@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    
+
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v26.3 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Transitioning to virtual threads using the Micronaut loom carrier - Micronaut Framework</title>
+	<link rel="canonical" href="/2025/06/30/transitioning-to-virtual-threads-using-the-micronaut-loom-carrier/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Transitioning to virtual threads using the Micronaut loom carrier - Micronaut Framework" />
+	<meta property="og:description" content="Micronaut HTTP Server Netty 4.9 introduces a new, experimental &#8220;loom carrier mode&#8221; for the Netty event loop. This prototype uses internal JDK APIs to run virtual threads directly on the event loop, under control of the framework. Our goal is to provide performance characteristics comparable to reactive code, with the convenience and &#8220;safety net&#8221; that [&hellip;]" />
+	<meta property="og:url" content="/2025/06/30/transitioning-to-virtual-threads-using-the-micronaut-loom-carrier/" />
+	<meta property="og:site_name" content="Micronaut Framework" />
+	<meta property="article:published_time" content="2025-06-30T09:50:07+00:00" />
+	<meta property="article:modified_time" content="2025-06-30T10:09:23+00:00" />
+	<meta property="og:image" content="/wp-content/uploads/2025/06/loom-carrier-figure-1.png" />
+	<meta property="og:image:width" content="1119" />
+	<meta property="og:image:height" content="460" />
+	<meta property="og:image:type" content="image/png" />
+	<meta name="author" content="Jonas Konrad" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="Jonas Konrad" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="17 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"/2025/06/30/transitioning-to-virtual-threads-using-the-micronaut-loom-carrier/","url":"/2025/06/30/transitioning-to-virtual-threads-using-the-micronaut-loom-carrier/","name":"Transitioning to virtual threads using the Micronaut loom carrier - Micronaut Framework","isPartOf":{"@id":"/#website"},"primaryImageOfPage":{"@id":"/2025/06/30/transitioning-to-virtual-threads-using-the-micronaut-loom-carrier/#primaryimage"},"image":{"@id":"/2025/06/30/transitioning-to-virtual-threads-using-the-micronaut-loom-carrier/#primaryimage"},"thumbnailUrl":"/wp-content/uploads/2025/06/loom-carrier-figure-1-1024x421.png","datePublished":"2025-06-30T09:50:07+00:00","dateModified":"2025-06-30T10:09:23+00:00","author":{"@id":"/#/schema/person/bd36f59dda43a7c6f42df17d4dc07619"},"breadcrumb":{"@id":"/2025/06/30/transitioning-to-virtual-threads-using-the-micronaut-loom-carrier/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["/2025/06/30/transitioning-to-virtual-threads-using-the-micronaut-loom-carrier/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"/2025/06/30/transitioning-to-virtual-threads-using-the-micronaut-loom-carrier/#primaryimage","url":"/wp-content/uploads/2025/06/loom-carrier-figure-1.png","contentUrl":"/wp-content/uploads/2025/06/loom-carrier-figure-1.png","width":1119,"height":460},{"@type":"BreadcrumbList","@id":"/2025/06/30/transitioning-to-virtual-threads-using-the-micronaut-loom-carrier/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"/"},{"@type":"ListItem","position":2,"name":"Blog","item":"/blog/"},{"@type":"ListItem","position":3,"name":"Transitioning to virtual threads using the Micronaut loom carrier"}]},{"@type":"WebSite","@id":"/#website","url":"/","name":"Micronaut Framework","description":"A modern, JVM-based, full-stack framework for building modular, easily testable microservice and serverless applications","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Person","@id":"/#/schema/person/bd36f59dda43a7c6f42df17d4dc07619","name":"Jonas Konrad"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//js.stripe.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/micronaut.io\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='/wp-includes/css/dist/block-library/style.min.css?ver=6.8.3' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--primary: #2559a7;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='modal-window-css' href='/wp-content/plugins/modal-window/public/assets/css/modal.min.css?ver=6.2.3' type='text/css' media='all' />
+<link rel='stylesheet' id='fonts-fira-sans-css' href='//fonts.googleapis.com/css2?family=Fira+Sans%3Awght%40300%3B500&#038;display=swap&#038;ver=6.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='micronaut-style-css' href='/wp-content/themes/micronaut/style.min.css?ver=6.8.3' type='text/css' media='all' />
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="//js.stripe.com/v3/?ver=6.8.3" id="stripe-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/posts/7280" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.8.3" />
+<link rel='shortlink' href='/?p=7280' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/2025/06/30/transitioning-to-virtual-threads-using-the-micronaut-loom-carrier/embed.json" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmicronaut.io%2F2025%2F06%2F30%2Ftransitioning-to-virtual-threads-using-the-micronaut-loom-carrier%2F&#038;format=xml" />
+<link rel="icon" href="/wp-content/uploads/2021/02/favicon.ico" type="image/png"><link rel="shortcut icon" href="/wp-content/uploads/2021/02/favicon.ico" type="image/png"><meta name="theme-color" content="#000000"><script type="text/javascript">var STRIPE_PUBLISHABLE_KEY = "pk_live_51HMxCnAdio0y30LTv9S4fLlYVaBdZN5ihurBPL6kJ8fQNbN3jRj6JwJQNXeL7PhZTQvuGcmWOdoyIUsuqXaop8OK00qddh873V";</script><script type="text/javascript">var TRIGGER_SUBSCRIBE = false;</script><link rel="icon" href="/wp-content/uploads/2025/09/favicon-120x120.png" sizes="32x32" />
+<link rel="icon" href="/wp-content/uploads/2025/09/favicon-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="/wp-content/uploads/2025/09/favicon-300x300.png" />
+<meta name="msapplication-TileImage" content="/wp-content/uploads/2025/09/favicon-300x300.png" />
+		<style type="text/css" id="wp-custom-css">
+			.fa-x-twitter:before {
+  content: "\e61b"; }
+p.expand-bottom-margin {
+	margin-bottom: 32px;
+}
+
+h2.expand-bottom-margin,
+h3.expand-bottom-margin,
+h4.expand-bottom-margin,
+h5.expand-bottom-margin,
+h6.expand-bottom-margin {
+	margin-bottom: 20px;
+}
+
+.underline {
+	text-decoration:underline;
+}
+
+h2.natural-case,
+h3.natural-case,
+h4.natural-case,
+h5.natural-case,
+h6.natural-case {
+	text-transform: none !important;
+}
+
+.legal-list {
+	list-style-type: '§';
+}
+
+.quote {
+	border-top: 2px solid black; 
+	border-bottom: 2px solid black;
+	margin: 18px auto;
+	padding:15px 15px 0 15px;
+	background-color: #f5f5f5;
+}
+
+blockquote {
+	display: block;
+	border-left: 5px solid black;
+	padding-left: 20px;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+figure {
+	padding: 20px;
+}
+.figurepink {
+	padding: 3px;
+	background: #FF0096;
+	color: #FFFFFF;
+}
+.figureorange {
+	padding: 3px;
+	background: #FF8A00;
+	color: #FFFFFF;
+}
+.figureblue {
+	padding: 3px;
+	background: #004EFF;
+	color: #FFFFFF;
+}		</style>
+		
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115754405-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-115754405-1');
+    </script>
+
+  </head>
+  <body class="wp-singular post-template-default single single-post postid-7280 single-format-standard wp-theme-micronaut">
+
+    <header id="header">
+
+      
+      <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+          <button class="collapsed" type="button" data-toggle="collapse" data-target="#nav" aria-expanded="false">
+            <span></span>
+          </button>
+
+          <a class="navbar-brand" href="/">
+            <img src="/wp-content/uploads/2020/11/MIcronautLogo_Horizontal.svg" alt="Micronaut Framework" />
+          </a>
+
+          <div class="collapse navbar-collapse" id="nav">
+
+            <ul class="navbar-nav ml-auto">
+
+              <li id="menu-item-2865" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2865 nav-item"><a href="/download/" class="nav-link">Download</a></li>
+<li id="menu-item-2868" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2868 dropdown nav-item"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Learn</a><ul class="dropdown-menu">
+	<li id="menu-item-4943" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4943"><a href="/learn/" class="dropdown-item">Overview</a></li>
+	<li id="menu-item-5111" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5111"><a href="https://docs.micronaut.io/index.html" class="dropdown-item">User Documentaton</a></li>
+	<li id="menu-item-4510" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4510"><a href="/guides/" class="dropdown-item">Guides</a></li>
+	<li id="menu-item-7373" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7373"><a href="https://mylearn.oracle.com/ou/course/micronaut-fundamentals/151938/" class="dropdown-item">Micronaut Fundamentals</a></li>
+	<li id="menu-item-2896" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2896"><a href="/category/microcast/" class="dropdown-item">Microcasts</a></li>
+	<li id="menu-item-2897" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2897"><a href="/category/webinar/" class="dropdown-item">Webinars</a></li>
+	<li id="menu-item-2871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2871"><a href="/professional-training/" class="dropdown-item">Professional Training</a></li>
+	<li id="menu-item-6526" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6526"><a href="https://micronaut-projects.github.io/micronaut-guides-mn3/latest/" class="dropdown-item">Guides for Micronaut Framework 3</a></li>
+</ul>
+</li>
+<li id="menu-item-2878" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2878 dropdown nav-item"><a href="/resources/" class="nav-link dropdown-toggle" data-toggle="dropdown">Resources</a><ul class="dropdown-menu">
+	<li id="menu-item-4999" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4999"><a href="/upcoming-events/" class="dropdown-item">Upcoming Events</a></li>
+	<li id="menu-item-2879" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-2879"><a href="/blog/" class="dropdown-item">Blog</a></li>
+	<li id="menu-item-6478" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6478"><a href="/category/release-announcements/" class="dropdown-item">Releases</a></li>
+	<li id="menu-item-6861" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6861"><a href="/micronaut-roadmap/" class="dropdown-item">Micronaut ROADMAP</a></li>
+	<li id="menu-item-6715" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6715"><a href="/category/security-announcements/" class="dropdown-item">Security Announcements</a></li>
+	<li id="menu-item-4499" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4499"><a href="https://micronautpodcast.com/" class="dropdown-item">Podcast</a></li>
+	<li id="menu-item-5798" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5798"><a href="/support/" class="dropdown-item">Commercial Support</a></li>
+	<li id="menu-item-4186" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4186"><a href="/resources/community-support/" class="dropdown-item">Community Support</a></li>
+	<li id="menu-item-2882" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2882"><a href="/faq/" class="dropdown-item">FAQ</a></li>
+	<li id="menu-item-2883" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2883"><a href="/contact/" class="dropdown-item">Contact</a></li>
+	<li id="menu-item-6479" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6479"><a href="/micronaut-success-stories/" class="dropdown-item">Micronaut Success Stories</a></li>
+</ul>
+</li>
+<li id="menu-item-2872" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2872 dropdown nav-item"><a href="/foundation/" class="nav-link dropdown-toggle" data-toggle="dropdown">Foundation</a><ul class="dropdown-menu">
+	<li id="menu-item-2877" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2877"><a href="/foundation/" class="dropdown-item">Overview</a></li>
+	<li id="menu-item-2874" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2874"><a href="/foundation/corporate-sponsorship/" class="dropdown-item">Corporate Sponsorship</a></li>
+	<li id="menu-item-2873" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2873"><a href="/foundation/community-sponsorship/" class="dropdown-item">Community Sponsorship</a></li>
+	<li id="menu-item-2876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2876"><a href="/foundation/sponsors/" class="dropdown-item">Sponsors</a></li>
+	<li id="menu-item-3838" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3838"><a href="/meeting-minutes/" class="dropdown-item">Meeting Minutes</a></li>
+</ul>
+</li>
+<li id="menu-item-2884" class="action menu-item menu-item-type-custom menu-item-object-custom menu-item-2884 nav-item"><a target="_blank" href="/launch/" class="nav-link">Launch</a></li>
+
+            </ul>
+
+          </div>
+
+        </nav>
+
+      </div>
+    </header>
+
+    
+<div id="contact" class="flyout collapse">
+  <div class="container">
+
+    <div class="inner">
+
+      <button type="button" data-toggle="collapse" data-target="#contact" class="close">&times;</button>
+
+      <div class="row justify-content-end">
+        <div class="col-md-4"><div class="widget"><h4>Contact Us About Sponsorship</h4>			<div class="textwidget"><p>Questions about Micronaut Foundation sponsorship?</p>
+<p>Please complete this form, and we’ll follow up with you shortly.</p>
+</div>
+		</div></div><div class="col-md-4"><div class="widget">			<div class="textwidget"><p>[hubspot type=form portal=4547412 id=a7b3ddfa-64b0-47fd-8358-45fa6a09456a]</p>
+</div>
+		</div></div> 
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div id="breadcrumbs"><div class="container"><span><span><a href="/">Home</a></span> » <span><a href="/blog/">Blog</a></span> » <span class="breadcrumb_last" aria-current="page">Transitioning to virtual threads using the Micronaut loom carrier</span></span></div></div>
+<main id="main">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-sm-8">
+        
+                  
+        
+        <article class="post_single">
+        
+          <header>
+            
+            <h1>Transitioning to virtual threads using the Micronaut loom carrier</h1>
+            
+            <span>by Jonas Konrad</span>
+            
+            <span class="tags">Tags: <a href="/tag/loom/" rel="tag">loom</a><a href="/tag/virtual-threads/" rel="tag">virtual-threads</a></span>            
+            <time>June 30, 2025</time>
+            
+          </header>
+          
+                    
+          <p>Micronaut HTTP Server Netty 4.9 introduces a new, experimental &#8220;loom carrier mode&#8221; for the Netty event loop. This prototype uses internal JDK APIs to run virtual threads directly on the event loop, under control of the framework. Our goal is to provide performance characteristics comparable to reactive code, with the convenience and &#8220;safety net&#8221; that virtual threads provide.</p>
+<div class="markdown-heading">
+<h2 class="heading-element">The Netty threading model</h2>
+<p>&nbsp;</p>
+</div>
+<p>Netty is a general-purpose framework for networking applications. Years of development have gone into some of the fastest protocol implementations available for the JVM. The use of native libraries to replace JDK APIs, such as the io_uring-based transport or the OpenSSL-based TLS implementation, push performance further. This has made it the natural choice for the basis of &#8220;next generation&#8221; web servers, such as Micronaut HTTP, Quarkus (Vert.x), and Spring WebFlux (reactor-netty).</p>
+<p>From the ground up, Netty is designed with an asynchronous programming model. Whereas traditional networking frameworks spin up a thread for each connection and use blocking operations to read from or write to the connection, Netty uses only a few threads, so-called <em>event loops</em>, that can each serve many connections.</p>
+<p>The most well-known advantage of this programming model is straight-forward: You need fewer threads. Platform threads (as opposed to the new virtual threads) require a fairly large amount of memory for the stack, causing problems when dealing with thousands of connections. Each new connection requires starting up a new thread, which can be expensive. Switching between processing different connections requires an OS-level context switch.</p>
+<p>But the benefits don&#8217;t stop there. New APIs and protocols are designed with this programming model in mind. For example, HTTP/2 bundles many requests on the same connection. Processing these streams in a synchronous fashion would need a thread for each request, and logic to distribute data to these threads. Similarly, Linux&#8217; new io_uring API, which offers superior IO performance by saving on syscalls, is modeled for a single user mode platform thread consuming the data of many asynchronous IO operations.</p>
+<p>Finally, there are gains to be had from sharing resources among connections but not among event loops. A pool of IO buffers does not need complicated (and slow!) synchronization operations to function if it is restricted to an event loop where all multitasking is cooperative and no other threads can interfere.</p>
+<p>The big downside to asynchronous programming is the added complexity, however. Code on the event loop must not block: Doing so will not only stall progress for the current connection, but potentially many others as well. In Netty, decoders must always verify that enough input data is available before decoding, and save their progress to fields when there isn&#8217;t. In higher-level frameworks built on Netty, network operations often use callbacks or reactive streams that will complete asynchronously with the operation. The difficulty of debugging such code is notorious. Wouldn&#8217;t it be nice to write &#8220;normal&#8221; blocking code, but still get the benefits of asynchronous code? Enter virtual threads.</p>
+<div class="markdown-heading">
+<h2 class="heading-element">Virtual Threads</h2>
+<p>&nbsp;</p>
+</div>
+<p>Many approaches have been tried to make asynchronous programming easier in various languages. The JDK team has chosen an ambitious one: Virtual threads that behave almost identically to platform threads. As opposed to async-await or Kotlin&#8217;s suspended functions, this requires no change to (most) existing blocking code to work. This is a great benefit to the large existing ecosystem that still uses blocking operations, but it&#8217;s also convenient for &#8220;rarely blocking&#8221; code. For example, a log statement is usually thrown around without a callback waiting for its completion, but may block in rare situations. You still want to avoid blocking the event loop then.</p>
+<p>Virtual threads are less memory intensive than platform threads, they are relatively cheap to start, and when a virtual thread goes idle, the carrier thread can pick up another without a heavy context switch. We can start a virtual thread for every connection or every HTTP/2 request with no issue.</p>
+<p>Virtual threads work using <em>continuations</em>. Blocking operations in the standard library, such as <code>Thread.sleep</code>, have a special path for virtual threads. Instead of actually performing a sleep system call, the JDK instead tells the JVM to <em>yield</em>the virtual thread. The JVM saves thread information (e.g. the stack) to a heap data structure. Once the sleep finishes, the JDK will tell the JVM to restore the stack and can continue execution of the virtual thread.</p>
+<p>The separation of responsibilities to make this happen in the JDK is quite neat. The suspension and resumption logic is distinct from the scheduler. A virtual thread is encapsulated by a <code>Runnable</code> that is submitted to an <code>Executor</code>. When the virtual thread needs to suspend, <code>Runnable.run()</code> finishes. When the thread is resumed, the thread is resubmitted using <code>Executor.execute(Runnable)</code>. The <code>Executor</code> implementation is implemented purely in Java.</p>
+<p>The <code>Executor</code> used for virtual threads in the JDK is a dedicated <code>ForkJoinPool</code>. This pool compromises between <em>locality</em>and <em>progress</em>: Each platform thread has a local queue and the submission logic tries to avoid moving tasks between platform threads unnecessarily, but if a task &#8220;hogs&#8221; a platform thread e.g. for a long CPU-intensive operation, other platform threads can <em>steal</em> queued tasks to make sure they progress anyway. This approach works reasonably well, but when combined with Netty, there are some drawbacks.</p>
+<div class="markdown-heading">
+<h2 class="heading-element">Netty and the <code>ForkJoinPool</code> (FJP) don&#8217;t mix well</h2>
+<p>&nbsp;</p>
+</div>
+<p>Say we have a Netty-based web server and want to run each request on a virtual thread for user convenience. The first dilemma is where to run the event loop. If we run the event loop as a virtual thread on the FJP, request tasks can run on the same carrier thread without a context switch. There are three reasons why this doesn&#8217;t work, however.</p>
+<ul>
+<li>In Netty, the most performant transport implementations use native code. In this native code, Netty sends off system calls that may block the current thread until data becomes available. The JVM cannot suspend the virtual thread in this case–the carrier thread is stuck even though it&#8217;s not busy and could be running continuations.</li>
+<li>The second issue is that the FJP may transfer the event loop to another platform thread between different iterations. This is forbidden e.g. by io_uring. If we want to use io_uring, we must ensure that the event loop remains on the same platform thread throughout its lifetime. That leaves us only the option to run the event loop outside the FJP, which means we have to live with the cost of context switching between the FJP and the event loop for every request and response.</li>
+<li>Another problem with FJP is that while it tries to keep virtual threads local, framework-level knowledge is missing. We&#8217;ve seen benchmarks where several HTTP/2 requests that come in on one connection would end up being distributed all over the FJP, leading to large synchronization overhead when the responses have to be merged back into a single TCP connection. In the other direction, when using a DB connection pool, we can gain some performance by picking DB connections that run on the same event loop as the server connection. A shoutout to Vert.x in particular for making this easy–and benefiting from it in benchmarks.</li>
+</ul>
+<div class="markdown-heading">
+<h2 class="heading-element">A framework-level solution</h2>
+<p>&nbsp;</p>
+</div>
+<p>I&#8217;ve described above the abstraction the JDK uses internally to run virtual threads. The FJP is simply used as an <code>Executor</code>. What if we were to replace this <code>Executor</code> with something we have more control over? The necessary APIs are private–we need the <code>--add-opens=java.base/java.lang=ALL-UNNAMED</code> JVM argument, and a healthy dose of reflection–but the infrastructure exists. With the loom carrier prototype, we make that option available for you to try.</p>
+<p>For every event loop, there is a carrier thread. The event loop itself runs on a virtual thread on that carrier thread, but is treated specially. The event loop will only enter the native blocking code if the carrier thread really is idle and there are no other virtual threads to run. On the other side, when a virtual thread is submitted to the carrier while the event loop is sleeping in native code, we wake the event loop and return control to the carrier so that we can run the submitted work. This way, we resolve the event loop on FJP issues listed above.</p>
+<p>When a request comes in, a virtual thread is created on the same carrier thread, so we don&#8217;t need to context switch. We can even go a step further with <em>immediate run</em>: Inside an event loop <code>read</code> event handler, we can submit the request processing task, <code>yield</code> the event loop thread, run the request handler virtual thread, and then return to the event loop. The response is available before the event loop even finishes with its <code>read</code> handler. When this works out, the performance advantage can be significant, in particular when the same read event contains multiple requests that can have their responses batched–something we could only achieve with async code before. When it doesn&#8217;t work out and the controller has to block, we don&#8217;t get this benefit, but the event loop doesn&#8217;t come crashing to a halt either. The best of both worlds.</p>
+<figure>
+<p><img fetchpriority="high" decoding="async" src="/wp-content/uploads/2025/06/loom-carrier-figure-1-1024x421.png" alt="" width="1024" height="421" class="alignnone size-large wp-image-7290" srcset="/wp-content/uploads/2025/06/loom-carrier-figure-1-1024x421.png 1024w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-1-300x123.png 300w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-1-768x316.png 768w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-1-150x62.png 150w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-1.png 1119w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption><b>Figure 1</b>: Simple &#8216;Hello World&#8217; style benchmark latency histogram. At low request rates, latency and CPU usage of the <span class="figurepink">custom loom scheduler</span> is between that of <span class="figureorange">async</span> and <span class="figureblue">loom with FJP</span>. Maximum request rate (not shown) also lies between async (best) and FJP.</figcaption></figure>
+<p>This is a great start! Now let&#8217;s look beyond the &#8220;immediate response&#8221; use case.</p>
+<div class="markdown-heading">
+<h2 class="heading-element">Client affinity</h2>
+<p>&nbsp;</p>
+</div>
+<p>I briefly touched on an optimization event loops can do above that I call <em>client affinity</em>. A Netty event loop can handle multiple connections at a time, but this is not limited to server connections. It&#8217;s possible to run HTTP client or database connections on the same event loop as the server. This avoids context switching between the IO thread of the request we&#8217;re serving and the IO thread of the client connection we&#8217;re using to fetch data.</p>
+<p>The difficulty with this optimization is that it necessarily requires specialized logic in the connection pool. Migrating a connection to a new thread is difficult to impossible, so when a controller requests a connection from the pool, the pool must be programmed to only choose among the connections on the same event loop as that controller.</p>
+<p>The Micronaut HTTP client has had this feature since 4.8, and further improved in 4.9, but only async code could benefit from affinity before. When the controller runs on a virtual thread on the FJP, there is little point in the client sharing the event loop with the server, because the response returned by the client will have to pass through the virtual thread on the FJP before making it back to the event loop anyway. With the event loop carrier however, this optimization finally becomes feasible with virtual threads.</p>
+<figure>
+<p><img decoding="async" src="/wp-content/uploads/2025/06/loom-carrier-figure-2-1024x416.png" alt="" width="1024" height="416" class="alignnone size-large wp-image-7292" srcset="/wp-content/uploads/2025/06/loom-carrier-figure-2-1024x416.png 1024w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-2-300x122.png 300w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-2-768x312.png 768w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-2-150x61.png 150w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-2.png 1125w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption><b>Figure 2</b>: HTTP client call inside a controller, latency histogram. Latency and CPU usage of the <span class="figurepink">custom loom scheduler</span> is close to <span class="figureorange">async</span> and far better than <span class="figureblue">loom with FJP</span>. Maximum request rate (not shown) is similar to that of async and better than FJP, though CPU usage exceeds async at high request rates.</figcaption></figure>
+<p>From the results, we can see that the optimization works and latency ends up very close to the async implementation (which also uses client affinity). This approach is transparent to the user.</p>
+<div class="markdown-heading">
+<h2 class="heading-element">Non-Netty IO</h2>
+<p>&nbsp;</p>
+</div>
+<p>While Netty-based IO works great, most external code uses normal JDK IO operations. With virtual threads, blocking IO is implemented using two levels of pollers.</p>
+<ol>
+<li>When <code>InputStream.read()</code> is called, first a non-blocking read is attempted.</li>
+<li>If data isn&#8217;t available immediately, the file descriptor is registered with a <em>sub poller</em> (chosen by the numeric FD value). The sub pollers are themselves virtual threads. When they see data become available, they wake up the virtual thread that&#8217;s waiting for it. Due to how virtual threads and the FJP work, this wakeup will usually need no context switch, the blocking thread will run on the same carrier thread as the sub poller that woke it up.</li>
+<li>If the sub poller also needs to wait because none of the files registered to it have data available, it registers with the <em>master poller</em> and goes to sleep itself. The master poller is a proper platform thread, not a virtual thread, so waking up the sub poller at that point does lead to a context switch.</li>
+</ol>
+<p>This setup is fairly rigid at the moment. There is no way for us to create our own sub pollers for a particular event loop, and even if we could, there would be no way to assign particular file descriptors to the &#8220;right&#8221; sub poller. In fact, the event loop carrier prototype has to take extra care to make sure that the poller virtual threads stay on the FJP and don&#8217;t all start on the event loop by accident.</p>
+<p>The best we can do for now is try to make JDK IO <em>no worse</em> than with FJP. When a controller virtual thread on the event loop carrier performs a blocking IO operation (i.e. waits using the sub poller), it is &#8220;moved&#8221; to the FJP temporarily, so that it can do its IO there. This is one context switch. Once IO is done and the controller thread interacts with the event loop again, it can be moved back, leading to a second context switch. Not ideal, but two context switches is the same cost we&#8217;d have paid if the controller virtual thread had run on the FJP from the start.</p>
+<p>Measuring this with a realistic example is surprisingly difficult. The Micronaut HTTP client uses Netty, so it doesn&#8217;t work as an example. The new JDK <code>HttpClient</code> has its own event loop architecture using a separate platform thread and doesn&#8217;t use the pollers either. The test case I settled on instead is a JDBC PostgreSQL connection using the Hikari connection pool. A fairly common setup, though Hikari and the JDBC driver have their own performance issues that interfere with the benchmark a bit.</p>
+<figure>
+<img decoding="async" src="/wp-content/uploads/2025/06/loom-carrier-figure-3-1024x425.png" alt="" width="1024" height="425" class="alignnone size-large wp-image-7291" srcset="/wp-content/uploads/2025/06/loom-carrier-figure-3-1024x425.png 1024w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-3-300x124.png 300w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-3-768x318.png 768w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-3-150x62.png 150w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-3.png 1124w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption><b>Figure 3</b>: PostgreSQL/HikariCP database operation. Latency and CPU usage is almost identical between the <span class="figureorange">custom loom scheduler</span> and <span class="figurepink">FJP</span>. However, the custom scheduler reaches a lower maximum request rate (not shown). No async benchmark here, since JDBC is a synchronous API.</figcaption></figure>
+<p>In the benchmark, the latency and CPU usage are on par with FJP, which is what we want. However, the loom carrier approach cannot handle a request rate as high as the pure FJP approach. This needs further work, but one possible explanation is related to HikariCP: In the loom carrier mode, connection acquisition happens on the event loop carrier thread, while release happens on the FJP. This could lead to more synchronization overhead and context switching when compared against the test where acquisition also happens on the FJP.</p>
+<div class="markdown-heading">
+<h2 class="heading-element">Balancing tasks</h2>
+<p>&nbsp;</p>
+</div>
+<p>One area where the event loop carrier approach differs substantially from the FJP is work stealing. FJP will transfer tasks between carrier threads much more freely. In some benchmarks this can become a disadvantage, with e.g. virtual threads of different HTTP/2 streams on the same connection being distributed to other carrier threads with little care, leading to unnecessary context switching and synchronization overhead to coordinate the response writing. But it can also go the other way. If there is a load burst on one event loop and the request processing is fairly heavy, the overhead from distributing tasks is smaller than the advantage gained from parallel processing. In an Oracle-internal synthetic benchmark this lead to a striking initial latency advantage for the FJP. I was able to tune the event loop carrier to reach performance on par with the FJP, but such optimization always runs the risk of &#8220;overfitting&#8221; a particular benchmark, with little benefit or even performance losses for real world applications.</p>
+<p>It is likely that there will always be applications that perform worse when running their virtual threads on the event loop compared to running them on the FJP. Improving locality and reducing migration between CPUs will always come with tradeoffs–but it&#8217;s nice to have the option to customize the scheduler to your needs.</p>
+<div class="markdown-heading">
+<h2 class="heading-element">Where to go from here</h2>
+<p>&nbsp;</p>
+</div>
+<p>Where we can, in principle, always compete, is async code. There is no fundamental reason why a reactive controller should be faster than the same reactive controller on a virtual thread on the event loop–we don&#8217;t pay the fixed FJP and context switch overhead after all. In practice there is still a gap, but there doesn&#8217;t have to be. If we can match the performance, we can take the step to making virtual threads the default for our users, without risking performance regressions in existing applications. Applications will get the &#8220;safety net&#8221; of virtual threads, where accidental blocking operations don&#8217;t stall the event loop. Folks that are already committed to blocking code and virtual threads can try the event loop carrier, or could continue using the FJP if that&#8217;s where their application performs better.</p>
+<p>Then, of course, there&#8217;s the JDK API side. This entire effort relies on reflecting into the JDKs innards, and the folks at Red Hat have even gone a step further and experimented with JDK patches. For production use, the JDK would have to open up scheduling APIs. Those APIs can be dangerous to use and restrict the JDK in what changes can be made in the future, so they will have to be designed with care.</p>
+<p>We&#8217;d love to hear your feedback on this prototype. Test your applications–be they reactive or blocking–with the event loop carrier to see if there are major performance regressions or improvements. To use the event loop carrier, set the following configuration properties:</p>
+<div class="highlight highlight-source-ini notranslate position-relative overflow-auto">
+<pre><span class="pl-c"># run controllers on virtual threads</span>
+<span class="pl-k">micronaut.server.thread-selection</span>=blocking
+<span class="pl-c"># enable the event loop carrier on the default event loop</span>
+<span class="pl-k">micronaut.netty.event-loops.default.loom-carrier</span>=true
+<span class="pl-c"># make the HTTP client use the same event loop as the server to take advantage of client affinity</span>
+<span class="pl-k">micronaut.http.client.event-loop-group</span>=default
+<span class="pl-c"># optional: throw an exception if client affinity does not engage</span>
+<span class="pl-c">#micronaut.http.client.pool.connection-locality=enforced-always</span></pre>
+<div class="zeroclipboard-container position-absolute right-0 top-0"></div>
+</div>
+<p>If you have feedback on the general design or the JDK APIs, that would also be appreciated. You can contact us in the micronaut-core <a href="https://github.com/micronaut-projects/micronaut-core/discussions">discussions forum</a>.</p>
+<div class="markdown-heading">
+<h2 class="heading-element">Acknowledgements</h2>
+<p>&nbsp;</p>
+</div>
+<p>This work would not have been possible without the help of the Red Hat folks from the Quarkus and OpenJDK teams. They laid the necessary groundwork to make Netty fast on virtual threads and to introduce the Netty APIs necessary for this level of event loop customization. They also provided feedback throughout the development process, and worked closely with us to solve functional and performance problems we encountered.</p>
+<div class="markdown-heading">
+<h2 class="heading-element">Appendix A: Deadlocks and running with scissors</h2>
+<p>&nbsp;</p>
+</div>
+<p>Implementing a custom virtual thread scheduler is risky business. One particular problem that we did not encounter in practice but played a big part in our design decisions is the risk of deadlocks. When a lock is used both in a carrier thread and a virtual thread that runs on that carrier, a deadlock can appear. If the virtual thread suspends while holding the lock, and then the carrier thread attempts to acquire the same lock, it will block forever because the virtual thread that releases it can never run–its carrier is blocked. Work stealing can mitigate this to some extent, but in more complex settings even that is not enough.</p>
+<p>The only real solution is to avoid locks shared between virtual threads and the carrier. But that is easier said than done: For example, logback appenders regularly use <code>synchronized</code>, so if the carrier thread does any logging at all it risks deadlocking with its virtual threads that certainly will log. Again, we&#8217;ve never seen this happen in practice, but the risk is there. When it does happen the event loop will lock up in an unrecoverable state.</p>
+<p>For that reason we decided to move the event loop to a virtual thread as described above. Running the event loop directly on the carrier thread carries some performance advantages due to how netty works, but the risk of a deadlock is hard to avoid. With the event loop on a virtual thread, if it does block (hopefully a rare occurrence), it can suspend and other virtual threads can run to unblock it.</p>
+<div class="markdown-heading">
+<h2 class="heading-element">Appendix B: Thread local caching</h2>
+<p>&nbsp;</p>
+</div>
+<p>One benefit of event loops over a many-thread architecture that I listed at the start of this article is that we can share resources without expensive synchronization. For example, a buffer pool can be stored in a <code>ThreadLocal</code> and will never have to worry about interference from other threads. You&#8217;ll notice that I haven&#8217;t talked about this since, and indeed there is still room for improvement here.</p>
+<p>The biggest pooling structure Netty uses, its buffer allocator, has been made more efficient for virtual threads with Netty 4.2, thanks to the folks at Red Hat. When <code>ThreadLocal</code> is not feasible, it can instead use the thread ID to select an &#8220;arena&#8221; that is hopefully uncontended. But even with this approach, some overhead remains. For other pools where the performance gain from pooling is smaller, this overhead is big enough to make pooling simply not worth it anymore.</p>
+<p>There is some work to be done here. Something we could do today already is to rely on <em>critical sections</em>, code sections where the carrier thread is fixed, and a virtual thread cannot suspend. Inside this section we can then manipulate a structure local to the carrier thread without worrying about interference.</p>
+<p>Because virtual threads are purely cooperative at the moment, we can &#8220;emulate&#8221; such a section by simply making sure none of the code inside of it may suspend the virtual thread. But this is brittle, and if the JDK ever introduces preemption for virtual threads, it will break. It also relies on internal APIs to access the carrier thread and share data structures.</p>
+<p>A better solution would be a JDK API that implements recycling without exposing concepts like critical sections or carrier thread access that may lock the JDK out of future changes to the virtual thread architecture. I&#8217;ve written up a proposal <a href="https://github.com/micronaut-projects/micronaut-http-benchmarks/wiki/Recycler-API-proposal">here</a>, but it&#8217;s in its early stages, and I&#8217;m not yet sure that the API can cover all the use cases Netty needs.</p>
+
+        </article>
+        
+        
+<nav class="row pager">
+  
+  <div class="col-6 text-right">
+    
+    <span class="next">
+      <a href="/2025/06/30/micronaut-framework-4-9-0-released/" rel="next">Newer post</a> 
+    </span>
+    
+  </div>
+  
+  <div class="col-6 text-left">
+    
+    <span class="prev">
+      <a href="/2025/06/12/micronaut-framework-4-8-3-released/" rel="prev">Previous post</a>    </span>
+    
+  </div>
+  
+</nav>        
+      </div>
+      <div class="col-sm-4">
+        
+        <aside id="sidebar">
+  
+    
+<h4 class="h2">You might also like ...</h4>
+
+
+<article class="post post_has-bg"  style="background-image:url(https://micronaut.io/wp-content/uploads/2018/06/blog-featured-image-03-300x300.jpg)">
+  
+  <a href="/2019/10/07/micronaut-aop-awesome-flexibility-without-the-complexity/">
+    
+    <time>October 7, 2019</time>
+  
+    <header>
+      <h3>Micronaut AOP: Awesome Flexibility Without the Complexity</h3>
+    </header>
+    
+  </a>
+  
+</article>
+  
+  <div id="tag_cloud-2" class="widget widget_tag_cloud"><h4 class="boxed first-word-bold">Post by tag</h4><div class="tagcloud"><a href="/tag/aws/" class="tag-cloud-link tag-link-85 tag-sm tag-link-position-1" style="font-size: 14.670588235294pt;" aria-label="aws (12 items)">aws</a>
+<a href="/tag/azure/" class="tag-cloud-link tag-link-100 tag-sm tag-link-position-2" style="font-size: 11.294117647059pt;" aria-label="azure (4 items)">azure</a>
+<a href="/tag/casestudy/" class="tag-cloud-link tag-link-126 tag-sm tag-link-position-3" style="font-size: 9.4823529411765pt;" aria-label="casestudy (2 items)">casestudy</a>
+<a href="/tag/cli/" class="tag-cloud-link tag-link-106 tag-sm tag-link-position-4" style="font-size: 9.4823529411765pt;" aria-label="cli (2 items)">cli</a>
+<a href="/tag/community/" class="tag-cloud-link tag-link-241 tag-sm tag-link-position-5" style="font-size: 11.294117647059pt;" aria-label="community (4 items)">community</a>
+<a href="/tag/corretto/" class="tag-cloud-link tag-link-97 tag-sm tag-link-position-6" style="font-size: 9.4823529411765pt;" aria-label="corretto (2 items)">corretto</a>
+<a href="/tag/data/" class="tag-cloud-link tag-link-89 tag-sm tag-link-position-7" style="font-size: 11.294117647059pt;" aria-label="data (4 items)">data</a>
+<a href="/tag/docker/" class="tag-cloud-link tag-link-116 tag-sm tag-link-position-8" style="font-size: 9.4823529411765pt;" aria-label="docker (2 items)">docker</a>
+<a href="/tag/foundation/" class="tag-cloud-link tag-link-102 tag-sm tag-link-position-9" style="font-size: 12.941176470588pt;" aria-label="foundation (7 items)">foundation</a>
+<a href="/tag/gcp/" class="tag-cloud-link tag-link-87 tag-sm tag-link-position-10" style="font-size: 11.952941176471pt;" aria-label="gcp (5 items)">gcp</a>
+<a href="/tag/graalvm/" class="tag-cloud-link tag-link-83 tag-sm tag-link-position-11" style="font-size: 13.764705882353pt;" aria-label="graalvm (9 items)">graalvm</a>
+<a href="/tag/gradle/" class="tag-cloud-link tag-link-107 tag-sm tag-link-position-12" style="font-size: 12.941176470588pt;" aria-label="gradle (7 items)">gradle</a>
+<a href="/tag/groovy/" class="tag-cloud-link tag-link-136 tag-sm tag-link-position-13" style="font-size: 9.4823529411765pt;" aria-label="groovy (2 items)">groovy</a>
+<a href="/tag/guides/" class="tag-cloud-link tag-link-132 tag-sm tag-link-position-14" style="font-size: 9.4823529411765pt;" aria-label="guides (2 items)">guides</a>
+<a href="/tag/http-client/" class="tag-cloud-link tag-link-291 tag-sm tag-link-position-15" style="font-size: 8pt;" aria-label="HTTP client (1 item)">HTTP client</a>
+<a href="/tag/intellijidea/" class="tag-cloud-link tag-link-98 tag-sm tag-link-position-16" style="font-size: 10.470588235294pt;" aria-label="intellijidea (3 items)">intellijidea</a>
+<a href="/tag/iot/" class="tag-cloud-link tag-link-303 tag-sm tag-link-position-17" style="font-size: 9.4823529411765pt;" aria-label="IoT (2 items)">IoT</a>
+<a href="/tag/jetbrains/" class="tag-cloud-link tag-link-296 tag-sm tag-link-position-18" style="font-size: 9.4823529411765pt;" aria-label="JetBrains (2 items)">JetBrains</a>
+<a href="/tag/jhipster/" class="tag-cloud-link tag-link-134 tag-sm tag-link-position-19" style="font-size: 11.294117647059pt;" aria-label="JHipster (4 items)">JHipster</a>
+<a href="/tag/kotlin/" class="tag-cloud-link tag-link-115 tag-sm tag-link-position-20" style="font-size: 10.470588235294pt;" aria-label="kotlin (3 items)">kotlin</a>
+<a href="/tag/lambda/" class="tag-cloud-link tag-link-339 tag-sm tag-link-position-21" style="font-size: 11.294117647059pt;" aria-label="lambda (4 items)">lambda</a>
+<a href="/tag/launch/" class="tag-cloud-link tag-link-99 tag-sm tag-link-position-22" style="font-size: 11.952941176471pt;" aria-label="launch (5 items)">launch</a>
+<a href="/tag/loom/" class="tag-cloud-link tag-link-490 tag-sm tag-link-position-23" style="font-size: 8pt;" aria-label="loom (1 item)">loom</a>
+<a href="/tag/maven/" class="tag-cloud-link tag-link-94 tag-sm tag-link-position-24" style="font-size: 11.294117647059pt;" aria-label="maven (4 items)">maven</a>
+<a href="/tag/meetup/" class="tag-cloud-link tag-link-108 tag-sm tag-link-position-25" style="font-size: 10.470588235294pt;" aria-label="meetup (3 items)">meetup</a>
+<a href="/tag/microcast/" class="tag-cloud-link tag-link-109 tag-sm tag-link-position-26" style="font-size: 12.529411764706pt;" aria-label="microcast (6 items)">microcast</a>
+<a href="/tag/micronaut2/" class="tag-cloud-link tag-link-103 tag-md tag-link-position-27" style="font-size: 16.4pt;" aria-label="micronaut2 (20 items)">micronaut2</a>
+<a href="/tag/micronaut4/" class="tag-cloud-link tag-link-344 tag-sm tag-link-position-28" style="font-size: 12.529411764706pt;" aria-label="micronaut4 (6 items)">micronaut4</a>
+<a href="/tag/micronaut-data/" class="tag-cloud-link tag-link-178 tag-sm tag-link-position-29" style="font-size: 9.4823529411765pt;" aria-label="Micronaut Data (2 items)">Micronaut Data</a>
+<a href="/tag/mqtt/" class="tag-cloud-link tag-link-123 tag-sm tag-link-position-30" style="font-size: 10.470588235294pt;" aria-label="mqtt (3 items)">mqtt</a>
+<a href="/tag/opentracing-api/" class="tag-cloud-link tag-link-290 tag-sm tag-link-position-31" style="font-size: 8pt;" aria-label="OpenTracing API (1 item)">OpenTracing API</a>
+<a href="/tag/oracle/" class="tag-cloud-link tag-link-113 tag-sm tag-link-position-32" style="font-size: 10.470588235294pt;" aria-label="oracle (3 items)">oracle</a>
+<a href="/tag/oracle-cloud/" class="tag-cloud-link tag-link-180 tag-sm tag-link-position-33" style="font-size: 10.470588235294pt;" aria-label="Oracle Cloud (3 items)">Oracle Cloud</a>
+<a href="/tag/raspberry-pi/" class="tag-cloud-link tag-link-304 tag-sm tag-link-position-34" style="font-size: 9.4823529411765pt;" aria-label="Raspberry Pi (2 items)">Raspberry Pi</a>
+<a href="/tag/release/" class="tag-cloud-link tag-link-80 tag-xl tag-link-position-35" style="font-size: 22pt;" aria-label="release (100 items)">release</a>
+<a href="/tag/security/" class="tag-cloud-link tag-link-125 tag-sm tag-link-position-36" style="font-size: 11.952941176471pt;" aria-label="security (5 items)">security</a>
+<a href="/tag/serverless/" class="tag-cloud-link tag-link-101 tag-sm tag-link-position-37" style="font-size: 9.4823529411765pt;" aria-label="serverless (2 items)">serverless</a>
+<a href="/tag/servlet/" class="tag-cloud-link tag-link-91 tag-sm tag-link-position-38" style="font-size: 9.4823529411765pt;" aria-label="servlet (2 items)">servlet</a>
+<a href="/tag/sponsors/" class="tag-cloud-link tag-link-253 tag-sm tag-link-position-39" style="font-size: 13.352941176471pt;" aria-label="sponsors (8 items)">sponsors</a>
+<a href="/tag/springboot/" class="tag-cloud-link tag-link-84 tag-sm tag-link-position-40" style="font-size: 10.470588235294pt;" aria-label="springboot (3 items)">springboot</a>
+<a href="/tag/townhall/" class="tag-cloud-link tag-link-114 tag-sm tag-link-position-41" style="font-size: 13.352941176471pt;" aria-label="townhall (8 items)">townhall</a>
+<a href="/tag/training/" class="tag-cloud-link tag-link-135 tag-sm tag-link-position-42" style="font-size: 13.352941176471pt;" aria-label="training (8 items)">training</a>
+<a href="/tag/video/" class="tag-cloud-link tag-link-88 tag-lg tag-link-position-43" style="font-size: 19.364705882353pt;" aria-label="video (47 items)">video</a>
+<a href="/tag/webinar/" class="tag-cloud-link tag-link-81 tag-md tag-link-position-44" style="font-size: 17.058823529412pt;" aria-label="webinar (24 items)">webinar</a>
+<a href="/tag/zipkin/" class="tag-cloud-link tag-link-289 tag-sm tag-link-position-45" style="font-size: 8pt;" aria-label="Zipkin (1 item)">Zipkin</a></div>
+</div>  
+</aside>        
+      </div>
+    </div>
+    
+  </div>
+</main>
+
+    <footer id="footer">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-sm-5 footer-left">
+            
+            <div id="text-14" class="widget widget_text">			<div class="textwidget"></div>
+		</div><div id="block-3" class="widget widget_block widget_media_image">
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="316" src="/wp-content/uploads/2021/10/MIcronaut_Foundation_Horizontal_white-1024x316.png" alt="" class="wp-image-4398" srcset="/wp-content/uploads/2021/10/MIcronaut_Foundation_Horizontal_white-1024x316.png 1024w, https://micronaut.io/wp-content/uploads/2021/10/MIcronaut_Foundation_Horizontal_white-300x93.png 300w, https://micronaut.io/wp-content/uploads/2021/10/MIcronaut_Foundation_Horizontal_white-768x237.png 768w, https://micronaut.io/wp-content/uploads/2021/10/MIcronaut_Foundation_Horizontal_white-150x46.png 150w, https://micronaut.io/wp-content/uploads/2021/10/MIcronaut_Foundation_Horizontal_white.png 1203w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></figure>
+</div>            
+          </div>
+          <div class="col-sm-7 footer-right">
+            
+            <ul class="meta">
+
+              <li id="menu-item-2895" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2895"><a href="/brand-guidelines/">Brand Guidelines</a></li>
+<li id="menu-item-2894" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2894"><a href="/community-guidelines/">Community Code of Conduct</a></li>
+<li id="menu-item-3377" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-3377"><a rel="privacy-policy" href="/privacy-policy/">Privacy Policy</a></li>
+
+            </ul>
+            
+            <div id="nav_menu-2" class="widget widget_nav_menu"><div class="menu-links-container"><ul id="menu-links" class="menu"><li id="menu-item-4515" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4515"><a href="mailto:info@micronaut.io"><i class="fas fa-envelope"><span class="sr-only">Mail</span></i></a></li>
+<li id="menu-item-2886" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2886"><a target="_blank" href="https://twitter.com/micronautfw"><i class="fab fa-x-twitter"><span class="sr-only">Twitter</span></i></a></li>
+<li id="menu-item-6740" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6740"><a href="https://fosstodon.org/@micronaut"><i class="fab fa-mastodon"><span class="sr-only">Mastodon</span></i></a></li>
+<li id="menu-item-2888" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2888"><a target="_blank" href="https://discord.com/invite/9xRFsHv98T"><i class="fab fa-discord"><span class="sr-only">Discord</span></i></a></li>
+<li id="menu-item-2889" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2889"><a target="_blank" href="https://github.com/micronaut-projects/"><i class="fab fa-github"><span class="sr-only">GitHub</span></i></a></li>
+<li id="menu-item-2890" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2890"><a target="_blank" href="https://www.youtube.com/@MicronautFramework"><i class="fab fa-youtube"><span class="sr-only">YouTube</span></i></a></li>
+<li id="menu-item-4514" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4514"><a href="https://www.linkedin.com/showcase/micronaut"><i class="fab fa-linkedin"><span class="sr-only">LinkedIn</span></i></a></li>
+<li id="menu-item-4513" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4513"><a href="https://www.twitch.tv/micronautfw"><i class="fab fa-twitch"><span class="sr-only">Twitch</span></i></a></li>
+</ul></div></div><div id="text-5" class="widget widget_text">			<div class="textwidget"><p><small>© 2024 Micronaut Foundation. All rights reserved.</small></p>
+</div>
+		</div>  
+            
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+
+    <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/micronaut\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript" src="/wp-content/themes/micronaut/js/script.min.js" id="micronaut-script-js"></script>
+
+  </body>
+</html><!--
+Performance optimized by Redis Object Cache. Learn more: https://wprediscache.com
+
+Retrieved 2475 objects (928 KB) from Redis using PhpRedis (v5.3.7).
+-->

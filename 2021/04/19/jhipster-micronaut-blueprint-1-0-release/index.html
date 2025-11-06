@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    
+
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v26.3 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>JHipster Micronaut Blueprint 1.0 Release - Micronaut Framework</title>
+	<link rel="canonical" href="/2021/04/19/jhipster-micronaut-blueprint-1-0-release/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="JHipster Micronaut Blueprint 1.0 Release - Micronaut Framework" />
+	<meta property="og:description" content="We are very happy to announce the 1.0.0 release of the Micronaut Blueprint for JHipster (otherwise known as MHipster)! This release represents a culmination of effort and teamwork between the Micronaut Foundation, the JHipster community, and Object Computing to create a Micronaut option for the server-side portion of JHipster applications. JHipster is a development platform [&hellip;]" />
+	<meta property="og:url" content="/2021/04/19/jhipster-micronaut-blueprint-1-0-release/" />
+	<meta property="og:site_name" content="Micronaut Framework" />
+	<meta property="article:published_time" content="2021-04-19T08:24:52+00:00" />
+	<meta property="article:modified_time" content="2021-04-20T13:34:07+00:00" />
+	<meta property="og:image" content="/wp-content/uploads/2018/06/blog-featured-image-03.jpg" />
+	<meta property="og:image:width" content="800" />
+	<meta property="og:image:height" content="800" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Jason Schindler" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="Jason Schindler" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="16 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"/2021/04/19/jhipster-micronaut-blueprint-1-0-release/","url":"/2021/04/19/jhipster-micronaut-blueprint-1-0-release/","name":"JHipster Micronaut Blueprint 1.0 Release - Micronaut Framework","isPartOf":{"@id":"/#website"},"primaryImageOfPage":{"@id":"/2021/04/19/jhipster-micronaut-blueprint-1-0-release/#primaryimage"},"image":{"@id":"/2021/04/19/jhipster-micronaut-blueprint-1-0-release/#primaryimage"},"thumbnailUrl":"/wp-content/uploads/2018/06/blog-featured-image-03.jpg","datePublished":"2021-04-19T08:24:52+00:00","dateModified":"2021-04-20T13:34:07+00:00","author":{"@id":"/#/schema/person/23819210b3632c038e5c7d32feae6bac"},"breadcrumb":{"@id":"/2021/04/19/jhipster-micronaut-blueprint-1-0-release/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["/2021/04/19/jhipster-micronaut-blueprint-1-0-release/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"/2021/04/19/jhipster-micronaut-blueprint-1-0-release/#primaryimage","url":"/wp-content/uploads/2018/06/blog-featured-image-03.jpg","contentUrl":"/wp-content/uploads/2018/06/blog-featured-image-03.jpg","width":800,"height":800},{"@type":"BreadcrumbList","@id":"/2021/04/19/jhipster-micronaut-blueprint-1-0-release/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"/"},{"@type":"ListItem","position":2,"name":"Blog","item":"/blog/"},{"@type":"ListItem","position":3,"name":"JHipster Micronaut Blueprint 1.0 Release"}]},{"@type":"WebSite","@id":"/#website","url":"/","name":"Micronaut Framework","description":"A modern, JVM-based, full-stack framework for building modular, easily testable microservice and serverless applications","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Person","@id":"/#/schema/person/23819210b3632c038e5c7d32feae6bac","name":"Jason Schindler"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//js.stripe.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Micronaut Framework &raquo; JHipster Micronaut Blueprint 1.0 Release Comments Feed" href="/2021/04/19/jhipster-micronaut-blueprint-1-0-release/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/micronaut.io\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='/wp-includes/css/dist/block-library/style.min.css?ver=6.8.3' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--primary: #2559a7;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='modal-window-css' href='/wp-content/plugins/modal-window/public/assets/css/modal.min.css?ver=6.2.3' type='text/css' media='all' />
+<link rel='stylesheet' id='fonts-fira-sans-css' href='//fonts.googleapis.com/css2?family=Fira+Sans%3Awght%40300%3B500&#038;display=swap&#038;ver=6.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='micronaut-style-css' href='/wp-content/themes/micronaut/style.min.css?ver=6.8.3' type='text/css' media='all' />
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="//js.stripe.com/v3/?ver=6.8.3" id="stripe-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/posts/3850" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.8.3" />
+<link rel='shortlink' href='/?p=3850' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/2021/04/19/jhipster-micronaut-blueprint-1-0-release/embed.json" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmicronaut.io%2F2021%2F04%2F19%2Fjhipster-micronaut-blueprint-1-0-release%2F&#038;format=xml" />
+<link rel="icon" href="/wp-content/uploads/2021/02/favicon.ico" type="image/png"><link rel="shortcut icon" href="/wp-content/uploads/2021/02/favicon.ico" type="image/png"><meta name="theme-color" content="#000000"><script type="text/javascript">var STRIPE_PUBLISHABLE_KEY = "pk_live_51HMxCnAdio0y30LTv9S4fLlYVaBdZN5ihurBPL6kJ8fQNbN3jRj6JwJQNXeL7PhZTQvuGcmWOdoyIUsuqXaop8OK00qddh873V";</script><script type="text/javascript">var TRIGGER_SUBSCRIBE = false;</script><link rel="icon" href="/wp-content/uploads/2025/09/favicon-120x120.png" sizes="32x32" />
+<link rel="icon" href="/wp-content/uploads/2025/09/favicon-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="/wp-content/uploads/2025/09/favicon-300x300.png" />
+<meta name="msapplication-TileImage" content="/wp-content/uploads/2025/09/favicon-300x300.png" />
+		<style type="text/css" id="wp-custom-css">
+			.fa-x-twitter:before {
+  content: "\e61b"; }
+p.expand-bottom-margin {
+	margin-bottom: 32px;
+}
+
+h2.expand-bottom-margin,
+h3.expand-bottom-margin,
+h4.expand-bottom-margin,
+h5.expand-bottom-margin,
+h6.expand-bottom-margin {
+	margin-bottom: 20px;
+}
+
+.underline {
+	text-decoration:underline;
+}
+
+h2.natural-case,
+h3.natural-case,
+h4.natural-case,
+h5.natural-case,
+h6.natural-case {
+	text-transform: none !important;
+}
+
+.legal-list {
+	list-style-type: '§';
+}
+
+.quote {
+	border-top: 2px solid black; 
+	border-bottom: 2px solid black;
+	margin: 18px auto;
+	padding:15px 15px 0 15px;
+	background-color: #f5f5f5;
+}
+
+blockquote {
+	display: block;
+	border-left: 5px solid black;
+	padding-left: 20px;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+figure {
+	padding: 20px;
+}
+.figurepink {
+	padding: 3px;
+	background: #FF0096;
+	color: #FFFFFF;
+}
+.figureorange {
+	padding: 3px;
+	background: #FF8A00;
+	color: #FFFFFF;
+}
+.figureblue {
+	padding: 3px;
+	background: #004EFF;
+	color: #FFFFFF;
+}		</style>
+		
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115754405-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-115754405-1');
+    </script>
+
+  </head>
+  <body class="wp-singular post-template-default single single-post postid-3850 single-format-standard wp-theme-micronaut">
+
+    <header id="header">
+
+      
+      <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+          <button class="collapsed" type="button" data-toggle="collapse" data-target="#nav" aria-expanded="false">
+            <span></span>
+          </button>
+
+          <a class="navbar-brand" href="/">
+            <img src="/wp-content/uploads/2020/11/MIcronautLogo_Horizontal.svg" alt="Micronaut Framework" />
+          </a>
+
+          <div class="collapse navbar-collapse" id="nav">
+
+            <ul class="navbar-nav ml-auto">
+
+              <li id="menu-item-2865" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2865 nav-item"><a href="/download/" class="nav-link">Download</a></li>
+<li id="menu-item-2868" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2868 dropdown nav-item"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Learn</a><ul class="dropdown-menu">
+	<li id="menu-item-4943" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4943"><a href="/learn/" class="dropdown-item">Overview</a></li>
+	<li id="menu-item-5111" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5111"><a href="https://docs.micronaut.io/index.html" class="dropdown-item">User Documentaton</a></li>
+	<li id="menu-item-4510" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4510"><a href="/guides/" class="dropdown-item">Guides</a></li>
+	<li id="menu-item-7373" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7373"><a href="https://mylearn.oracle.com/ou/course/micronaut-fundamentals/151938/" class="dropdown-item">Micronaut Fundamentals</a></li>
+	<li id="menu-item-2896" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2896"><a href="/category/microcast/" class="dropdown-item">Microcasts</a></li>
+	<li id="menu-item-2897" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2897"><a href="/category/webinar/" class="dropdown-item">Webinars</a></li>
+	<li id="menu-item-2871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2871"><a href="/professional-training/" class="dropdown-item">Professional Training</a></li>
+	<li id="menu-item-6526" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6526"><a href="https://micronaut-projects.github.io/micronaut-guides-mn3/latest/" class="dropdown-item">Guides for Micronaut Framework 3</a></li>
+</ul>
+</li>
+<li id="menu-item-2878" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2878 dropdown nav-item"><a href="/resources/" class="nav-link dropdown-toggle" data-toggle="dropdown">Resources</a><ul class="dropdown-menu">
+	<li id="menu-item-4999" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4999"><a href="/upcoming-events/" class="dropdown-item">Upcoming Events</a></li>
+	<li id="menu-item-2879" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-2879"><a href="/blog/" class="dropdown-item">Blog</a></li>
+	<li id="menu-item-6478" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6478"><a href="/category/release-announcements/" class="dropdown-item">Releases</a></li>
+	<li id="menu-item-6861" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6861"><a href="/micronaut-roadmap/" class="dropdown-item">Micronaut ROADMAP</a></li>
+	<li id="menu-item-6715" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6715"><a href="/category/security-announcements/" class="dropdown-item">Security Announcements</a></li>
+	<li id="menu-item-4499" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4499"><a href="https://micronautpodcast.com/" class="dropdown-item">Podcast</a></li>
+	<li id="menu-item-5798" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5798"><a href="/support/" class="dropdown-item">Commercial Support</a></li>
+	<li id="menu-item-4186" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4186"><a href="/resources/community-support/" class="dropdown-item">Community Support</a></li>
+	<li id="menu-item-2882" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2882"><a href="/faq/" class="dropdown-item">FAQ</a></li>
+	<li id="menu-item-2883" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2883"><a href="/contact/" class="dropdown-item">Contact</a></li>
+	<li id="menu-item-6479" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6479"><a href="/micronaut-success-stories/" class="dropdown-item">Micronaut Success Stories</a></li>
+</ul>
+</li>
+<li id="menu-item-2872" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2872 dropdown nav-item"><a href="/foundation/" class="nav-link dropdown-toggle" data-toggle="dropdown">Foundation</a><ul class="dropdown-menu">
+	<li id="menu-item-2877" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2877"><a href="/foundation/" class="dropdown-item">Overview</a></li>
+	<li id="menu-item-2874" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2874"><a href="/foundation/corporate-sponsorship/" class="dropdown-item">Corporate Sponsorship</a></li>
+	<li id="menu-item-2873" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2873"><a href="/foundation/community-sponsorship/" class="dropdown-item">Community Sponsorship</a></li>
+	<li id="menu-item-2876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2876"><a href="/foundation/sponsors/" class="dropdown-item">Sponsors</a></li>
+	<li id="menu-item-3838" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3838"><a href="/meeting-minutes/" class="dropdown-item">Meeting Minutes</a></li>
+</ul>
+</li>
+<li id="menu-item-2884" class="action menu-item menu-item-type-custom menu-item-object-custom menu-item-2884 nav-item"><a target="_blank" href="/launch/" class="nav-link">Launch</a></li>
+
+            </ul>
+
+          </div>
+
+        </nav>
+
+      </div>
+    </header>
+
+    
+<div id="contact" class="flyout collapse">
+  <div class="container">
+
+    <div class="inner">
+
+      <button type="button" data-toggle="collapse" data-target="#contact" class="close">&times;</button>
+
+      <div class="row justify-content-end">
+        <div class="col-md-4"><div class="widget"><h4>Contact Us About Sponsorship</h4>			<div class="textwidget"><p>Questions about Micronaut Foundation sponsorship?</p>
+<p>Please complete this form, and we’ll follow up with you shortly.</p>
+</div>
+		</div></div><div class="col-md-4"><div class="widget">			<div class="textwidget"><p>[hubspot type=form portal=4547412 id=a7b3ddfa-64b0-47fd-8358-45fa6a09456a]</p>
+</div>
+		</div></div> 
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div id="breadcrumbs"><div class="container"><span><span><a href="/">Home</a></span> » <span><a href="/blog/">Blog</a></span> » <span class="breadcrumb_last" aria-current="page">JHipster Micronaut Blueprint 1.0 Release</span></span></div></div>
+<main id="main">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-sm-8">
+        
+                  
+        
+        <article class="post_single">
+        
+          <header>
+            
+            <h1>JHipster Micronaut Blueprint 1.0 Release</h1>
+            
+            <span>by Jason Schindler, </span>
+            
+            <span class="tags">Tags: <a href="/tag/jhipster/" rel="tag">JHipster</a></span>            
+            <time>April 19, 2021</time>
+            
+          </header>
+          
+                    
+          <p>We are very happy to announce the <a href="https://github.com/jhipster/generator-jhipster-micronaut/releases/tag/v1.0.0" target="_blank" rel="noopener">1.0.0 release</a> of the <a href="https://github.com/jhipster/generator-jhipster-micronaut" target="_blank" rel="noopener">Micronaut Blueprint for JHipster</a> (otherwise known as MHipster)! This release represents a culmination of effort and teamwork between the <a href="/foundation/">Micronaut Foundation</a>, the <a href="https://www.jhipster.tech/" target="_blank" rel="noopener">JHipster</a> community, and <a href="https://objectcomputing.com" target="_blank" rel="noopener">Object Computing</a> to create a Micronaut option for the server-side portion of JHipster applications.</p>
+<p>JHipster is a development platform to quickly generate, develop, and deploy modern web applications and microservice architectures. Besides bootstrapping an application skeleton, JHipster offers tools and methods to evolve your domain model and test, monitor, and deploy your application to production with ease. It provides a ready-to-use frontend to manage your domain entities.</p>
+<p>The <a href="/" target="_blank" rel="noopener">Micronaut</a> framework is a modern JVM application toolkit that&#8217;s optimized for runtime performance. With integrations for AWS, GCP, Azure, and Oracle Cloud, the Micronaut framework enables developers to build applications for cloud environments with fast start-up times, high throughput, and a low memory footprint.</p>
+<p>The Micronaut JHipster Blueprint generates applications with key features and integrations to help you deploy to production quickly. The blueprint supports two application types: monoliths and microservice applications.</p>
+<p>The monolith type can be used for single standalone applications. You can define entities with validation rules and relationships to other entities and package in a user interface written in Angular or React. New applications can be configured to supply their own auth with JWT support or use OAuth 2.0 to allow another application (Keycloak is provided by default) to manage user credentials and access. Pick a SQL database and optionally a cache implementation, and your brand new application is ready to go, complete with Liquibase migration scripts to initialize your database structures, entity REST APIs for common CRUD operations, unit and integration tests, and (if you added a UI) an optional Protractor test suite!</p>
+<p>The microservice application type is similar to the monolith with a few key differences. It does not include a user interface and comes with service discovery via Consul or the JHipster Registry (backed by Eureka).</p>
+<p><i>Note: There is a known issue with applications that use both OAuth auth configurations along with Eureka service discovery. For more information, please review <a href="https://github.com/jhipster/generator-jhipster-micronaut/issues/220" target="_blank" rel="noopener">this issue.</a>.</i></p>
+<p>In a moment, we’ll walk you through how to generate a new application using the <code>mhipster</code> command line tool. For an up-to-date list of supported features, please see the project <a href="https://github.com/jhipster/generator-jhipster-micronaut/blob/main/README.md" target="_blank" rel="noopener">README</a>. At the time of this release, the full feature list is as follows:</p>
+<ul>
+<li>Project Types
+<ul>
+<li>Monolith</li>
+<li>Microservice</li>
+</ul>
+</li>
+<li>Authentication
+<ul>
+<li>JWT</li>
+<li>OAuth 2.0</li>
+</ul>
+</li>
+<li>SQL Database
+<ul>
+<li>MySQL</li>
+<li>MariaDB</li>
+<li>PostgreSQL</li>
+<li>H2</li>
+</ul>
+</li>
+<li>Cache
+<ul>
+<li>Ehcache</li>
+<li>Caffeine</li>
+<li>Redis</li>
+</ul>
+</li>
+<li>Build Tool
+<ul>
+<li>Maven</li>
+<li>Gradle</li>
+</ul>
+</li>
+<li>Front-End
+<ul>
+<li>Angular</li>
+<li>React</li>
+</ul>
+</li>
+<li>Protractor Tests</li>
+<li>Heroku Deployment</li>
+</ul>
+<h2>Getting Started</h2>
+<p>To create your first application with the JHipster Micronaut Blueprint, we suggest that you explore the provided CLI.</p>
+<h3>Install</h3>
+<p>Before you can start working with JHipster, you’ll need:</p>
+<ul>
+<li><a href="https://www.docker.com/" target="_blank" rel="noopener">Docker</a> with docker-compose</li>
+<li>A Java JDK (the Micronaut framework supports Java 8+, but JHipster applications are generally Java 11+)</li>
+<li><a href="https://nodejs.org/" target="_blank" rel="noopener">Node.js</a> with NPM</li>
+</ul>
+<p>1. First, globally install the JHipster Generator and the Micronaut Blueprint:</p>
+<pre class="wp-block-code"><code>$ npm install -g generator-jhipster@6.10.5 generator-jhipster-micronaut@1.0.0</code></pre>
+<p>2. Now create a folder for your new project and run the <code>mhipster</code> CLI</p>
+<pre class="wp-block-code"><code>$ mkdir hello-mhipster &amp;&amp; cd hello-mhipster
+
+$ mhipster</code></pre>
+<p>At this point, you should be greeted with the following:</p>
+<p><img fetchpriority="high" decoding="async" class="alignnone wp-image-3852 size-full" src="/wp-content/uploads/2021/04/2021-04-19-img01.png" alt="" width="915" height="640" srcset="/wp-content/uploads/2021/04/2021-04-19-img01.png 915w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img01-300x210.png 300w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img01-768x537.png 768w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img01-150x105.png 150w" sizes="(max-width: 915px) 100vw, 915px" /></p>
+<p>3. Now, you can build a basic application. Using the provided prompts, select “Monolithic application” and provide a base name (HelloMhipster) and default package (hello.mhipster).</p>
+<p>4. Once the basic information is in place, it&#8217;s time to choose the technologies you want to include. For this example, I’m going to select JWT authentication with a MySQL production database and an in-memory H2 database for development. I’ll use the Caffeine cache and enable Hibernate’s second level cache. Finally, I’ll pick Gradle as my build tool.</p>
+<p>5. Now you get to make some choices for your frontend. I’m going to choose “React” with the Cyborg Bootswatch theme and the Primary navbar. Let’s enable internationalization with a native language of English and an additional language of Spanish. Finally, I’ll also add Protractor tests.</p>
+<p>Here is a screenshot of my choices:</p>
+<p><img decoding="async" class="alignnone wp-image-3853 size-full" src="/wp-content/uploads/2021/04/2021-04-19-img02.png" alt="" width="993" height="343" srcset="/wp-content/uploads/2021/04/2021-04-19-img02.png 993w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img02-300x104.png 300w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img02-768x265.png 768w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img02-150x52.png 150w" sizes="(max-width: 993px) 100vw, 993px" /></p>
+<p>Once you hit enter, you’ll observe a number of things happening. The generator is creating your project. It&#8217;s initializing a Git repo for you, generating necessary source code and configuration files, and if you are installing a client, it will also run <code>npm install</code> on your behalf.</p>
+<p>6. Once generation is complete, you have a working application, but it isn’t very interesting. Let’s add some entities to represent schools of fish. First, we’ll create the Fish entity. Each fish must have a name that&#8217;s at least 3 characters long. It has a required age that cannot be negative and a water type of FRESH or SALT represented by an enum. At this time, the fish will not have a relationship with any other entity.</p>
+<pre class="wp-block-code"><code>$ mhipster entity Fish</code></pre>
+<p><img decoding="async" class="alignnone size-full wp-image-3854" src="/wp-content/uploads/2021/04/2021-04-19-img03.png" alt="" width="993" height="162" srcset="/wp-content/uploads/2021/04/2021-04-19-img03.png 993w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img03-300x49.png 300w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img03-768x125.png 768w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img03-150x24.png 150w" sizes="(max-width: 993px) 100vw, 993px" /><br />
+<img loading="lazy" decoding="async" class="alignnone wp-image-3855 size-full" src="/wp-content/uploads/2021/04/2021-04-19-img04.png" alt="" width="993" height="162" srcset="/wp-content/uploads/2021/04/2021-04-19-img04.png 993w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img04-300x49.png 300w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img04-768x125.png 768w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img04-150x24.png 150w" sizes="auto, (max-width: 993px) 100vw, 993px" /><br />
+<img loading="lazy" decoding="async" class="alignnone size-full wp-image-3856" src="/wp-content/uploads/2021/04/2021-04-19-img05.png" alt="" width="993" height="172" srcset="/wp-content/uploads/2021/04/2021-04-19-img05.png 993w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img05-300x52.png 300w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img05-768x133.png 768w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img05-150x26.png 150w" sizes="auto, (max-width: 993px) 100vw, 993px" /><br />
+After you define the fields and relationships, you will be asked a few more questions, like whether you want to generate a service for this entity or have the REST controller use the repository directly. I’m going to generate a service without a DTO. It&#8217;s not read-only, and I do not want pagination.</p>
+<p>While the generator is creating the classes required for this entity, it may run into conflicts in existing source code and configurations. You can allow it to overwrite the existing files by pressing <code>y</code> for &#8220;yes&#8221; or <code>a</code> for &#8220;all.&#8221;</p>
+<p>7. Now that you have an entity, your application is a bit more interesting. Let’s add one more entity to illustrate entity relationships. Create a “School” that groups Fish together. Each school should have a required name and a collection of Fish that are in the School.</p>
+<pre class="wp-block-code"><code>$ mhipster entity School</code></pre>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3857" src="/wp-content/uploads/2021/04/2021-04-19-img06.png" alt="" width="1069" height="152" srcset="/wp-content/uploads/2021/04/2021-04-19-img06.png 1069w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img06-300x43.png 300w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img06-1024x146.png 1024w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img06-768x109.png 768w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img06-150x21.png 150w" sizes="auto, (max-width: 1069px) 100vw, 1069px" /></p>
+<p>After you create the name field, you can create a one-to-many relationship with the Fish entity.</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3858" src="/wp-content/uploads/2021/04/2021-04-19-img07.png" alt="" width="1072" height="147" srcset="/wp-content/uploads/2021/04/2021-04-19-img07.png 1072w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img07-300x41.png 300w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img07-1024x140.png 1024w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img07-768x105.png 768w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img07-150x21.png 150w" sizes="auto, (max-width: 1072px) 100vw, 1072px" /></p>
+<p>8. Now that you have set up the School entity to contain multiple Fish, add a relationship from Fish back to their School</p>
+<pre class="wp-block-code"><code>$ mhipster entity Fish</code></pre>
+<p>You’ll notice when you run the <code>entity</code> subcommand for an existing entity, you’ll have the option to re-generate the entity entirely or to modify the existing entity by adding or removing fields and relationships. We want to add a relationship, so select the second option.</p>
+<p>You’ll first be prompted to add more fields. We aren’t adding fields, so respond <code>N</code> and then reply with a <code>Y</code> when prompted to add a new relationship.</p>
+<p>This side of the relationship is many-to-one. One question will ask which field from this entity you want to display on the client, and it will default to <code>id</code>. Change this to <code>name</code> so that when the client displays the school for a fish, we see its name instead of the identifier.</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3859" src="/wp-content/uploads/2021/04/2021-04-19-img08.png" alt="" width="1091" height="335" srcset="/wp-content/uploads/2021/04/2021-04-19-img08.png 1091w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img08-300x92.png 300w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img08-1024x314.png 1024w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img08-768x236.png 768w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img08-150x46.png 150w" sizes="auto, (max-width: 1091px) 100vw, 1091px" /></p>
+<p>9. Congratulations! You’ve created a non-trivial application with JHipster and the Micronaut framework! Let’s take a stroll around your new project.</p>
+<p>The first item I’d like to direct your attention to is your entity classes. If you followed the base package above, they are located in <code>src/main/java/hello/mhipster/domain</code>. A quick review of Fish.java and School.java illustrates the relationships that we have configured between these two entities, as well as the validation rules and field types we declared:</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3860" src="/wp-content/uploads/2021/04/2021-04-19-img09.png" alt="" width="707" height="412" srcset="/wp-content/uploads/2021/04/2021-04-19-img09.png 707w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img09-300x175.png 300w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img09-150x87.png 150w" sizes="auto, (max-width: 707px) 100vw, 707px" /></p>
+<p>Next, let’s take a look at the REST controllers. You’ll find them in <code>src/main/java/hello/mhipster/web/rest/</code>.</p>
+<p>As you can see, for each entity we created, we also received a REST controller with basic CRUD operations already configured:<br />
+<img loading="lazy" decoding="async" class="alignnone size-full wp-image-3861" src="/wp-content/uploads/2021/04/2021-04-19-img10.png" alt="" width="1200" height="449" srcset="/wp-content/uploads/2021/04/2021-04-19-img10.png 1200w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img10-300x112.png 300w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img10-1024x383.png 1024w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img10-768x287.png 768w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img10-150x56.png 150w" sizes="auto, (max-width: 1200px) 100vw, 1200px" /></p>
+<p>As you explore the codebase, you’ll also notice that classes to support user management have been added, as well as configuration files for different environments, Liquibase migrations, a React UI, and unit and integration tests!</p>
+<p>10. Now let’s start up our application!</p>
+<pre class="wp-block-code"><code>$ ./gradlew</code></pre>
+<p>By default, running Gradle with no task will build and run the application with the <code>dev</code> environment. If everything goes well, when you navigate to <code>localhost:8080</code>, you should see your React UI and Harper (the Micronaut JHipster 🙂 )</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3862" src="/wp-content/uploads/2021/04/2021-04-19-img11.png" alt="" width="1093" height="564" srcset="/wp-content/uploads/2021/04/2021-04-19-img11.png 1093w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img11-300x155.png 300w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img11-1024x528.png 1024w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img11-768x396.png 768w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img11-150x77.png 150w" sizes="auto, (max-width: 1093px) 100vw, 1093px" /></p>
+<p>Now, let’s log in to the application as an admin and select “Entities -&gt; School” from the navigation bar.</p>
+<p>You’ll see that a number of “Schools” have already been created for you. This data was created as part of the Liquibase migrations and uses Faker.js. You can disable this behavior by removing the faker profile from Liquibase. Let’s add a new one:</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3863" src="/wp-content/uploads/2021/04/2021-04-19-img12.png" alt="" width="1105" height="334" srcset="/wp-content/uploads/2021/04/2021-04-19-img12.png 1105w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img12-300x91.png 300w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img12-1024x310.png 1024w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img12-768x232.png 768w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img12-150x45.png 150w" sizes="auto, (max-width: 1105px) 100vw, 1105px" /></p>
+<p>Now, let’s navigate to the Fish page and create a new Fish for our school:</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3864" src="/wp-content/uploads/2021/04/2021-04-19-img13.png" alt="" width="1105" height="557" srcset="/wp-content/uploads/2021/04/2021-04-19-img13.png 1105w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img13-300x151.png 300w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img13-1024x516.png 1024w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img13-768x387.png 768w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img13-150x76.png 150w" sizes="auto, (max-width: 1105px) 100vw, 1105px" /></p>
+<p>Once you save your new fish, it will show up in your list with a link to the School!</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3865" src="/wp-content/uploads/2021/04/2021-04-19-img14.png" alt="" width="1105" height="64" srcset="/wp-content/uploads/2021/04/2021-04-19-img14.png 1105w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img14-300x17.png 300w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img14-1024x59.png 1024w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img14-768x44.png 768w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img14-150x9.png 150w" sizes="auto, (max-width: 1105px) 100vw, 1105px" /></p>
+<p>This, of course, isn’t likely what your production app will look like, but it gives you a solid starting place to build out the screens and make the changes needed for your application.</p>
+<p>There&#8217;s a lot more to see here. The application was also generated with User Management screens, Metrics, Health, and Configuration screens!</p>
+<h2>Using the JDL</h2>
+<p>While creating an application with the CLI is a good start, it gets quickly cumbersome, especially when creating a lot of entities and relations.</p>
+<p>The <a href="https://www.jhipster.tech/jdl/" target="_blank" rel="noopener">JHipster Domain Language</a> (short JDL) is a domain specific language to describe an application (or multiple applications) and its entities, relations, and deployments with a user-friendly syntax.</p>
+<p>Various tools help with code completions, syntax highlighting, and UML-like visualization. The fastest way to get started with JDL is to use the <a href="https://www.jhipster.tech/jdl-studio/" target="_blank" rel="noopener">web-based JDL-Studio</a>.</p>
+<p>Instead of creating the application, entities, and relations by answering multiple questions on the command line, you can define the whole application like this:</p>
+<pre class="wp-block-code"><code>application {
+ config {
+	applicationType monolith
+	baseName HelloMHipster
+	packageName hello.mhipster
+	clientTheme cyborg,
+	clientThemeVariant primary,
+	authenticationType oauth2
+	prodDatabaseType postgresql
+	buildTool maven
+	cacheProvider caffeine
+	testFrameworks [protractor]
+	languages [en, de, fr]
+ }
+ entities *
+}
+
+entity Fish {
+	name String required minlength(3)
+	age Integer required min(0)
+	waterType WaterType required
+	picture Blob
+}
+
+entity School {
+	name String required
+}
+
+enum WaterType {
+	SALT, FRESH
+}
+
+relationship ManyToOne {
+ Fish{school(name)} to School
+}
+paginate Fish, School with pagination
+</code></pre>
+<p>The above JDL is visualized like this:</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3866" src="/wp-content/uploads/2021/04/2021-04-19-img15.png" alt="" width="244" height="295" srcset="/wp-content/uploads/2021/04/2021-04-19-img15.png 244w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img15-150x181.png 150w" sizes="auto, (max-width: 244px) 100vw, 244px" /></p>
+<p>For options that are not explicitly defined (e.g., devDatabase) a default value will be used. For a full list of available options, have a look at the official JDL documentation.</p>
+<p>Instead of executing <code>mhipster</code>, you need to tell the cli to import a JDL file:</p>
+<pre class="wp-block-code"><code>$ mhipster import-jdl jhipster-jdl.jdl</code></pre>
+<p>In contrast to our first example, we have selected OAuth2/OIDC as the authentication mechanism. This replaces the stateless JWT-based authentication with a stateful, external OIDC provider. By default JHipster supports Keycloak and Okta.</p>
+<p>Just like the JWT option selected earlier, the OAuth2/OIDC feature comes with “batteries included,” so you can start using it right away:</p>
+<pre class="wp-block-code"><code>$ docker-compose -f src/main/docker/keycloak.yaml up -d
+$ ./mvnw
+</code></pre>
+<p>Go to <code>localhost:8080</code> in your favorite browser and click the sign in link.</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3867" src="/wp-content/uploads/2021/04/2021-04-19-img16.png" alt="" width="1920" height="681" srcset="/wp-content/uploads/2021/04/2021-04-19-img16.png 1920w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img16-300x106.png 300w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img16-1024x363.png 1024w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img16-768x272.png 768w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img16-1536x545.png 1536w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img16-150x53.png 150w" sizes="auto, (max-width: 1920px) 100vw, 1920px" /></p>
+<p>You will be redirected to Keycloak to login. Use <code>admin/admin</code> to log in as an administrator.</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3868" src="/wp-content/uploads/2021/04/2021-04-19-img17.png" alt="" width="1920" height="517" srcset="/wp-content/uploads/2021/04/2021-04-19-img17.png 1920w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img17-300x81.png 300w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img17-1024x276.png 1024w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img17-768x207.png 768w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img17-1536x414.png 1536w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img17-150x40.png 150w" sizes="auto, (max-width: 1920px) 100vw, 1920px" /></p>
+<p>You should see the exact same user interface (but powered by Angular instead of React) as when creating it manually but have a much smoother experience. You can even change your entities or application configuration and regenerate the whole application using the <code>import-jdl</code> command again.</p>
+<p>The authentication server is configured in <code>src/main/resources/application.yml</code>. If you would like to use another OIDC provider (e.g., Okta), you need to adapt these settings:</p>
+<pre class="wp-block-code"><code>security:
+	enabled: true
+	basic-auth:
+ 	enabled: false
+	authentication: cookie
+	oauth2:
+ 	enabled: true
+ 	clients:
+  	oidc:
+   	client-secret: web_app
+   	client-id: web_app
+   	openid:
+    	issuer: http://localhost:9080/auth/realms/jhipster
+ 	login-uri: /oauth2/authorization{/provider}
+ 	callback-uri: /oauth2/callback{/provider}
+</code></pre>
+<h3>Going to Production</h3>
+<p>Right now, we have used the application in development mode. This means everything is optimized for the developer. For example, hot reloading for both back- and frontend is enabled, a H2 database is used, and the frontend is not optimized. In particular, this means the whole javascript bundle is 3.1 MB in size when gzipped. This leads to a quite bad performance rating when using <a href="https://developers.google.com/web/tools/lighthouse/" target="_blank" rel="noopener">lighthouse</a> to audit the application.</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3869" src="/wp-content/uploads/2021/04/2021-04-19-img18.png" alt="" width="782" height="453" srcset="/wp-content/uploads/2021/04/2021-04-19-img18.png 782w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img18-300x174.png 300w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img18-768x445.png 768w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img18-150x87.png 150w" sizes="auto, (max-width: 782px) 100vw, 782px" /></p>
+<p>You can start the application in production mode via</p>
+<pre class="wp-block-code"><code>$ docker-compose -f src/main/docker/postgresql.yml up -d
+$ ./mvnw -Pprod
+</code></pre>
+<p>Now the frontend is only 275KB, which results in a much better performance score and smaller loading times for your users. Instead of a H2 database, PostgreSQL is used.</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3870" src="/wp-content/uploads/2021/04/2021-04-19-img19.png" alt="" width="776" height="459" srcset="/wp-content/uploads/2021/04/2021-04-19-img19.png 776w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img19-300x177.png 300w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img19-768x454.png 768w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img19-150x89.png 150w" sizes="auto, (max-width: 776px) 100vw, 776px" /></p>
+<p>You are now ready to deploy your application to <a href="https://www.heroku.com/" target="_blank" rel="noopener">Heroku</a>!</p>
+<p>Before you go on, you need to install the <a href="https://cli.heroku.com/" target="_blank" rel="noopener">Heroku CLI</a> and create and validate an account! For more details see the <a href="https://www.jhipster.tech/heroku/" target="_blank" rel="noopener">official JHipster Heroku documentation</a>.</p>
+<p>Make sure you have stopped your application. Then run:</p>
+<pre class="wp-block-code"><code>$ mhipster heroku</code></pre>
+<p>You can use all default choices except for the identity provider. Select Okta such that you don’t need to deploy your own Keycloak instance. Enter an email address for the JHipster Admin user and an initial password, which you must change on first login.</p>
+<p>This can take a while to complete. JHipster must create additional configuration files, set up an application, set up required add-ons on Heroku, and push your code, such that Heroku can build and deploy it. The whole build took around 10 minutes when I tried it, so be patient.</p>
+<p>When the deployment process finishes, open your favorite browser to the URL in your console or run <code>heroku open</code>. You should be able to log in using the email and password you provided. Okta will prompt you to change your password.</p>
+<p>You can use lighthouse again to check the performance score. Visit <a href="https://securityheaders.com/" target="_blank" rel="noopener">https://securityheaders.com/</a> to test for common security headers. It will score an A!</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3871" src="/wp-content/uploads/2021/04/2021-04-19-img20.png" alt="" width="619" height="283" srcset="/wp-content/uploads/2021/04/2021-04-19-img20.png 619w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img20-300x137.png 300w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img20-150x69.png 150w" sizes="auto, (max-width: 619px) 100vw, 619px" /></p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3872" src="/wp-content/uploads/2021/04/2021-04-19-img21.png" alt="" width="1226" height="298" srcset="/wp-content/uploads/2021/04/2021-04-19-img21.png 1226w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img21-300x73.png 300w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img21-1024x249.png 1024w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img21-768x187.png 768w, https://micronaut.io/wp-content/uploads/2021/04/2021-04-19-img21-150x36.png 150w" sizes="auto, (max-width: 1226px) 100vw, 1226px" /></p>
+<h2>What’s Next?</h2>
+<p>As usual, the 1.0.0 release is a great achievement, but the Micronaut Blueprint is far from complete when looking at the feature set JHipster supports.</p>
+<p>In <a href="https://www.jhipster.tech/2021/03/21/jhipster-release-7.0.0.html" target="_blank" rel="noopener">March 2021 JHipster 7.0.0 </a>was released. This release contains breaking changes and a lot of new features. Therefore the next Micronaut Blueprint will be based on JHipster 7.</p>
+<p>Besides getting ready and compatible with JHipster 7, there are a lot of Micronaut-specific issues to be solved. An already long-running task is the support of packaging an <a href="https://github.com/jhipster/generator-jhipster-micronaut/pull/174" target="_blank" rel="noopener">application as native image</a>. Because a lot of different technologies are used, the configuration is not trivial, but we have made a lot of progress. Especially with the rise of reactive drivers for SQL databases, reactive programming has become more important. JHipster&#8217;s reactive support has moved from experimental to beta status; thus the <a href="https://github.com/jhipster/generator-jhipster-micronaut/issues/71" target="_blank" rel="noopener">Micronaut Blueprint should support it too</a>. This involves a lot of work because nearly every template must be made aware of the reactive option.</p>
+<p>Additionally, we would like to see more database options available in the blueprint, including support for <a href="https://github.com/jhipster/generator-jhipster-micronaut/issues/49" target="_blank" rel="noopener">MongoDB</a>.</p>
+<p>As with all open source software, a big piece of the project’s success is due to the contributions and support of the community. Let’s work together to make this project even better!!</p>
+<h2>Contributing</h2>
+<p>The JHipster Micronaut Blueprint is an open source project released under the Apache 2.0 licence. The project is hosted under the JHipster GitHub organization, and contributions are very welcome. There are many ways to get involved with the project including:</p>
+<ul>
+<li>Reporting or validating issues</li>
+<li>Requesting features</li>
+<li>Fixing documentation</li>
+<li>Fixing bugs</li>
+<li>Implementing features or enhancements</li>
+</ul>
+<p>If you would like to contribute to the project, a great place to start is reviewing the <a href="https://github.com/jhipster/generator-jhipster-micronaut/blob/main/CODE_OF_CONDUCT.md" target="_blank" rel="noopener">Code of Conduct</a>, <a href="https://github.com/jhipster/generator-jhipster-micronaut/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">contributing</a> documentation, and our <a href="https://github.com/jhipster/generator-jhipster-micronaut/issues" target="_blank" rel="noopener">current issues</a>. Of particular note, are issues that are a part of the <a href="https://www.jhipster.tech/bug-bounties/" target="_blank" rel="noopener">JHipster bug bounty system</a>. JHipster has bug bounties across multiple projects, including the <a href="https://github.com/jhipster/generator-jhipster-micronaut/issues?q=is%3Aissue+is%3Aopen+label%3A%22%24%24+bug-bounty+%24%24%22" target="_blank" rel="noopener">Micronaut Blueprint</a>. If you intend to work on any issue, please post a message on the issue to let us know you’re interested.</p>
+<h2>Thank You!</h2>
+<p>A huge thanks to JHipster&#8217;s <a target="_blank" href="https://twitter.com/atomfrede" rel="noopener">Frederik Hahne</a>, who collaborated with us to write this blog post!</p>
+<p>Also, this release wouldn’t have been possible without the support of the JHipster community, Micronaut Foundation, Object Computing, and all of the <a href="https://github.com/jhipster/generator-jhipster-micronaut/graphs/contributors" target="_blank" rel="noopener">project contributors</a>. In particular, we would like to thank:</p>
+<ul>
+<li><a href="https://twitter.com/mraible" target="_blank" rel="noopener">Matt Raible</a></li>
+<li><a href="https://twitter.com/AurelienMino" target="_blank" rel="noopener">Aurélien Mino</a></li>
+<li><a href="https://github.com/agilob" target="_blank" rel="noopener">Agilob</a></li>
+<li><a href="https://twitter.com/wbucksoft" target="_blank" rel="noopener">Will Buck</a></li>
+<li><a href="https://twitter.com/ZacharyAKlein" target="_blank" rel="noopener">Zachary Klein</a></li>
+</ul>
+
+        </article>
+        
+        
+<nav class="row pager">
+  
+  <div class="col-6 text-right">
+    
+    <span class="next">
+      <a href="/2021/04/23/new-live-training-events-scheduled/" rel="next">Newer post</a> 
+    </span>
+    
+  </div>
+  
+  <div class="col-6 text-left">
+    
+    <span class="prev">
+      <a href="/2021/04/16/new-webinar-for-micronaut-and-jhipster-users/" rel="prev">Previous post</a>    </span>
+    
+  </div>
+  
+</nav>        
+      </div>
+      <div class="col-sm-4">
+        
+        <aside id="sidebar">
+  
+    
+<h4 class="h2">You might also like ...</h4>
+
+
+<article class="post post_has-bg"  style="background-image:url(https://micronaut.io/wp-content/uploads/2018/05/blog-featured-image-01-300x300.jpg)">
+  
+  <a href="/2020/04/28/practical-performance-comparison-of-spring-boot-micronaut-1-3-micronaut-2-0/">
+    
+    <time>April 28, 2020</time>
+  
+    <header>
+      <h3>Practical Performance Comparison of Spring Boot, Micronaut 1.3, Micronaut 2.0</h3>
+    </header>
+    
+  </a>
+  
+</article>
+  
+  <div id="tag_cloud-2" class="widget widget_tag_cloud"><h4 class="boxed first-word-bold">Post by tag</h4><div class="tagcloud"><a href="/tag/aws/" class="tag-cloud-link tag-link-85 tag-sm tag-link-position-1" style="font-size: 14.670588235294pt;" aria-label="aws (12 items)">aws</a>
+<a href="/tag/azure/" class="tag-cloud-link tag-link-100 tag-sm tag-link-position-2" style="font-size: 11.294117647059pt;" aria-label="azure (4 items)">azure</a>
+<a href="/tag/casestudy/" class="tag-cloud-link tag-link-126 tag-sm tag-link-position-3" style="font-size: 9.4823529411765pt;" aria-label="casestudy (2 items)">casestudy</a>
+<a href="/tag/cli/" class="tag-cloud-link tag-link-106 tag-sm tag-link-position-4" style="font-size: 9.4823529411765pt;" aria-label="cli (2 items)">cli</a>
+<a href="/tag/community/" class="tag-cloud-link tag-link-241 tag-sm tag-link-position-5" style="font-size: 11.294117647059pt;" aria-label="community (4 items)">community</a>
+<a href="/tag/corretto/" class="tag-cloud-link tag-link-97 tag-sm tag-link-position-6" style="font-size: 9.4823529411765pt;" aria-label="corretto (2 items)">corretto</a>
+<a href="/tag/data/" class="tag-cloud-link tag-link-89 tag-sm tag-link-position-7" style="font-size: 11.294117647059pt;" aria-label="data (4 items)">data</a>
+<a href="/tag/docker/" class="tag-cloud-link tag-link-116 tag-sm tag-link-position-8" style="font-size: 9.4823529411765pt;" aria-label="docker (2 items)">docker</a>
+<a href="/tag/foundation/" class="tag-cloud-link tag-link-102 tag-sm tag-link-position-9" style="font-size: 12.941176470588pt;" aria-label="foundation (7 items)">foundation</a>
+<a href="/tag/gcp/" class="tag-cloud-link tag-link-87 tag-sm tag-link-position-10" style="font-size: 11.952941176471pt;" aria-label="gcp (5 items)">gcp</a>
+<a href="/tag/graalvm/" class="tag-cloud-link tag-link-83 tag-sm tag-link-position-11" style="font-size: 13.764705882353pt;" aria-label="graalvm (9 items)">graalvm</a>
+<a href="/tag/gradle/" class="tag-cloud-link tag-link-107 tag-sm tag-link-position-12" style="font-size: 12.941176470588pt;" aria-label="gradle (7 items)">gradle</a>
+<a href="/tag/groovy/" class="tag-cloud-link tag-link-136 tag-sm tag-link-position-13" style="font-size: 9.4823529411765pt;" aria-label="groovy (2 items)">groovy</a>
+<a href="/tag/guides/" class="tag-cloud-link tag-link-132 tag-sm tag-link-position-14" style="font-size: 9.4823529411765pt;" aria-label="guides (2 items)">guides</a>
+<a href="/tag/http-client/" class="tag-cloud-link tag-link-291 tag-sm tag-link-position-15" style="font-size: 8pt;" aria-label="HTTP client (1 item)">HTTP client</a>
+<a href="/tag/intellijidea/" class="tag-cloud-link tag-link-98 tag-sm tag-link-position-16" style="font-size: 10.470588235294pt;" aria-label="intellijidea (3 items)">intellijidea</a>
+<a href="/tag/iot/" class="tag-cloud-link tag-link-303 tag-sm tag-link-position-17" style="font-size: 9.4823529411765pt;" aria-label="IoT (2 items)">IoT</a>
+<a href="/tag/jetbrains/" class="tag-cloud-link tag-link-296 tag-sm tag-link-position-18" style="font-size: 9.4823529411765pt;" aria-label="JetBrains (2 items)">JetBrains</a>
+<a href="/tag/jhipster/" class="tag-cloud-link tag-link-134 tag-sm tag-link-position-19" style="font-size: 11.294117647059pt;" aria-label="JHipster (4 items)">JHipster</a>
+<a href="/tag/kotlin/" class="tag-cloud-link tag-link-115 tag-sm tag-link-position-20" style="font-size: 10.470588235294pt;" aria-label="kotlin (3 items)">kotlin</a>
+<a href="/tag/lambda/" class="tag-cloud-link tag-link-339 tag-sm tag-link-position-21" style="font-size: 11.294117647059pt;" aria-label="lambda (4 items)">lambda</a>
+<a href="/tag/launch/" class="tag-cloud-link tag-link-99 tag-sm tag-link-position-22" style="font-size: 11.952941176471pt;" aria-label="launch (5 items)">launch</a>
+<a href="/tag/loom/" class="tag-cloud-link tag-link-490 tag-sm tag-link-position-23" style="font-size: 8pt;" aria-label="loom (1 item)">loom</a>
+<a href="/tag/maven/" class="tag-cloud-link tag-link-94 tag-sm tag-link-position-24" style="font-size: 11.294117647059pt;" aria-label="maven (4 items)">maven</a>
+<a href="/tag/meetup/" class="tag-cloud-link tag-link-108 tag-sm tag-link-position-25" style="font-size: 10.470588235294pt;" aria-label="meetup (3 items)">meetup</a>
+<a href="/tag/microcast/" class="tag-cloud-link tag-link-109 tag-sm tag-link-position-26" style="font-size: 12.529411764706pt;" aria-label="microcast (6 items)">microcast</a>
+<a href="/tag/micronaut2/" class="tag-cloud-link tag-link-103 tag-md tag-link-position-27" style="font-size: 16.4pt;" aria-label="micronaut2 (20 items)">micronaut2</a>
+<a href="/tag/micronaut4/" class="tag-cloud-link tag-link-344 tag-sm tag-link-position-28" style="font-size: 12.529411764706pt;" aria-label="micronaut4 (6 items)">micronaut4</a>
+<a href="/tag/micronaut-data/" class="tag-cloud-link tag-link-178 tag-sm tag-link-position-29" style="font-size: 9.4823529411765pt;" aria-label="Micronaut Data (2 items)">Micronaut Data</a>
+<a href="/tag/mqtt/" class="tag-cloud-link tag-link-123 tag-sm tag-link-position-30" style="font-size: 10.470588235294pt;" aria-label="mqtt (3 items)">mqtt</a>
+<a href="/tag/opentracing-api/" class="tag-cloud-link tag-link-290 tag-sm tag-link-position-31" style="font-size: 8pt;" aria-label="OpenTracing API (1 item)">OpenTracing API</a>
+<a href="/tag/oracle/" class="tag-cloud-link tag-link-113 tag-sm tag-link-position-32" style="font-size: 10.470588235294pt;" aria-label="oracle (3 items)">oracle</a>
+<a href="/tag/oracle-cloud/" class="tag-cloud-link tag-link-180 tag-sm tag-link-position-33" style="font-size: 10.470588235294pt;" aria-label="Oracle Cloud (3 items)">Oracle Cloud</a>
+<a href="/tag/raspberry-pi/" class="tag-cloud-link tag-link-304 tag-sm tag-link-position-34" style="font-size: 9.4823529411765pt;" aria-label="Raspberry Pi (2 items)">Raspberry Pi</a>
+<a href="/tag/release/" class="tag-cloud-link tag-link-80 tag-xl tag-link-position-35" style="font-size: 22pt;" aria-label="release (100 items)">release</a>
+<a href="/tag/security/" class="tag-cloud-link tag-link-125 tag-sm tag-link-position-36" style="font-size: 11.952941176471pt;" aria-label="security (5 items)">security</a>
+<a href="/tag/serverless/" class="tag-cloud-link tag-link-101 tag-sm tag-link-position-37" style="font-size: 9.4823529411765pt;" aria-label="serverless (2 items)">serverless</a>
+<a href="/tag/servlet/" class="tag-cloud-link tag-link-91 tag-sm tag-link-position-38" style="font-size: 9.4823529411765pt;" aria-label="servlet (2 items)">servlet</a>
+<a href="/tag/sponsors/" class="tag-cloud-link tag-link-253 tag-sm tag-link-position-39" style="font-size: 13.352941176471pt;" aria-label="sponsors (8 items)">sponsors</a>
+<a href="/tag/springboot/" class="tag-cloud-link tag-link-84 tag-sm tag-link-position-40" style="font-size: 10.470588235294pt;" aria-label="springboot (3 items)">springboot</a>
+<a href="/tag/townhall/" class="tag-cloud-link tag-link-114 tag-sm tag-link-position-41" style="font-size: 13.352941176471pt;" aria-label="townhall (8 items)">townhall</a>
+<a href="/tag/training/" class="tag-cloud-link tag-link-135 tag-sm tag-link-position-42" style="font-size: 13.352941176471pt;" aria-label="training (8 items)">training</a>
+<a href="/tag/video/" class="tag-cloud-link tag-link-88 tag-lg tag-link-position-43" style="font-size: 19.364705882353pt;" aria-label="video (47 items)">video</a>
+<a href="/tag/webinar/" class="tag-cloud-link tag-link-81 tag-md tag-link-position-44" style="font-size: 17.058823529412pt;" aria-label="webinar (24 items)">webinar</a>
+<a href="/tag/zipkin/" class="tag-cloud-link tag-link-289 tag-sm tag-link-position-45" style="font-size: 8pt;" aria-label="Zipkin (1 item)">Zipkin</a></div>
+</div>  
+</aside>        
+      </div>
+    </div>
+    
+  </div>
+</main>
+
+    <footer id="footer">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-sm-5 footer-left">
+            
+            <div id="text-14" class="widget widget_text">			<div class="textwidget"></div>
+		</div><div id="block-3" class="widget widget_block widget_media_image">
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="316" src="/wp-content/uploads/2021/10/MIcronaut_Foundation_Horizontal_white-1024x316.png" alt="" class="wp-image-4398" srcset="/wp-content/uploads/2021/10/MIcronaut_Foundation_Horizontal_white-1024x316.png 1024w, https://micronaut.io/wp-content/uploads/2021/10/MIcronaut_Foundation_Horizontal_white-300x93.png 300w, https://micronaut.io/wp-content/uploads/2021/10/MIcronaut_Foundation_Horizontal_white-768x237.png 768w, https://micronaut.io/wp-content/uploads/2021/10/MIcronaut_Foundation_Horizontal_white-150x46.png 150w, https://micronaut.io/wp-content/uploads/2021/10/MIcronaut_Foundation_Horizontal_white.png 1203w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></figure>
+</div>            
+          </div>
+          <div class="col-sm-7 footer-right">
+            
+            <ul class="meta">
+
+              <li id="menu-item-2895" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2895"><a href="/brand-guidelines/">Brand Guidelines</a></li>
+<li id="menu-item-2894" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2894"><a href="/community-guidelines/">Community Code of Conduct</a></li>
+<li id="menu-item-3377" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-3377"><a rel="privacy-policy" href="/privacy-policy/">Privacy Policy</a></li>
+
+            </ul>
+            
+            <div id="nav_menu-2" class="widget widget_nav_menu"><div class="menu-links-container"><ul id="menu-links" class="menu"><li id="menu-item-4515" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4515"><a href="mailto:info@micronaut.io"><i class="fas fa-envelope"><span class="sr-only">Mail</span></i></a></li>
+<li id="menu-item-2886" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2886"><a target="_blank" href="https://twitter.com/micronautfw"><i class="fab fa-x-twitter"><span class="sr-only">Twitter</span></i></a></li>
+<li id="menu-item-6740" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6740"><a href="https://fosstodon.org/@micronaut"><i class="fab fa-mastodon"><span class="sr-only">Mastodon</span></i></a></li>
+<li id="menu-item-2888" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2888"><a target="_blank" href="https://discord.com/invite/9xRFsHv98T"><i class="fab fa-discord"><span class="sr-only">Discord</span></i></a></li>
+<li id="menu-item-2889" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2889"><a target="_blank" href="https://github.com/micronaut-projects/"><i class="fab fa-github"><span class="sr-only">GitHub</span></i></a></li>
+<li id="menu-item-2890" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2890"><a target="_blank" href="https://www.youtube.com/@MicronautFramework"><i class="fab fa-youtube"><span class="sr-only">YouTube</span></i></a></li>
+<li id="menu-item-4514" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4514"><a href="https://www.linkedin.com/showcase/micronaut"><i class="fab fa-linkedin"><span class="sr-only">LinkedIn</span></i></a></li>
+<li id="menu-item-4513" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4513"><a href="https://www.twitch.tv/micronautfw"><i class="fab fa-twitch"><span class="sr-only">Twitch</span></i></a></li>
+</ul></div></div><div id="text-5" class="widget widget_text">			<div class="textwidget"><p><small>© 2024 Micronaut Foundation. All rights reserved.</small></p>
+</div>
+		</div>  
+            
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+
+    <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/micronaut\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript" src="/wp-content/themes/micronaut/js/script.min.js" id="micronaut-script-js"></script>
+
+  </body>
+</html><!--
+Performance optimized by Redis Object Cache. Learn more: https://wprediscache.com
+
+Retrieved 2581 objects (948 KB) from Redis using PhpRedis (v5.3.7).
+-->
