@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    
+
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Micronaut Framework 5.0.0 Released! - Micronaut Framework</title>
+	<link rel="canonical" href="/2026/05/20/micronaut-framework-5-0-0-released/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Micronaut Framework 5.0.0 Released! - Micronaut Framework" />
+	<meta property="og:description" content="The Micronaut Foundation is excited to announce the general availability (GA) release of Micronaut framework 5! Latest Versions Micronaut 5 is represented by the Micronaut Platform BOM and brings the framework, its modules, and the managed dependency ecosystem up to current major versions. Micronaut 4 was introduced almost three years ago, so Micronaut 5 is [&hellip;]" />
+	<meta property="og:url" content="/2026/05/20/micronaut-framework-5-0-0-released/" />
+	<meta property="og:site_name" content="Micronaut Framework" />
+	<meta property="article:published_time" content="2026-05-20T14:54:35+00:00" />
+	<meta name="author" content="Sergio Del Amo Caballero" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="Sergio Del Amo Caballero" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="7 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"Article","@id":"https:\/\/micronaut.io\/2026\/05\/20\/micronaut-framework-5-0-0-released\/#article","isPartOf":{"@id":"https:\/\/micronaut.io\/2026\/05\/20\/micronaut-framework-5-0-0-released\/"},"author":{"name":"Sergio Del Amo Caballero","@id":"https:\/\/micronaut.io\/#\/schema\/person\/08982814a2a9b5c9d7c5c7d629cb7175"},"headline":"Micronaut Framework 5.0.0 Released!","datePublished":"2026-05-20T14:54:35+00:00","mainEntityOfPage":{"@id":"https:\/\/micronaut.io\/2026\/05\/20\/micronaut-framework-5-0-0-released\/"},"wordCount":1534,"keywords":["release"],"articleSection":["Micronaut 5","Release Announcements"],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https:\/\/micronaut.io\/2026\/05\/20\/micronaut-framework-5-0-0-released\/","url":"https:\/\/micronaut.io\/2026\/05\/20\/micronaut-framework-5-0-0-released\/","name":"Micronaut Framework 5.0.0 Released! - Micronaut Framework","isPartOf":{"@id":"https:\/\/micronaut.io\/#website"},"datePublished":"2026-05-20T14:54:35+00:00","author":{"@id":"https:\/\/micronaut.io\/#\/schema\/person\/08982814a2a9b5c9d7c5c7d629cb7175"},"breadcrumb":{"@id":"https:\/\/micronaut.io\/2026\/05\/20\/micronaut-framework-5-0-0-released\/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https:\/\/micronaut.io\/2026\/05\/20\/micronaut-framework-5-0-0-released\/"]}]},{"@type":"BreadcrumbList","@id":"https:\/\/micronaut.io\/2026\/05\/20\/micronaut-framework-5-0-0-released\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/micronaut.io\/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https:\/\/micronaut.io\/blog\/"},{"@type":"ListItem","position":3,"name":"Micronaut Framework 5.0.0 Released!"}]},{"@type":"WebSite","@id":"https:\/\/micronaut.io\/#website","url":"https:\/\/micronaut.io\/","name":"Micronaut Framework","description":"A modern, JVM-based, full-stack framework for building modular, easily testable microservice and serverless applications","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/micronaut.io\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Person","@id":"https:\/\/micronaut.io\/#\/schema\/person\/08982814a2a9b5c9d7c5c7d629cb7175","name":"Sergio Del Amo Caballero"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//js.stripe.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/2026/05/20/micronaut-framework-5-0-0-released/embed.json" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmicronaut.io%2F2026%2F05%2F20%2Fmicronaut-framework-5-0-0-released%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+/*wp_block_styles_on_demand_placeholder:6a83e323f32fd*/
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id="wp-block-styles-placeholder-inline-css">
+:root { --wp-internal-comment: "Placeholder for wp_hoist_late_printed_styles() to replace with the block styles printed at wp_footer." }
+/*# sourceURL=wp-block-styles-placeholder-inline-css */
+</style>
+<style id="wp-global-styles-placeholder-inline-css">
+:root { --wp-internal-comment: "Placeholder for wp_hoist_late_printed_styles() to replace with the global-styles printed at wp_footer." }
+/*# sourceURL=wp-global-styles-placeholder-inline-css */
+</style>
+<link rel='stylesheet' id='modal-window-css' href='/wp-content/plugins/modal-window/public/assets/css/modal.min.css?ver=6.3' media='all' />
+<link rel='stylesheet' id='fonts-fira-sans-css' href='/external/fonts.googleapis.com/css2-433vpe.css' media='all' />
+<link rel='stylesheet' id='micronaut-style-css' href='/wp-content/themes/micronaut/style.min.css?ver=7.0.4' media='all' />
+<script id="jquery-core-js" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="stripe-js" src="//js.stripe.com/v3/?ver=7.0.4"></script>
+<link rel="https://api.w.org/" href="/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/posts/7497" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel='shortlink' href='/?p=7497' />
+<link rel="icon" href="/wp-content/uploads/2021/02/favicon.ico" type="image/png"><link rel="shortcut icon" href="/wp-content/uploads/2021/02/favicon.ico" type="image/png"><meta name="theme-color" content="#000000"><script type="text/javascript">var STRIPE_PUBLISHABLE_KEY = "pk_live_51HMxCnAdio0y30LTv9S4fLlYVaBdZN5ihurBPL6kJ8fQNbN3jRj6JwJQNXeL7PhZTQvuGcmWOdoyIUsuqXaop8OK00qddh873V";</script><script type="text/javascript">var TRIGGER_SUBSCRIBE = false;</script><link rel="icon" href="/wp-content/uploads/2025/09/favicon-120x120.png" sizes="32x32" />
+<link rel="icon" href="/wp-content/uploads/2025/09/favicon-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="/wp-content/uploads/2025/09/favicon-300x300.png" />
+<meta name="msapplication-TileImage" content="/wp-content/uploads/2025/09/favicon-300x300.png" />
+<style id="wp-custom-css">
+.fa-x-twitter:before {
+  content: "\e61b"; }
+p.expand-bottom-margin {
+	margin-bottom: 32px;
+}
+
+h2.expand-bottom-margin,
+h3.expand-bottom-margin,
+h4.expand-bottom-margin,
+h5.expand-bottom-margin,
+h6.expand-bottom-margin {
+	margin-bottom: 20px;
+}
+
+.underline {
+	text-decoration:underline;
+}
+
+h2.natural-case,
+h3.natural-case,
+h4.natural-case,
+h5.natural-case,
+h6.natural-case {
+	text-transform: none !important;
+}
+
+.legal-list {
+	list-style-type: '§';
+}
+
+.quote {
+	border-top: 2px solid black; 
+	border-bottom: 2px solid black;
+	margin: 18px auto;
+	padding:15px 15px 0 15px;
+	background-color: #f5f5f5;
+}
+
+blockquote {
+	display: block;
+	border-left: 5px solid black;
+	padding-left: 20px;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+figure {
+	padding: 20px;
+}
+.figurepink {
+	padding: 3px;
+	background: #FF0096;
+	color: #FFFFFF;
+}
+.figureorange {
+	padding: 3px;
+	background: #FF8A00;
+	color: #FFFFFF;
+}
+.figureblue {
+	padding: 3px;
+	background: #004EFF;
+	color: #FFFFFF;
+}
+</style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115754405-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-115754405-1');
+    </script>
+
+  </head>
+  <body class="wp-singular post-template-default single single-post postid-7497 single-format-standard wp-theme-micronaut">
+
+    <header id="header">
+
+      
+      <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+          <button class="collapsed" type="button" data-toggle="collapse" data-target="#nav" aria-expanded="false">
+            <span></span>
+          </button>
+
+          <a class="navbar-brand" href="/">
+            <img src="/wp-content/uploads/2020/11/MIcronautLogo_Horizontal.svg" alt="Micronaut Framework" />
+          </a>
+
+          <div class="collapse navbar-collapse" id="nav">
+
+            <ul class="navbar-nav ml-auto">
+
+              <li id="menu-item-2865" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2865 nav-item"><a href="/download/" class="nav-link">Download</a></li>
+<li id="menu-item-2868" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2868 dropdown nav-item"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Learn</a><ul class="dropdown-menu">
+	<li id="menu-item-4943" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4943"><a href="/learn/" class="dropdown-item">Overview</a></li>
+	<li id="menu-item-5111" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5111"><a href="https://docs.micronaut.io/index.html" class="dropdown-item">User Documentaton</a></li>
+	<li id="menu-item-4510" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4510"><a href="/guides/" class="dropdown-item">Guides</a></li>
+	<li id="menu-item-7373" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7373"><a href="https://mylearn.oracle.com/ou/course/micronaut-fundamentals/151938/" class="dropdown-item">Micronaut Fundamentals</a></li>
+	<li id="menu-item-2896" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2896"><a href="/category/microcast/" class="dropdown-item">Microcasts</a></li>
+	<li id="menu-item-2897" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2897"><a href="/category/webinar/" class="dropdown-item">Webinars</a></li>
+	<li id="menu-item-2871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2871"><a href="/professional-training/" class="dropdown-item">Professional Training</a></li>
+	<li id="menu-item-6526" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6526"><a href="https://micronaut-projects.github.io/micronaut-guides-mn3/latest/" class="dropdown-item">Guides for Micronaut Framework 3</a></li>
+</ul>
+</li>
+<li id="menu-item-2878" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2878 dropdown nav-item"><a href="/resources/" class="nav-link dropdown-toggle" data-toggle="dropdown">Resources</a><ul class="dropdown-menu">
+	<li id="menu-item-4999" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4999"><a href="/upcoming-events/" class="dropdown-item">Upcoming Events</a></li>
+	<li id="menu-item-2879" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-2879"><a href="/blog/" class="dropdown-item">Blog</a></li>
+	<li id="menu-item-6478" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-6478 active"><a href="/category/release-announcements/" class="dropdown-item">Releases</a></li>
+	<li id="menu-item-6861" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6861"><a href="/micronaut-roadmap/" class="dropdown-item">Micronaut ROADMAP</a></li>
+	<li id="menu-item-6715" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6715"><a href="/category/security-announcements/" class="dropdown-item">Security Announcements</a></li>
+	<li id="menu-item-4499" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4499"><a href="https://micronautpodcast.com/" class="dropdown-item">Podcast</a></li>
+	<li id="menu-item-5798" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5798"><a href="/support/" class="dropdown-item">Commercial Support</a></li>
+	<li id="menu-item-4186" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4186"><a href="/resources/community-support/" class="dropdown-item">Community Support</a></li>
+	<li id="menu-item-2882" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2882"><a href="/faq/" class="dropdown-item">FAQ</a></li>
+	<li id="menu-item-2883" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2883"><a href="/contact/" class="dropdown-item">Contact</a></li>
+	<li id="menu-item-6479" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6479"><a href="/micronaut-success-stories/" class="dropdown-item">Micronaut Success Stories</a></li>
+</ul>
+</li>
+<li id="menu-item-2872" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2872 dropdown nav-item"><a href="/foundation/" class="nav-link dropdown-toggle" data-toggle="dropdown">Foundation</a><ul class="dropdown-menu">
+	<li id="menu-item-2877" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2877"><a href="/foundation/" class="dropdown-item">Overview</a></li>
+	<li id="menu-item-2874" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2874"><a href="/foundation/corporate-sponsorship/" class="dropdown-item">Corporate Sponsorship</a></li>
+	<li id="menu-item-2873" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2873"><a href="/foundation/community-sponsorship/" class="dropdown-item">Community Sponsorship</a></li>
+	<li id="menu-item-2876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2876"><a href="/foundation/sponsors/" class="dropdown-item">Sponsors</a></li>
+	<li id="menu-item-3838" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3838"><a href="/meeting-minutes/" class="dropdown-item">Meeting Minutes</a></li>
+</ul>
+</li>
+<li id="menu-item-2884" class="action menu-item menu-item-type-custom menu-item-object-custom menu-item-2884 nav-item"><a target="_blank" href="/launch/" class="nav-link">Launch</a></li>
+
+            </ul>
+
+          </div>
+
+        </nav>
+
+      </div>
+    </header>
+
+    
+<div id="contact" class="flyout collapse">
+  <div class="container">
+
+    <div class="inner">
+
+      <button type="button" data-toggle="collapse" data-target="#contact" class="close">&times;</button>
+
+      <div class="row justify-content-end">
+        <div class="col-md-4"><div class="widget"><h4>Contact Us About Sponsorship</h4>			<div class="textwidget"><p>Questions about Micronaut Foundation sponsorship?</p>
+<p>Please complete this form, and we’ll follow up with you shortly.</p>
+</div>
+		</div></div><div class="col-md-4"><div class="widget">			<div class="textwidget"><p>[hubspot type=form portal=4547412 id=a7b3ddfa-64b0-47fd-8358-45fa6a09456a]</p>
+</div>
+		</div></div> 
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div id="breadcrumbs"><div class="container"><span><span><a href="/">Home</a></span> » <span><a href="/blog/">Blog</a></span> » <span class="breadcrumb_last" aria-current="page">Micronaut Framework 5.0.0 Released!</span></span></div></div>
+<main id="main">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-sm-8">
+        
+                  
+        
+        <article class="post_single">
+        
+          <header>
+            
+            <h1>Micronaut Framework 5.0.0 Released!</h1>
+            
+            <span>by Sergio Del Amo Caballero</span>
+            
+            <span class="tags">Tags: <a href="/tag/release/" rel="tag">release</a></span>            
+            <time>May 20, 2026</time>
+            
+          </header>
+          
+                    
+          <p>The Micronaut Foundation is excited to announce the general availability (GA) release of <a href="/" rel="nofollow">Micronaut</a> framework 5!</p>
+<p><strong>Latest Versions</strong></p>
+<p>Micronaut 5 is represented by the <a href="https://micronaut-projects.github.io/micronaut-platform/snapshot/guide/" rel="nofollow">Micronaut Platform BOM</a> and brings the framework, its modules, and the managed dependency ecosystem up to current major versions. <a href="/2023/07/14/micronaut-framework-4-0-0-released/" rel="nofollow">Micronaut 4</a> was introduced almost three years ago, so Micronaut 5 is both a major framework release and a broad platform refresh across more than 70 Micronaut modules.</p>
+<p><strong>Build-Time and Speed</strong></p>
+<p>We have, of course, also taken the opportunity to continue improving the framework&#8217;s internals, maintaining alignment with its core values. Do as much as possible during build time and keep making it faster and faster.</p>
+<div class="markdown-heading">
+<h2 class="heading-element">Languages&#8217; Baselines</h2>
+<p><a id="user-content-languages-baselines" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#languages-baselines" aria-label="Permalink: Languages' Baselines"></a></div>
+<p>Micronaut 5 updates to the following baselines:</p>
+<ul>
+<li><a href="/2026/04/27/micronaut-framework-5-0-with-java-25-baseline/" rel="nofollow">Java 25</a></li>
+<li><a href="/2026/04/28/micronaut-framework-5-0-supports-apache-groovy-5/" rel="nofollow">Apache Groovy 5</a></li>
+<li><a href="/2026/04/28/micronaut-framework-5-0-supports-kotlin-2-3/" rel="nofollow">Kotlin 2.3</a></li>
+</ul>
+<div class="markdown-heading">
+<h2 class="heading-element">GraalVM</h2>
+<p><a id="user-content-graalvm" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#graalvm" aria-label="Permalink: GraalVM"></a></div>
+<p>Micronaut 5 updates <a href="https://graalvm.org/" rel="nofollow">GraalVM</a> to 25.0.3.</p>
+<div class="markdown-heading">
+<h2 class="heading-element">Core Changes</h2>
+<p><a id="user-content-core-changes" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#core-changes" aria-label="Permalink: Core Changes"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">Internals</h3>
+<p><a id="user-content-internals" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#internals" aria-label="Permalink: Internals"></a></div>
+<p>The IoC container and compile-time infrastructure have received substantial work in Micronaut 5. Bean resolution, qualifier handling, replacement metadata, eager initialization, and runtime annotation processing were refined to reduce runtime work and improve predictability.</p>
+<p>The bean context was reworked in several areas during the Micronaut 5 development cycle, including precomputed bean indexes, compile-time <code>@Replaces</code> handling, and broader bean context optimizations. Together, these changes continue Micronaut&#8217;s focus on startup performance and low runtime overhead.</p>
+<p>Micronaut 5 adds support for <code>jakarta.annotation.Priority</code>, mapping it to Micronaut&#8217;s bean and HTTP filter ordering semantics.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">HTTP</h3>
+<p><a id="user-content-http" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#http" aria-label="Permalink: HTTP"></a></div>
+<p>On the HTTP side, <a href="https://docs.micronaut.io/snapshot/guide/#http3Server" rel="nofollow">HTTP/3 support</a> on the Netty stack was promoted to stable. Micronaut 5 also includes a multipart/form handling refactor that introduces a lower-level, more server-independent form API and improves resource management in higher-level binders. See <a href="https://docs.micronaut.io/snapshot/guide/#form" rel="nofollow">Forms</a>, <a href="https://docs.micronaut.io/snapshot/guide/#formCapable" rel="nofollow">Detailed Form API</a>, and <a href="https://docs.micronaut.io/snapshot/guide/#uploads" rel="nofollow">File Uploads</a>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">JSpecify Nullability Annotations</h3>
+<p><a id="user-content-jspecify-nullability-annotations" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#jspecify-nullability-annotations" aria-label="Permalink: JSpecify Nullability Annotations"></a></div>
+<p>The framework APIs now embrace <a href="https://docs.micronaut.io/snapshot/guide/#nullabilityAnnotations" rel="nofollow">nullability annotations</a> and specifically <a href="https://docs.micronaut.io/snapshot/guide/#jspecify" rel="nofollow">JSpecify nullability annotations</a>, with <code>@NullMarked</code> adoption across the codebase and stronger static analysis integration. The result is clearer API contracts, improved Kotlin interoperability, and better IDE feedback.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Resilience and Context Propagation</h3>
+<p><a id="user-content-resilience-and-context-propagation" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#resilience-and-context-propagation" aria-label="Permalink: Resilience and Context Propagation"></a></div>
+<p>In addition to the existing annotation-driven model documented in <a href="https://docs.micronaut.io/snapshot/guide/#retry" rel="nofollow">Retry Advice</a>, Micronaut 5 offers <a href="https://docs.micronaut.io/snapshot/guide/#_programmatic_retry" rel="nofollow">programmatic retry</a>and <a href="https://docs.micronaut.io/snapshot/guide/#_programmatic_circuit_breaker" rel="nofollow">circuit breaker APIs</a>. These changes enable defining typed retry and circuit breaker policies in code and reusing them for synchronous, reactive, and asynchronous flows.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Configuration</h2>
+<p><a id="user-content-configuration" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#configuration" aria-label="Permalink: Configuration"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">Configuration Support</h3>
+<p><a id="user-content-configuration-support" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#configuration-support" aria-label="Permalink: Configuration Support"></a></div>
+<p>Micronaut 5 supports config imports and a <a href="https://docs.micronaut.io/snapshot/api/io/micronaut/context/env/PropertySourceImporter.html" rel="nofollow"><code>PropertySourceImporter</code> SPI</a>, enabling configuration loading from sources such as files, classpath locations, environment variables, config trees, and custom importer implementations. See <a href="https://docs.micronaut.io/snapshot/guide/#configImport" rel="nofollow">Importing Additional Configuration</a>, <a href="https://docs.micronaut.io/snapshot/guide/#customPropertySourceImporter" rel="nofollow">Implementing a Custom PropertySourceImporter</a>, and <a href="https://docs.micronaut.io/snapshot/guide/#propertySource" rel="nofollow">Externalized Configuration with PropertySources</a>.</p>
+<p>This new approach deprecates the <a href="https://docs.micronaut.io/snapshot/guide/#bootstrap" rel="nofollow">Bootstrap Configuration</a> support, which may be removed in Micronaut 6.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Application Configuration Validation</h3>
+<p><a id="user-content-application-configuration-validation" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#application-configuration-validation" aria-label="Permalink: Application Configuration Validation"></a></div>
+<p>A new module, <a href="https://micronaut-projects.github.io/micronaut-json-schema/snapshot/guide/#configurationValidator" rel="nofollow">Micronaut JSON Schema configuration validator</a>, eases application configuration validation and is integrated into the <a href="https://micronaut-projects.github.io/micronaut-maven-plugin/snapshot/examples/configuration-validation.html" rel="nofollow">Micronaut Maven Plugin</a> and the <a href="https://micronaut-projects.github.io/micronaut-gradle-plugin/5.0.0/#configuration-validation" rel="nofollow">Micronaut Gradle Plugin</a>.</p>
+<p>This module relies on the capability introduced in Micronaut 5 to generate JSON Schema documents from <code>@ConfigurationProperties</code>.</p>
+<p><a href="https://micronaut-projects.github.io/micronaut-json-schema/snapshot/guide/" rel="nofollow">Micronaut JSON Schema</a> updates <a href="https://github.com/networknt/json-schema-validator"><code>com.networknt:json-schema-validator</code></a> to <code>3.0.2</code>.</p>
+<div class="markdown-heading">
+<h2 class="heading-element">Logging</h2>
+<p><a id="user-content-logging" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#logging" aria-label="Permalink: Logging"></a></div>
+<p>Micronaut Logging updates to Log4j <a href="https://logging.apache.org/log4j/2.x/release-notes.html#release-notes-2-25-4" rel="nofollow"><code>2.25.4</code></a></p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Dev &amp; Test</h2>
+<p><a id="user-content-dev--test" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#dev--test" aria-label="Permalink: Dev &amp; Test"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">Control Panel</h3>
+<p><a id="user-content-control-panel" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#control-panel" aria-label="Permalink: Control Panel"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-control-panel/snapshot/guide/" rel="nofollow">Micronaut Control Panel</a> gets a fresh look, and it adds panels for <a href="https://micronaut-projects.github.io/micronaut-control-panel/snapshot/guide/#cache" rel="nofollow">Cache</a>, <a href="https://micronaut-projects.github.io/micronaut-control-panel/snapshot/guide/#datasource" rel="nofollow">DataSource</a>, <a href="https://micronaut-projects.github.io/micronaut-control-panel/snapshot/guide/#hibernate" rel="nofollow">Hibernate</a>, and <a href="https://micronaut-projects.github.io/micronaut-control-panel/snapshot/guide/#kafka" rel="nofollow">Kafka Streams</a>. It also adds Object Storage, Disabled Beans, and Metrics panels, plus authenticated and authorized access.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">AOT</h3>
+<p><a id="user-content-aot" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#aot" aria-label="Permalink: AOT"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-aot/snapshot/guide/" rel="nofollow">Micronaut AOT</a> adds an AOT diagnostics report.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">OpenAPI</h3>
+<p><a id="user-content-openapi" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#openapi" aria-label="Permalink: OpenAPI"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-openapi/snapshot/guide/" rel="nofollow">Micronaut OpenAPI</a> updates to <code>7.0.0</code>, with fixes and improvements for KSP2, <code>@SecuritySchema</code>, <code>JsonAnyGetter</code> / <code>JsonAnySetter</code>, <code>JsonNode</code>, headers, byte arrays, and URI template/path/query processing.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Test</h3>
+<p><a id="user-content-test" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#test" aria-label="Permalink: Test"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-test/snapshot/guide/" rel="nofollow">Micronaut Test</a> updates:</p>
+<ul>
+<li><a href="https://junit.org/" rel="nofollow">JUnit</a> to <code>6.0.3</code>.</li>
+<li><a href="https://kotest.io/" rel="nofollow">KoTest</a> to <code>6.1.9</code>.</li>
+<li><a href="https://spockframework.org/" rel="nofollow">Spock</a> to <code>2.4-groovy-5.0</code>.</li>
+<li><a href="https://site.mockito.org/" rel="nofollow">Mockito</a> to <code>5.23.0</code>.</li>
+<li><a href="https://mockk.io/" rel="nofollow">Mockk</a> to <code>1.14.9</code>.</li>
+<li><a href="https://rest-assured.io/" rel="nofollow">REST-assured</a> to <code>6.0.0</code>.</li>
+<li><a href="https://assertj.github.io/doc/" rel="nofollow">AssertJ</a>: updates to <code>3.27.7</code>.</li>
+</ul>
+<p><a href="https://micronaut-projects.github.io/micronaut-test-resources/snapshot/guide/" rel="nofollow">Micronaut Test Resources</a> updates to <code>4.0.0</code>, with a binary protocol between client and server, shared containers across multiple databases, and new providers for Infinispan, Hazelcast, Pulsar, MinIO, SeaweedFS, Azurite, Couchbase, and WireMock. The platform also manages <a href="https://testcontainers.com/" rel="nofollow">Testcontainers</a> <code>2.0.5</code>.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Serialization</h2>
+<p><a id="user-content-serialization" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#serialization" aria-label="Permalink: Serialization"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">Micronaut Serialization</h3>
+<p><a id="user-content-micronaut-serialization" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#micronaut-serialization" aria-label="Permalink: Micronaut Serialization"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-serialization/snapshot/guide/" rel="nofollow">Micronaut Serialization</a> adds:</p>
+<ul>
+<li>Serializers and Deserializers are now generated at build time with SourceGen, improving performance. The <a href="https://micronaut-projects.github.io/micronaut-serialization/snapshot/api/io/micronaut/serde/annotation/SerdeableGenerated.html" rel="nofollow"><code>@SerdeableGenerated</code></a> annotation, declares the compile-time generated serde contract for a <a href="https://micronaut-projects.github.io/micronaut-serialization/snapshot/api/io/micronaut/serde/annotation/Serdeable.html" rel="nofollow"><code>Serdeable</code></a> type.</li>
+<li>Broader format metadata support: pattern, shape, locale, timezone, lenient parsing, and radix.</li>
+<li>Serialization feature flags for nanosecond timestamps, zone IDs, unwrapped single-element arrays, and sorted map entries.</li>
+<li>Deserialization feature flags for single-value-as-array, case-insensitive properties, unknown enum handling, timestamp precision, and context time zone adjustment.</li>
+<li>Support for <code>@JsonEnumDefaultValue</code> with <code>@JsonFormat(with = READ_UNKNOWN_ENUM_VALUES_USING_DEFAULT_VALUE)</code></li>
+</ul>
+<div class="markdown-heading">
+<h3 class="heading-element">Jackson 3</h3>
+<p><a id="user-content-jackson-3" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#jackson-3" aria-label="Permalink: Jackson 3"></a></div>
+<p>With the release of Micronaut 5, <a href="/2026/05/01/micronaut-framework-5-with-jackson-3/" rel="nofollow">Micronaut Jackson Databind updates to Jackson 3</a> (<code>3.1.3</code> in the platform BOM).</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Server</h2>
+<p><a id="user-content-server" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#server" aria-label="Permalink: Server"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">Ktor</h3>
+<p><a id="user-content-ktor" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#ktor" aria-label="Permalink: Ktor"></a></div>
+<p>Micronaut Kotlin updates to <a href="https://ktor.io/changelog/3.0/" rel="nofollow">Ktor 3</a> (<code>3.4.3</code> in the platform BOM).</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Servlet</h3>
+<p><a id="user-content-servlet" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#servlet" aria-label="Permalink: Servlet"></a></div>
+<p>Micronaut Servlet updates the following server runtime dependencies:</p>
+<ul>
+<li><a href="https://undertow.io/" rel="nofollow">Undertow</a> to <code>2.3.24.Final</code></li>
+<li><a href="https://tomcat.apache.org/" rel="nofollow">Apache Tomcat</a> to <code>11.0.21</code></li>
+<li><a href="https://jetty.org/" rel="nofollow">Eclipse Jetty</a> to <code>12.1.8</code></li>
+</ul>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Persistence</h2>
+<p><a id="user-content-persistence" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#persistence" aria-label="Permalink: Persistence"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">DATA</h3>
+<p><a id="user-content-data" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#data" aria-label="Permalink: DATA"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-data/snapshot/guide/" rel="nofollow">Micronaut Data</a> adds <a href="https://micronaut-projects.github.io/micronaut-data/snapshot/guide/#sqlGeospatial" rel="nofollow">Geospatial Support</a>, <a href="https://micronaut-projects.github.io/micronaut-data/snapshot/guide/#sqlVectorType" rel="nofollow">SQL Vector Type Mapping</a>, and it continues to improve the <a href="https://micronaut-projects.github.io/micronaut-data/snapshot/guide/#sqlJsonView" rel="nofollow">@JsonView</a>support.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">SQL</h3>
+<p><a id="user-content-sql" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#sql" aria-label="Permalink: SQL"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-sql/snapshot/guide/" rel="nofollow">Micronaut SQL</a> adds the ability to <a href="https://micronaut-projects.github.io/micronaut-sql/snapshot/guide/#jdbc-runtime-password-update" rel="nofollow">update JDBC datasource credentials at runtime without restarting the application</a>, adds support for <a href="https://www.sqlite.org/" rel="nofollow">SQLite</a>, <a href="https://micronaut-projects.github.io/micronaut-sql/snapshot/guide/#jdbc-connection-pools" rel="nofollow">Oracle Session Program Auto-Configuration</a>, unpooled datasource support, and updates to the latest versions:</p>
+<ul>
+<li>vertx to <code>5.0.12</code>.</li>
+<li>jooq to <code>3.21.4</code>.</li>
+<li>Hibernate-core to <code>7.3.4.Final</code>.</li>
+<li>jdbi3-core to <code>3.53.0</code>.</li>
+<li>ojdbc to <code>23.26.2.0.0</code>.</li>
+<li>postgresql to <code>42.7.11</code>.</li>
+<li>mariadb-driver to <code>3.5.8</code>.</li>
+<li>mssql-jdbc to <code>13.4.0.jre11</code>.</li>
+<li>Mysql-connector-j to <code>9.7.0</code>.</li>
+<li>Hikari to <code>7.0.2</code>.</li>
+<li>commons-dbcp2 to <code>2.14.0</code>.</li>
+<li>Tomcat JDBC to <code>11.0.22</code>.</li>
+<li>Jakarta Persistence API to <code>3.2.0</code>.</li>
+<li>H2 to <code>2.4.240</code>.</li>
+</ul>
+<div class="markdown-heading">
+<h3 class="heading-element">R2DBC</h3>
+<p><a id="user-content-r2dbc" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#r2dbc" aria-label="Permalink: R2DBC"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-r2dbc/snapshot/guide/" rel="nofollow">Micronaut R2DBC</a> adds Google Cloud SQL R2DBC PostgreSQL support, and it updates the R2DBC drivers, including H2 from <code>1.0.0</code> to <code>1.1.0</code>, MariaDB from <code>1.3.0</code> to <code>1.4.0</code>, MSSQL from <code>1.0.3</code> to <code>1.0.4</code>, MySQL from <code>1.4.1</code> to <code>1.4.2</code>, PostgreSQL from <code>1.1.0</code> to <code>1.1.1</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">MongoDB</h3>
+<p><a id="user-content-mongodb" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#mongodb" aria-label="Permalink: MongoDB"></a></div>
+<p><a href="https://github.com/mongodb/mongo-java-driver">MongoDB Java Driver</a> upgrades to <code>5.7.0</code>.</p>
+<p>A new module, <code>io.micronaut.mongodb:micronaut-mongo-coroutine</code>, adds Kotlin coroutine MongoDB driver support. The release also adds <code>MongoClientSettings</code> customization for client-side field-level encryption.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Eclipsestore</h3>
+<p><a id="user-content-eclipsestore" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#eclipsestore" aria-label="Permalink: Eclipsestore"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-eclipsestore/snapshot/guide/" rel="nofollow">Micronaut EclipseStore</a> annotation mappers moved from <code>micronaut-eclipsestore-annotations</code> to the new module <code>micronaut-eclipsestore-processor</code>. Users must replace the annotation processor or Groovy <code>compileOnly</code>dependency accordingly.</p>
+<p>The module updates EclipseStore from <code>1.4.0</code> to <a href="https://github.com/eclipse-store/store/releases/tag/4.0.1"><code>4.0.1</code></a>. It also adds Google Cloud Firestore storage target support.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Redis</h3>
+<p><a id="user-content-redis" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#redis" aria-label="Permalink: Redis"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-redis/snapshot/guide/" rel="nofollow">Micronaut Redis</a> adds <a href="https://micronaut-projects.github.io/micronaut-redis/snapshot/guide/#pubsub" rel="nofollow">Pub/Sub Messaging support</a>, cache bulk operations, retry options, configurable namespace support, and it updates the <a href="https://github.com/redis/lettuce">Lettuce Java Redis client</a> to <code>7.5.1</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Neo4J</h3>
+<p><a id="user-content-neo4j" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#neo4j" aria-label="Permalink: Neo4J"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-neo4j/snapshot/guide/" rel="nofollow">Micronaut Neo4J</a> updates the <a href="https://github.com/neo4j/neo4j-java-driver">Neo4j Java driver</a> to <code>6.1.0</code>.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Database Migration</h2>
+<p><a id="user-content-database-migration" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#database-migration" aria-label="Permalink: Database Migration"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">Liquibase</h3>
+<p><a id="user-content-liquibase" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#liquibase" aria-label="Permalink: Liquibase"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-liquibase/snapshot/guide/" rel="nofollow">Micronaut Liquibase</a> updates to Liquibase <code>5.0.2</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Flyway</h3>
+<p><a id="user-content-flyway" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#flyway" aria-label="Permalink: Flyway"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-flyway/snapshot/guide/" rel="nofollow">Micronaut Flyway</a> updates to Flyway <code>12.6.1</code>.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Cloud</h2>
+<p><a id="user-content-cloud" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#cloud" aria-label="Permalink: Cloud"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">Object Storage</h3>
+<p><a id="user-content-object-storage" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#object-storage" aria-label="Permalink: Object Storage"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-object-storage/snapshot/guide/" rel="nofollow">Micronaut Object Storage</a> adds support for <a href="https://micronaut-projects.github.io/micronaut-object-storage/snapshot/guide/#paginatedListing" rel="nofollow">Paginated Listing</a>, <a href="https://micronaut-projects.github.io/micronaut-object-storage/snapshot/guide/#bucketManagement" rel="nofollow">Bucket and Container Management APIs</a>, presigned requests, streaming upload support, and reactive operations.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Tracing</h3>
+<p><a id="user-content-tracing" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#tracing" aria-label="Permalink: Tracing"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-tracing/snapshot/guide/" rel="nofollow">Micronaut Tracing</a> updates to <a href="https://github.com/open-telemetry/opentelemetry-java">Open Telemetry</a> <code>1.62.0</code>. It also adds OpenTelemetry R2DBC instrumentation and a Logback appender.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Kubernetes</h3>
+<p><a id="user-content-kubernetes" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#kubernetes" aria-label="Permalink: Kubernetes"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-kubernetes/snapshot/guide/" rel="nofollow">Micronaut Kubernetes</a> updates to <a href="https://github.com/kubernetes-client/java">Kubernetes Java client</a> <code>26.0.0</code>.</p>
+<p>The Kubernetes module also gains support for <a href="https://micronaut-projects.github.io/micronaut-kubernetes/latest/guide/#config-import" rel="nofollow">Configuration Import via Kubernetes ConfigMaps, Secrets or Mounted Volumes</a>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">AWS</h3>
+<p><a id="user-content-aws" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#aws" aria-label="Permalink: AWS"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-aws/snapshot/guide/" rel="nofollow">Micronaut AWS</a> updates AWS SDK v2 to <code>2.44.7</code>, AWS Lambda Java Serialization to <code>1.4.0</code>, and runtime interface client to <code>2.10.1</code>. It also adds config import support for AWS Parameter Store and AWS Secrets Manager.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Azure</h3>
+<p><a id="user-content-azure" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#azure" aria-label="Permalink: Azure"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-azure/snapshot/guide/" rel="nofollow">Micronaut Azure</a> updates to Azure SDK to <code>1.3.6</code>, Azure Cosmos to <code>4.80.0</code>, and Azure Functions Library to <code>3.3.0</code>. It also adds Azure Key Vault config import support.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">GCP</h3>
+<p><a id="user-content-gcp" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#gcp" aria-label="Permalink: GCP"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-gcp/snapshot/guide/" rel="nofollow">Micronaut GCP</a> updates <a href="https://github.com/cloudevents/sdk-java">CloudEvents SDK</a> to <code>4.0.2</code>, Google Secret Manager to <code>2.91.0</code>, Google Auth <code>1.46.0</code>, Pub/Sub <code>1.150.1</code>, and Functions Framework API <code>2.0.1</code>. It also adds Google Secret Manager config import support.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Oracle Cloud</h3>
+<p><a id="user-content-oracle-cloud" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#oracle-cloud" aria-label="Permalink: Oracle Cloud"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-oracle-cloud/snapshot/guide/" rel="nofollow">Micronaut Oracle Cloud</a> updates to OCI SDK <code>3.86.1</code>.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">AI</h2>
+<p><a id="user-content-ai" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#ai" aria-label="Permalink: AI"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">Micronaut MCP</h3>
+<p><a id="user-content-micronaut-mcp" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#micronaut-mcp" aria-label="Permalink: Micronaut MCP"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-mcp/snapshot/guide/" rel="nofollow">Micronaut MCP</a> updates to <a href="https://github.com/modelcontextprotocol/java-sdk">MCP Java SDK</a> <code>1.1.2</code> and is included in the platform as <code>1.0.0</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Micronaut Langchain4J</h3>
+<p><a id="user-content-micronaut-langchain4j" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#micronaut-langchain4j" aria-label="Permalink: Micronaut Langchain4J"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-langchain4j/snapshot/guide/" rel="nofollow">Micronaut Langchain4j</a> updates to <a href="https://github.com/langchain4j/langchain4j">Langchain4j</a> <code>1.15.0</code>.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Validation</h2>
+<p><a id="user-content-validation" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#validation" aria-label="Permalink: Validation"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-hibernate-validator/snapshot/guide/" rel="nofollow">Micronaut Hibernate Validator</a> updates <a href="https://hibernate.org/validator/" rel="nofollow">Hibernate Validator</a> to <code>9.1.0.Final</code> and registers custom <code>ValueExtractor</code>beans in <code>ValidatorFactoryProvider</code>.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Security</h2>
+<p><a id="user-content-security" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#security" aria-label="Permalink: Security"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-security/snapshot/guide/" rel="nofollow">Micronaut Security</a> updates <a href="https://connect2id.com/products/nimbus-jose-jwt" rel="nofollow">Nimbus JOSE JWT</a> to <code>10.9</code>.</p>
+<p>The JSR 250 annotation mappers have been moved to a new module <code>io.micronaut.security:micronaut-security-processor</code>. Users must replace the annotation processor or Groovy <code>compileOnly</code> dependency accordingly.</p>
+<p>New security context API/SPI was added: <a href="https://micronaut-projects.github.io/micronaut-security/snapshot/api/io/micronaut/security/context/SecurityContext.html" rel="nofollow">SecurityContext</a>, <a href="https://micronaut-projects.github.io/micronaut-security/snapshot/api/io/micronaut/security/context/SecurityContextHolder.html" rel="nofollow">SecurityContextHolder</a>, and <a href="https://micronaut-projects.github.io/micronaut-security/snapshot/api/io/micronaut/security/context/SecurityContextSupplier.html" rel="nofollow">SecurityContextSupplier</a>, with request-backed behavior wired through the SecurityFilter. The module also adds OAuth2/OIDC <code>prompt=create</code>support for user registration.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Reactive Libraries</h2>
+<p><a id="user-content-reactive-libraries" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#reactive-libraries" aria-label="Permalink: Reactive Libraries"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">Micronaut Reactor</h3>
+<p><a id="user-content-micronaut-reactor" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#micronaut-reactor" aria-label="Permalink: Micronaut Reactor"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-reactor/snapshot/guide/" rel="nofollow">Micronaut Reactor</a> updates Reactor to <code>2025.0.5</code> and <code>micrometer-context-propagation</code> to <code>1.2.1</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Micronaut RxJava</h3>
+<p><a id="user-content-micronaut-rxjava" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#micronaut-rxjava" aria-label="Permalink: Micronaut RxJava"></a></div>
+<p>Micronaut 5 no longer supports RxJava 2. Micronaut 5 users willing to use RxJava should use <a href="https://micronaut-projects.github.io/micronaut-rxjava3/snapshot/guide/" rel="nofollow">Micronaut RxJava 3</a>.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Analytics</h2>
+<p><a id="user-content-analytics" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#analytics" aria-label="Permalink: Analytics"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">OpenSearch</h3>
+<p><a id="user-content-opensearch" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#opensearch" aria-label="Permalink: OpenSearch"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-opensearch/snapshot/guide/" rel="nofollow">Micronaut OpenSearch</a> updates the <a href="https://github.com/opensearch-project/opensearch-java">OpenSearch Java client</a> to <code>3.8.0</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">ElasticSearch</h3>
+<p><a id="user-content-elasticsearch" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#elasticsearch" aria-label="Permalink: ElasticSearch"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-elasticsearch/snapshot/guide/" rel="nofollow">Micronaut ElasticSearch</a> updates the <a href="https://github.com/elastic/elasticsearch-java">ElasticSearch Java Client</a> to <code>9.4.0</code>.</p>
+<div class="markdown-heading">
+<h2 class="heading-element">Micrometer</h2>
+<p><a id="user-content-micrometer" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#micrometer" aria-label="Permalink: Micrometer"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-micrometer/snapshot/guide/" rel="nofollow">Micronaut Micrometer</a> updates:</p>
+<ul>
+<li><a href="https://github.com/micrometer-metrics/micrometer">Micrometer</a> to <code>1.16.5</code>.</li>
+<li><code>micrometer-tracing</code> to <code>1.6.5</code>.</li>
+<li><code>metrics-core</code> to <code>4.2.38</code>.</li>
+<li><code>prometheus-metrics-exporter-pushgateway</code> to <code>1.6.1</code>.</li>
+<li><code>datasource-micrometer</code> to <code>2.2.1</code>.</li>
+</ul>
+<p>Micronaut Micrometer also adds streaming Prometheus scrape responses.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">API</h2>
+<p><a id="user-content-api" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#api" aria-label="Permalink: API"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">JAX-RS</h3>
+<p><a id="user-content-jax-rs" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#jax-rs" aria-label="Permalink: JAX-RS"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-jaxrs/snapshot/guide/" rel="nofollow">Micronaut JAX-RS</a> updates to Jakarta REST API <code>4.0.0</code> and adds support for <code>@ConstrainedTo</code> and <code>ParamConverterProvider</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">GraphQL</h3>
+<p><a id="user-content-graphql" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#graphql" aria-label="Permalink: GraphQL"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-graphql/snapshot/guide/" rel="nofollow">Micronaut GraphQL</a> updates:</p>
+<ul>
+<li><a href="https://github.com/graphql-java/graphql-java">GraphQL Java</a> to <code>26.0</code>.</li>
+<li><a href="https://github.com/graphql-java/graphql-java-extended-scalars">GraphQL Java Extended Scalars</a> to <code>24.0</code>.</li>
+</ul>
+<p>Malformed GraphQL JSON now returns HTTP 400.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">gRPC</h3>
+<p><a id="user-content-grpc" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#grpc" aria-label="Permalink: gRPC"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-grpc/snapshot/guide/" rel="nofollow">Micronaut gRPC</a> adds the <code>io.micronaut.grpc:micronaut-grpc-inprocess</code> module to ease testing. It updates to:</p>
+<ul>
+<li>gRPC Java to <code>1.80.0</code>.</li>
+<li>Protobuf to <code>4.34.1</code>.</li>
+<li>gRPC Kotlin to <code>1.5.0</code>.</li>
+</ul>
+<p>It also adds configurable gRPC server executor support.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Spring</h3>
+<p><a id="user-content-spring" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#spring" aria-label="Permalink: Spring"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-spring/snapshot/guide/" rel="nofollow">Micronaut Spring</a> updates to</p>
+<ul>
+<li>Spring Boot <code>4.0.6</code>.</li>
+<li>Spring <code>7.0.7</code>.</li>
+</ul>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Messaging</h2>
+<p><a id="user-content-messaging" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#messaging" aria-label="Permalink: Messaging"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">Kafka</h3>
+<p><a id="user-content-kafka" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#kafka" aria-label="Permalink: Kafka"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-kafka/snapshot/guide/" rel="nofollow">Micronaut Kafka</a> updates to <a href="https://github.com/apache/kafka">Apache Kafka</a> <code>4.2.0</code>.</p>
+<p>The Kafka module receives a number of enhancements including per-class consumer strategies, a Kafka consumer bean scope, listener IDs, listener invocation scope, optional AdminClient, and support for graceful shutdown.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">RABBITMQ</h3>
+<p><a id="user-content-rabbitmq" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#rabbitmq" aria-label="Permalink: RABBITMQ"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-rabbitmq/snapshot/guide/" rel="nofollow">Micronaut RabbitMQ</a> updates the <a href="https://github.com/rabbitmq/rabbitmq-java-client">RabbitMQ Java client</a> to <code>5.30.0</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">NATS</h3>
+<p><a id="user-content-nats" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#nats" aria-label="Permalink: NATS"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-spring/nats/guide/" rel="nofollow">Micronaut NATS</a> updates the <a href="https://github.com/nats-io/nats.java">NATS &#8211; Java Client</a> to <code>2.25.3</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">JMS</h3>
+<p><a id="user-content-jms" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#jms" aria-label="Permalink: JMS"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-jms/nats/guide/" rel="nofollow">Micronaut JMS</a> updates to:</p>
+<ul>
+<li>ActiveMQ Classic to <code>6.2.5</code>.</li>
+<li>ActiveMQ Artemis Jakarta client to <code>2.53.0</code>.</li>
+<li>Apache Commons Pool to <code>2.13.1</code>.</li>
+</ul>
+<div class="markdown-heading">
+<h3 class="heading-element">MQTT</h3>
+<p><a id="user-content-mqtt" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#mqtt" aria-label="Permalink: MQTT"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-mqtt/nats/guide/" rel="nofollow">Micronaut MQTT</a> updates the HiveMQ MQTT Client to <code>1.3.14</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Pulsar</h3>
+<p><a id="user-content-pulsar" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#pulsar" aria-label="Permalink: Pulsar"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-pulsar/nats/guide/" rel="nofollow">Micronaut Pulsar</a> updates <a href="https://github.com/apache/pulsar">Apache Pulsar</a> Java Client to <code>4.2.1</code>.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Views</h2>
+<p><a id="user-content-views" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#views" aria-label="Permalink: Views"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-views/snapshot/guide/" rel="nofollow">Micronaut Views</a> updates:</p>
+<ul>
+<li>Soy to <code>2024-02-26</code></li>
+<li>Handlebars to <code>4.5.0</code>.</li>
+<li>JTE to <code>3.2.4</code>.</li>
+<li>Thymeleaf to <code>3.1.5.RELEASE</code>.</li>
+<li>Pebble to <code>4.1.1</code>.</li>
+</ul>
+<p><a href="https://micronaut-projects.github.io/micronaut-views/snapshot/guide/#turbo" rel="nofollow">Turbo</a> has moved to its own dependency <code>io.micronaut.views:micronaut-views-turbo</code>. Micronaut Views also adds HTMX integration.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Miscellaneous</h2>
+<p><a id="user-content-miscellaneous" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#miscellaneous" aria-label="Permalink: Miscellaneous"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">EMAIL</h3>
+<p><a id="user-content-email" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#email" aria-label="Permalink: EMAIL"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-email/snapshot/guide/" rel="nofollow">Micronaut Email</a> updates Mailjet to <code>6.0.1</code>, Mailtrap to <code>1.2.0</code>, and Postmark to <code>1.13.0</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">ACME</h3>
+<p><a id="user-content-acme" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#acme" aria-label="Permalink: ACME"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-acme/snapshot/guide/" rel="nofollow">Micronaut ACME</a> <a href="https://github.com/shred/acme4j">updates to ACMEJ</a> <code>5.1.0</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Session</h3>
+<p><a id="user-content-session" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#session" aria-label="Permalink: Session"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-session/snapshot/guide/" rel="nofollow">Micronaut Session</a> updates to <code>5.0.0</code>, with request/response filter method support and custom context-path fixes.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Cache</h3>
+<p><a id="user-content-cache" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#cache" aria-label="Permalink: Cache"></a></div>
+<p>It updates:</p>
+<ul>
+<li><a href="https://github.com/ben-manes/caffeine">Caffeine</a> to <code>3.2.4</code>.</li>
+<li><a href="https://www.ehcache.org/" rel="nofollow">Ehcache</a> to <code>3.12.0</code>.</li>
+<li><a href="https://hazelcast.com/developers/clients/java/" rel="nofollow">Hazelcast</a> to <code>5.6.0</code>.</li>
+<li><a href="https://infinispan.org/" rel="nofollow">Infinispan</a> to <code>16.1.4</code>.</li>
+</ul>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">HOW TO UPGRADE TO MICRONAUT FRAMEWORK 5?</h2>
+<p><a id="user-content-how-to-upgrade-to-micronaut-framework-5" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#how-to-upgrade-to-micronaut-framework-5" aria-label="Permalink: HOW TO UPGRADE TO MICRONAUT FRAMEWORK 5?"></a></div>
+<p>We have published an <a href="https://github.com/micronaut-projects/micronaut-core/wiki/Update-to-Micronaut-5">upgrade to Micronaut framework 5 guide</a> to help you upgrade your Micronaut applications.</p>
+<div class="markdown-heading">
+<h1 class="heading-element">NEXT STEPS</h1>
+<p><a id="user-content-next-steps" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#next-steps" aria-label="Permalink: NEXT STEPS"></a></div>
+<p>Please refer to the <a href="https://docs.micronaut.io/" rel="nofollow">documentation</a> for further details, try upgrading your applications, and use <a href="https://github.com/micronaut-projects">GitHub</a> to report any issues.</p>
+<p>Thanks to all those who contributed to this release! We look forward to your feedback.</p>
+
+        </article>
+        
+        
+<nav class="row pager">
+  
+  <div class="col-6 text-right">
+    
+    <span class="next">
+      <a href="/2026/06/01/micronaut-framework-5-0-1-released/" rel="next">Newer post</a> 
+    </span>
+    
+  </div>
+  
+  <div class="col-6 text-left">
+    
+    <span class="prev">
+      <a href="/2026/05/12/micronaut-framework-4-10-14-released/" rel="prev">Previous post</a>    </span>
+    
+  </div>
+  
+</nav>        
+      </div>
+      <div class="col-sm-4">
+        
+        <aside id="sidebar">
+  
+    
+<h4 class="h2">You might also like ...</h4>
+
+
+<article class="post" >
+  
+  <a href="/2025/04/01/micronaut-framework-4-8-0-released/">
+    
+    <time>April 1, 2025</time>
+  
+    <header>
+      <h3>Micronaut Framework 4.8.0 Released!</h3>
+    </header>
+    
+  </a>
+  
+</article>
+  
+  <div id="tag_cloud-2" class="widget widget_tag_cloud"><h4 class="boxed first-word-bold">Post by tag</h4><div class="tagcloud"><a href="/tag/aws/" class="tag-cloud-link tag-link-85 tag-sm tag-link-position-1" style="font-size: 14.370786516854pt;" aria-label="aws (12 items)">aws</a>
+<a href="/tag/azure/" class="tag-cloud-link tag-link-100 tag-sm tag-link-position-2" style="font-size: 11.14606741573pt;" aria-label="azure (4 items)">azure</a>
+<a href="/tag/casestudy/" class="tag-cloud-link tag-link-126 tag-sm tag-link-position-3" style="font-size: 9.4157303370787pt;" aria-label="casestudy (2 items)">casestudy</a>
+<a href="/tag/cli/" class="tag-cloud-link tag-link-106 tag-sm tag-link-position-4" style="font-size: 9.4157303370787pt;" aria-label="cli (2 items)">cli</a>
+<a href="/tag/community/" class="tag-cloud-link tag-link-241 tag-sm tag-link-position-5" style="font-size: 11.14606741573pt;" aria-label="community (4 items)">community</a>
+<a href="/tag/corretto/" class="tag-cloud-link tag-link-97 tag-sm tag-link-position-6" style="font-size: 9.4157303370787pt;" aria-label="corretto (2 items)">corretto</a>
+<a href="/tag/data/" class="tag-cloud-link tag-link-89 tag-sm tag-link-position-7" style="font-size: 11.14606741573pt;" aria-label="data (4 items)">data</a>
+<a href="/tag/docker/" class="tag-cloud-link tag-link-116 tag-sm tag-link-position-8" style="font-size: 9.4157303370787pt;" aria-label="docker (2 items)">docker</a>
+<a href="/tag/foundation/" class="tag-cloud-link tag-link-102 tag-sm tag-link-position-9" style="font-size: 12.719101123596pt;" aria-label="foundation (7 items)">foundation</a>
+<a href="/tag/gcp/" class="tag-cloud-link tag-link-87 tag-sm tag-link-position-10" style="font-size: 11.775280898876pt;" aria-label="gcp (5 items)">gcp</a>
+<a href="/tag/graalvm/" class="tag-cloud-link tag-link-83 tag-sm tag-link-position-11" style="font-size: 13.505617977528pt;" aria-label="graalvm (9 items)">graalvm</a>
+<a href="/tag/gradle/" class="tag-cloud-link tag-link-107 tag-sm tag-link-position-12" style="font-size: 12.719101123596pt;" aria-label="gradle (7 items)">gradle</a>
+<a href="/tag/groovy/" class="tag-cloud-link tag-link-136 tag-sm tag-link-position-13" style="font-size: 9.4157303370787pt;" aria-label="groovy (2 items)">groovy</a>
+<a href="/tag/guides/" class="tag-cloud-link tag-link-132 tag-sm tag-link-position-14" style="font-size: 9.4157303370787pt;" aria-label="guides (2 items)">guides</a>
+<a href="/tag/intellijidea/" class="tag-cloud-link tag-link-98 tag-sm tag-link-position-15" style="font-size: 10.359550561798pt;" aria-label="intellijidea (3 items)">intellijidea</a>
+<a href="/tag/iot/" class="tag-cloud-link tag-link-303 tag-sm tag-link-position-16" style="font-size: 9.4157303370787pt;" aria-label="IoT (2 items)">IoT</a>
+<a href="/tag/java/" class="tag-cloud-link tag-link-343 tag-sm tag-link-position-17" style="font-size: 9.4157303370787pt;" aria-label="Java (2 items)">Java</a>
+<a href="/tag/jetbrains/" class="tag-cloud-link tag-link-296 tag-sm tag-link-position-18" style="font-size: 9.4157303370787pt;" aria-label="JetBrains (2 items)">JetBrains</a>
+<a href="/tag/jhipster/" class="tag-cloud-link tag-link-134 tag-sm tag-link-position-19" style="font-size: 11.14606741573pt;" aria-label="JHipster (4 items)">JHipster</a>
+<a href="/tag/kotlin/" class="tag-cloud-link tag-link-115 tag-sm tag-link-position-20" style="font-size: 10.359550561798pt;" aria-label="kotlin (3 items)">kotlin</a>
+<a href="/tag/lambda/" class="tag-cloud-link tag-link-339 tag-sm tag-link-position-21" style="font-size: 11.14606741573pt;" aria-label="lambda (4 items)">lambda</a>
+<a href="/tag/launch/" class="tag-cloud-link tag-link-99 tag-sm tag-link-position-22" style="font-size: 11.775280898876pt;" aria-label="launch (5 items)">launch</a>
+<a href="/tag/loom/" class="tag-cloud-link tag-link-490 tag-sm tag-link-position-23" style="font-size: 8pt;" aria-label="loom (1 item)">loom</a>
+<a href="/tag/maven/" class="tag-cloud-link tag-link-94 tag-sm tag-link-position-24" style="font-size: 11.14606741573pt;" aria-label="maven (4 items)">maven</a>
+<a href="/tag/meetup/" class="tag-cloud-link tag-link-108 tag-sm tag-link-position-25" style="font-size: 10.359550561798pt;" aria-label="meetup (3 items)">meetup</a>
+<a href="/tag/microcast/" class="tag-cloud-link tag-link-109 tag-sm tag-link-position-26" style="font-size: 12.325842696629pt;" aria-label="microcast (6 items)">microcast</a>
+<a href="/tag/micronaut2/" class="tag-cloud-link tag-link-103 tag-md tag-link-position-27" style="font-size: 16.022471910112pt;" aria-label="micronaut2 (20 items)">micronaut2</a>
+<a href="/tag/micronaut4/" class="tag-cloud-link tag-link-344 tag-sm tag-link-position-28" style="font-size: 12.325842696629pt;" aria-label="micronaut4 (6 items)">micronaut4</a>
+<a href="/tag/micronaut5/" class="tag-cloud-link tag-link-494 tag-sm tag-link-position-29" style="font-size: 13.112359550562pt;" aria-label="micronaut5 (8 items)">micronaut5</a>
+<a href="/tag/micronaut-data/" class="tag-cloud-link tag-link-178 tag-sm tag-link-position-30" style="font-size: 9.4157303370787pt;" aria-label="Micronaut Data (2 items)">Micronaut Data</a>
+<a href="/tag/mqtt/" class="tag-cloud-link tag-link-123 tag-sm tag-link-position-31" style="font-size: 10.359550561798pt;" aria-label="mqtt (3 items)">mqtt</a>
+<a href="/tag/oracle/" class="tag-cloud-link tag-link-113 tag-sm tag-link-position-32" style="font-size: 10.359550561798pt;" aria-label="oracle (3 items)">oracle</a>
+<a href="/tag/oracle-cloud/" class="tag-cloud-link tag-link-180 tag-sm tag-link-position-33" style="font-size: 10.359550561798pt;" aria-label="Oracle Cloud (3 items)">Oracle Cloud</a>
+<a href="/tag/raspberry-pi/" class="tag-cloud-link tag-link-304 tag-sm tag-link-position-34" style="font-size: 9.4157303370787pt;" aria-label="Raspberry Pi (2 items)">Raspberry Pi</a>
+<a href="/tag/release/" class="tag-cloud-link tag-link-80 tag-xl tag-link-position-35" style="font-size: 22pt;" aria-label="release (119 items)">release</a>
+<a href="/tag/security/" class="tag-cloud-link tag-link-125 tag-sm tag-link-position-36" style="font-size: 11.775280898876pt;" aria-label="security (5 items)">security</a>
+<a href="/tag/serverless/" class="tag-cloud-link tag-link-101 tag-sm tag-link-position-37" style="font-size: 9.4157303370787pt;" aria-label="serverless (2 items)">serverless</a>
+<a href="/tag/servlet/" class="tag-cloud-link tag-link-91 tag-sm tag-link-position-38" style="font-size: 9.4157303370787pt;" aria-label="servlet (2 items)">servlet</a>
+<a href="/tag/sponsors/" class="tag-cloud-link tag-link-253 tag-sm tag-link-position-39" style="font-size: 13.112359550562pt;" aria-label="sponsors (8 items)">sponsors</a>
+<a href="/tag/springboot/" class="tag-cloud-link tag-link-84 tag-sm tag-link-position-40" style="font-size: 10.359550561798pt;" aria-label="springboot (3 items)">springboot</a>
+<a href="/tag/townhall/" class="tag-cloud-link tag-link-114 tag-sm tag-link-position-41" style="font-size: 13.112359550562pt;" aria-label="townhall (8 items)">townhall</a>
+<a href="/tag/training/" class="tag-cloud-link tag-link-135 tag-sm tag-link-position-42" style="font-size: 13.112359550562pt;" aria-label="training (8 items)">training</a>
+<a href="/tag/video/" class="tag-cloud-link tag-link-88 tag-lg tag-link-position-43" style="font-size: 18.85393258427pt;" aria-label="video (47 items)">video</a>
+<a href="/tag/virtual-threads/" class="tag-cloud-link tag-link-491 tag-sm tag-link-position-44" style="font-size: 8pt;" aria-label="virtual-threads (1 item)">virtual-threads</a>
+<a href="/tag/webinar/" class="tag-cloud-link tag-link-81 tag-md tag-link-position-45" style="font-size: 16.651685393258pt;" aria-label="webinar (24 items)">webinar</a></div>
+</div>  
+</aside>        
+      </div>
+    </div>
+    
+  </div>
+</main>
+
+    <footer id="footer">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-sm-5 footer-left">
+            
+            <div id="text-14" class="widget widget_text">			<div class="textwidget"></div>
+		</div><div id="block-3" class="widget widget_block widget_media_image">
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="316" src="/wp-content/uploads/2021/10/MIcronaut_Foundation_Horizontal_white-1024x316.png" alt="" class="wp-image-4398" srcset="/wp-content/uploads/2021/10/MIcronaut_Foundation_Horizontal_white-1024x316.png 1024w, /wp-content/uploads/2021/10/MIcronaut_Foundation_Horizontal_white-300x93.png 300w, /wp-content/uploads/2021/10/MIcronaut_Foundation_Horizontal_white-768x237.png 768w, /wp-content/uploads/2021/10/MIcronaut_Foundation_Horizontal_white-150x46.png 150w, /wp-content/uploads/2021/10/MIcronaut_Foundation_Horizontal_white.png 1203w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></figure>
+</div>            
+          </div>
+          <div class="col-sm-7 footer-right">
+            
+            <ul class="meta">
+
+              <li id="menu-item-2895" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2895"><a href="/brand-guidelines/">Brand Guidelines</a></li>
+<li id="menu-item-2894" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2894"><a href="/community-guidelines/">Community Code of Conduct</a></li>
+<li id="menu-item-3377" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-3377"><a rel="privacy-policy" href="/privacy-policy/">Privacy Policy</a></li>
+
+            </ul>
+            
+            <div id="nav_menu-2" class="widget widget_nav_menu"><div class="menu-links-container"><ul id="menu-links" class="menu"><li id="menu-item-4515" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4515"><a href="mailto:info@micronaut.io"><i class="fas fa-envelope"><span class="sr-only">Mail</span></i></a></li>
+<li id="menu-item-2886" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2886"><a target="_blank" href="https://twitter.com/micronautfw"><i class="fab fa-x-twitter"><span class="sr-only">Twitter</span></i></a></li>
+<li id="menu-item-6740" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6740"><a href="https://fosstodon.org/@micronaut"><i class="fab fa-mastodon"><span class="sr-only">Mastodon</span></i></a></li>
+<li id="menu-item-2888" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2888"><a target="_blank" href="https://discord.com/invite/9xRFsHv98T"><i class="fab fa-discord"><span class="sr-only">Discord</span></i></a></li>
+<li id="menu-item-2889" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2889"><a target="_blank" href="https://github.com/micronaut-projects/"><i class="fab fa-github"><span class="sr-only">GitHub</span></i></a></li>
+<li id="menu-item-2890" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2890"><a target="_blank" href="https://www.youtube.com/@MicronautFramework"><i class="fab fa-youtube"><span class="sr-only">YouTube</span></i></a></li>
+<li id="menu-item-4514" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4514"><a href="https://www.linkedin.com/showcase/micronaut"><i class="fab fa-linkedin"><span class="sr-only">LinkedIn</span></i></a></li>
+<li id="menu-item-4513" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4513"><a href="https://www.twitch.tv/micronautfw"><i class="fab fa-twitch"><span class="sr-only">Twitch</span></i></a></li>
+</ul></div></div><div id="text-5" class="widget widget_text">			<div class="textwidget"><p><small>© 2024 Micronaut Foundation. All rights reserved.</small></p>
+</div>
+		</div>  
+            
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+
+    <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/micronaut/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="micronaut-script-js" src="/wp-content/themes/micronaut/js/script.min.js"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=7.0.4"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+</script>
+<div hidden data-wpu-integrity="c1dd3f241f7f9e2439bda4c57ee76f1c"></div>
+
+  </body>
+</html><!--
+Performance optimized by Redis Object Cache. Learn more: https://wprediscache.com
+
+Retrieved 2668 objects (2 MB) from Redis using PhpRedis (v5.3.7).
+-->

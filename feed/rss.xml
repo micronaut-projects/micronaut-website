@@ -12,13 +12,13 @@
 	<atom:link href="https://micronaut.io/feed/" rel="self" type="application/rss+xml" />
 	<link>https://micronaut.io/</link>
 	<description>A modern, JVM-based, full-stack framework for building modular, easily testable microservice and serverless applications</description>
-	<lastBuildDate>Wed, 29 Oct 2025 15:34:27 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 17 Aug 2026 10:26:15 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.8.3</generator>
+	
 
 <image>
 	<url>https://micronaut.io/wp-content/uploads/2025/09/favicon-120x120.png</url>
@@ -28,531 +28,742 @@
 	<height>32</height>
 </image> 
 	<item>
-		<title>Micronaut Framework 4.10.1</title>
-		<link>https://micronaut.io/2025/10/29/micronaut-framework-4-10-1/</link>
+		<title>Micronaut Framework 5.1.1 Released!</title>
+		<link>https://micronaut.io/2026/08/17/micronaut-framework-5-1-1-released/</link>
 		
 		<dc:creator><![CDATA[Sergio Del Amo Caballero]]></dc:creator>
-		<pubDate>Wed, 29 Oct 2025 15:34:27 +0000</pubDate>
+		<pubDate>Mon, 17 Aug 2026 10:26:15 +0000</pubDate>
 				<category><![CDATA[Release Announcements]]></category>
+		<category><![CDATA[Security Announcements]]></category>
 		<category><![CDATA[release]]></category>
-		<guid isPermaLink="false">https://micronaut.io/?p=7371</guid>
+		<guid isPermaLink="false">https://micronaut.io/?p=7544</guid>
 
-					<description><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 4.10.1! It contains releases of Micronaut Core 4.10.8, Micronaut MCP 0.0.14, Micronaut OpenAPI 6.19.2, Micronaut Flyway 7.9.1, Micronaut Test 4.10.2 and Micronaut GCP 5.13.1 NEXT STEPS If you haven’t yet updated to Micronaut framework 4, this is an excellent opportunity to do so! Please [&#8230;]</p>
-<p>The post <a href="https://micronaut.io/2025/10/29/micronaut-framework-4-10-1/">Micronaut Framework 4.10.1</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
+					<description><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 5.1.1! It includes a release of Micronaut Core, and Micronaut OpenAPI. If you haven’t yet updated to Micronaut Framework 5, this is an excellent opportunity to do so! Please feel free to reach out to us if you need any assistance.</p>
+<p>The post <a href="https://micronaut.io/2026/08/17/micronaut-framework-5-1-1-released/">Micronaut Framework 5.1.1 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
 ]]></description>
-										<content:encoded><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 4.10.1!</p>
-<p>It contains releases of <a href="https://github.com/micronaut-projects/micronaut-core/releases/tag/v4.10.8">Micronaut Core 4.10.8</a>, <a href="https://github.com/micronaut-projects/micronaut-mcp/releases/tag/v0.0.14">Micronaut MCP 0.0.14</a>, <a href="https://github.com/micronaut-projects/micronaut-openapi/releases/tag/v6.19.2">Micronaut OpenAPI 6.19.2</a>, <a href="https://github.com/micronaut-projects/micronaut-flyway/releases/tag/v7.9.1">Micronaut Flyway 7.9.1</a>, <a href="https://github.com/micronaut-projects/micronaut-test/releases/tag/v4.10.2">Micronaut Test 4.10.2</a> and <a href="https://github.com/micronaut-projects/micronaut-gcp/releases/tag/v5.13.1">Micronaut GCP 5.13.1</a></p>
-<h2>NEXT STEPS</h2>
-<p>If you haven’t yet updated to <a href="https://micronaut.io/2023/07/14/micronaut-framework-4-0-0-released/">Micronaut framework 4</a>, this is an excellent opportunity to do so!</p>
+										<content:encoded><![CDATA[<p><span data-preserver-spaces="true">The Micronaut Foundation is excited to announce the release of Micronaut framework 5.1.1! It includes a release of <a href="https://github.com/micronaut-projects/micronaut-core/releases/tag/v5.1.11">Micronaut Core</a>, and <a href="https://github.com/micronaut-projects/micronaut-openapi/releases/tag/v7.1.2">Micronaut OpenAPI.</a></span></p>
+<p><span draggable="true">If you haven’t yet updated to <a href="https://micronaut.io/2026/05/20/micronaut-framework-5-0-0-released/">Micronaut Framework 5</a>, this is an excellent opportunity to do so!</span></p>
 <p>Please feel free to <a href="https://micronaut.io/support/">reach out to us</a> if you need any assistance.</p>
-<p>The post <a href="https://micronaut.io/2025/10/29/micronaut-framework-4-10-1/">Micronaut Framework 4.10.1</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
+<p>The post <a href="https://micronaut.io/2026/08/17/micronaut-framework-5-1-1-released/">Micronaut Framework 5.1.1 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
 ]]></content:encoded>
 					
 		
 		
 			</item>
 		<item>
-		<title>Micronaut Framework 4.10.0 Released!</title>
-		<link>https://micronaut.io/2025/10/22/micronaut-framework-4-10-0-released/</link>
+		<title>Micronaut Framework 5.1.0 Released!</title>
+		<link>https://micronaut.io/2026/07/27/micronaut-framework-5-1-0-release/</link>
 		
 		<dc:creator><![CDATA[Sergio Del Amo Caballero]]></dc:creator>
-		<pubDate>Wed, 22 Oct 2025 11:24:14 +0000</pubDate>
+		<pubDate>Mon, 27 Jul 2026 20:22:18 +0000</pubDate>
 				<category><![CDATA[Release Announcements]]></category>
+		<category><![CDATA[Security Announcements]]></category>
 		<category><![CDATA[release]]></category>
-		<guid isPermaLink="false">https://micronaut.io/?p=7340</guid>
+		<guid isPermaLink="false">https://micronaut.io/?p=7540</guid>
 
-					<description><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 4.10.0! AI Micronaut MCP, a new module, enables you to develop Model MCP (Model Context Protocol) servers easily. Micronaut Langchain4j updates to LangChain4J 1.5.0 with support for the ChatMemory API. Micronaut Core Micronaut Core 4.10.7 enables: Modification of class annotations with a Mixin [&#8230;]</p>
-<p>The post <a href="https://micronaut.io/2025/10/22/micronaut-framework-4-10-0-released/">Micronaut Framework 4.10.0 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
+					<description><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 5.1.0! If you haven’t yet updated to Micronaut Framework 5, this is an excellent opportunity to do so! What&#8217;s new in Micronaut 5.1.0 Micronaut Core (5.0.7 → 5.1.10) Adds explicit @Introspected.Property, sequenced-collection injection, CDI integration hooks, KSP traversal of Kotlin inner classes, configuration-based [&#8230;]</p>
+<p>The post <a href="https://micronaut.io/2026/07/27/micronaut-framework-5-1-0-release/">Micronaut Framework 5.1.0 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
 ]]></description>
-										<content:encoded><![CDATA[<p>The Micronaut Foundation is excited to announce the release of <a href="https://github.com/micronaut-projects/micronaut-platform/releases/tag/v4.10.0">Micronaut framework 4.10.0</a>!</p>
+										<content:encoded><![CDATA[<p><span data-preserver-spaces="true">The Micronaut Foundation is excited to announce the release of Micronaut framework 5.1.0! </span><span draggable="true">If you haven’t yet updated to <a href="https://micronaut.io/2026/05/20/micronaut-framework-5-0-0-released/">Micronaut Framework 5</a>, this is an excellent opportunity to do so!</span></p>
+<h1>What&#8217;s new in Micronaut 5.1.0</h1>
+<h2>Micronaut Core (<a href="https://github.com/micronaut-projects/micronaut-core/releases/v5.0.7">5.0.7</a> → <a href="https://github.com/micronaut-projects/micronaut-core/releases/v5.1.10">5.1.10</a>)</h2>
+<p>Adds explicit <code>@Introspected.Property</code>, sequenced-collection injection, CDI integration hooks, KSP traversal of Kotlin inner classes, configuration-based logger levels, and per-service client SSL enabled by default. It also fixes request-bean binding, Jackson/introspection properties, AOP proxies, factory beans, and suspend-function type aliases.</p>
+<h2>Open DI</h2>
+<p class="p1">Micronaut 5.1 makes the release of <a href="https://github.com/eclipse-ee4j/odi">Open DI 1.0.0</a> possible.</p>
+<div class="paragraph">
+<blockquote><p>ODI is a CDI Lite implementation backed by Micronaut’s compile-time dependency injection infrastructure.</p></blockquote>
+</div>
+<div class="paragraph">
+<blockquote><p>ODI runtime uses CDI APIs while the build uses an annotation processor to generate Micronaut bean definitions and proxy classes. Applications keep the ODI processor on the annotation processor path and run with the ODI CDI runtime plus the Jakarta CDI API.</p></blockquote>
+</div>
+<h2>Data Access</h2>
+<h3>Micronaut Data (<a href="https://github.com/micronaut-projects/micronaut-data/releases/v5.0.6">5.0.6</a> → <a href="https://github.com/micronaut-projects/micronaut-data/releases/v5.1.1">5.1.1</a>)</h3>
+<p>Adds <a href="https://micronaut-projects.github.io/micronaut-data/5.1.1/guide/#_setting_the_dialect" rel="nofollow">SQLite dialect support</a>, <a href="https://micronaut-projects.github.io/micronaut-data/5.1.1/guide/#optimisticLocking" rel="nofollow">value-based ETags for optimistic locking</a>, Jakarta JPA metamodel generation, and fixes escaped column names in runtime SQL sorting.</p>
+<h3>Micronaut SQL / JDBC (<a href="https://github.com/micronaut-projects/micronaut-sql/releases/v7.0.2">7.0.2</a> → <a href="https://github.com/micronaut-projects/micronaut-sql/releases/v7.1.0">7.1.0</a>)</h3>
+<p>Adds a <a href="https://micronaut-projects.github.io/micronaut-sql/7.1.0/guide/#mybatis" rel="nofollow">MyBatis integration</a>.</p>
+<h3>Micronaut Coherence (<a href="https://github.com/micronaut-projects/micronaut-coherence/releases/v6.0.0">6.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-coherence/releases/v7.0.1">7.0.1</a>)</h3>
+<p>Updates Oracle Coherence to <code>26.04</code>.</p>
+<h3>Micronaut EclipseStore (<a href="https://github.com/micronaut-projects/micronaut-eclipsestore/releases/v2.0.0">2.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-eclipsestore/releases/v2.1.0">2.1.0</a>)</h3>
+<p>Updates <a href="https://github.com/eclipse-store/store/releases">Eclipse Store</a> to <code>4.1.0</code>.</p>
+<h3>Micronaut MongoDB (<a href="https://github.com/micronaut-projects/micronaut-mongodb/releases/v6.0.1">6.0.1</a> → <a href="https://github.com/micronaut-projects/micronaut-mongodb/releases/v6.1.0">6.1.0</a>)</h3>
+<p>Updates the <a href="https://github.com/mongodb/mongo-java-driver">MongoDB Java Driver</a> to <code>5.9.1</code>.</p>
+<h3>Micronaut Neo4j (<a href="https://github.com/micronaut-projects/micronaut-neo4j/releases/v8.0.0">8.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-neo4j/releases/v8.1.0">8.1.0</a>)</h3>
+<p>Updates the <a href="https://github.com/neo4j/neo4j-java-driver">Neo4j Java Driver</a> to <code>6.2.0</code>.</p>
+<h3>Micronaut R2DBC (<a href="https://github.com/micronaut-projects/micronaut-r2dbc/releases/v7.0.2">7.0.2</a> → <a href="https://github.com/micronaut-projects/micronaut-r2dbc/releases/v7.1.0">7.1.0</a>)</h3>
+<p>Updates R2DBC MySQL to <code>1.0.5.RELEASE</code>, MariaDB to <code>1.4.1</code>, and PostgreSQL to <code>1.1.2</code>.</p>
+<h3>Micronaut Redis (<a href="https://github.com/micronaut-projects/micronaut-redis/releases/v7.0.0">7.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-redis/releases/v7.1.0">7.1.0</a>)</h3>
+<p>Updates <a href="https://github.com/redis/lettuce">Lettuce</a> to <code>7.6.0.RELEASE</code>.</p>
 <h2>AI</h2>
-<ul>
-<li><a href="https://micronaut-projects.github.io/micronaut-mcp/snapshot/guide/" rel="nofollow">Micronaut MCP</a>, a new module, enables you to develop Model MCP (Model Context Protocol) servers easily.</li>
-<li><a href="https://micronaut-projects.github.io/micronaut-langchain4j/latest/guide">Micronaut Langchain4j</a> updates to <a href="https://github.com/langchain4j/langchain4j/releases/tag/1.5.0">LangChain4J 1.5.0</a> with support for the <a href="https://micronaut-projects.github.io/micronaut-langchain4j/snapshot/guide/#chatMemory" rel="nofollow">ChatMemory API</a>.</li>
-</ul>
-<h3>Micronaut Core</h3>
-<p><a href="https://github.com/micronaut-projects/micronaut-core/releases/tag/v4.10.7">Micronaut Core 4.10.7</a> enables:</p>
-<ul>
-<li><a href="https://docs.micronaut.io/latest/guide/#mixin" rel="nofollow">Modification of class annotations with a Mixin</a></li>
-<li><a href="https://docs.micronaut.io/latest/guide/#atIntrospected" rel="nofollow">It’s possible to introspect all the classes in one package</a>. Create a <code>package-info.java</code> file and annotate the package with <code>@Introspected</code>.</li>
-<li><a href="https://docs.micronaut.io/latest/guide/index.html#resources" rel="nofollow">Loading resources directly from configuration strings</a></li>
-<li>New <a href="https://docs.micronaut.io/latest/guide/index.html#certificates" rel="nofollow">certificate provider configuration</a> for more flexibility and better reloading</li>
-<li>New <code>ReadBuffer</code> API to replace <code>ByteBuffer&lt;?&gt;</code></li>
-<li>Netty: Event loop threads are now named default-eventLoopGroup instead of default-nioEventLoopGroup</li>
-<li>Netty: Improved configuration for native transports</li>
-<li>Micronaut HTTP Server Netty: Add an option to disable request decompression (micronaut.server.netty.request-decompression-enabled)</li>
-<li>Micronaut HTTP Server Netty: For the Micronaut loom carrier, the APIs on the <a href="https://github.com/openjdk/loom/">OpenJDK loom branch</a> are now supported</li>
-</ul>
-<h3>Runtimes</h3>
-<ul>
-<li>Update to Netty <code>4.2.7.Final</code></li>
-<li><a href="https://micronaut-projects.github.io/micronaut-servlet/latest/guide">Micronaut Servlet</a> updates to <code>Jetty 12.1.1</code>, <code>Tomcat 11.0.11</code>, and Undertow <code> 2.3.19.Final</code>.</li>
-</ul>
-<h3>Security</h3>
-<p><a href="https://micronaut-projects.github.io/micronaut-security/latest/guide">Micronaut Security</a> adds the ability to <a href="https://micronaut-projects.github.io/micronaut-security/snapshot/guide/#proxyToAuthServer" rel="nofollow">proxy <code>.well-known</code> requests to an Auth Server</a>, and it supports the <a href="https://micronaut-projects.github.io/micronaut-security/snapshot/guide/#wwwAuthenticate" rel="nofollow">HTTP WWW-Authenticate response header</a>. It enables <a href="https://micronaut-projects.github.io/micronaut-security/snapshot/guide/#user-info" rel="nofollow">token validation using the remote authorization server’s <code>UserInfo</code> endpoint</a>.</p>
-<h3>Validation</h3>
-<p><a href="https://micronaut-projects.github.io/micronaut-validation/latest/guide">Micronaut Validation</a> adds new annotations such as <a href="https://micronaut-projects.github.io/micronaut-validation/latest/api/io/micronaut/validation/annotation/package-summary.html" rel="nofollow"><code>@InEnum</code>, <code>@InList</code>, &#8230;</a></p>
-<h3>Database Migration</h3>
-<ul>
-<li><a href="https://micronaut-projects.github.io/micronaut-liquibase/latest/guide">Micronaut Liquibase</a> updates to <a href="https://github.com/liquibase/liquibase/releases/tag/v4.33.0">Liquibase 4.33.0</a>.</li>
-</ul>
-<h3>Data and Persistence</h3>
-<ul>
-<li><a href="https://micronaut-projects.github.io/micronaut-redis/latest/guide">Micronaut Redis</a> updates to <a href="https://github.com/redis/lettuce/releases/tag/6.8.1.RELEASE">Lettuce 6.8.1.RELEASE</a>.</li>
-<li><a href="https://micronaut-projects.github.io/micronaut-r2dbc/latest/guide">Micronaut R2DBC</a> updates to <code>r2dbc-io-asyncer-mysql</code> to <code>1.4.1</code>, and <code>r2dbc-postgresql</code> to <code>1.1.0.RELEASE</code>.</li>
-<li><a href="https://micronaut-projects.github.io/micronaut-sql/latest/guide">Micronaut SQL</a> updates <code>ojdbc</code> to <code>23.9.0.25.07</code>, MariaDB to <code>3.5.6</code>, and MySQL Connector to <code>9.4.0</code>, Hikari to <code>6.3.3</code>, and Tomcat JDBC to <code>11.0.12</code>.</li>
-</ul>
-<ul>
-<li><a href="https://micronaut-projects.github.io/micronaut-neo4j/latest/guide">Micronaut Neo4j</a> updates to <a href="https://github.com/neo4j/neo4j-java-driver/releases/tag/5.28.10">Neo4J <code>5.28.10</code></a>.</li>
-</ul>
-<h3>JSON Schema</h3>
-<ul>
-<li><a href="https://micronaut-projects.github.io/micronaut-json-schema/latest/guide">Micronaut JSON Schema</a> adds the <a href="https://micronaut-projects.github.io/micronaut-json-schema/snapshot/api/io/micronaut/jsonschema/utils/JsonSchemaClassPathResourceLoader.html" rel="nofollow"><code>JsonSchemaClassPathResourceLoader </code></a> API.</li>
-</ul>
-<h3>Dev &amp; Test</h3>
-<ul>
-<li><a href="https://micronaut-projects.github.io/micronaut-test/latest/guide">Micronaut Test</a> updates to JUnit <code>5.14.0</code>, and Mockito <code>5.20.0</code>. Micronaut test adds a new dependency to <a href="https://micronaut-projects.github.io/micronaut-test/snapshot/guide/#nettyLeak" rel="nofollow">detect Netty Leaks</a>.</li>
-<li><a href="https://micronaut-projects.github.io/micronaut-test-resources/latest/guide">Micronaut Test Resources</a> adds a Test Resources Provider for Oracle Test Pilot.</li>
-<li><a href="https://micronaut-projects.github.io/micronaut-control-panel/latest/guide">Micronaut Control Panel</a> adds an <a href="https://micronaut-projects.github.io/micronaut-control-panel/snapshot/guide/#objectStorage" rel="nofollow">Object Storage Panel</a>.</li>
-</ul>
-<h3>Reactive Libraries</h3>
-<ul>
-<li><a href="https://micronaut-projects.github.io/micronaut-reactor/latest/guide">Micronaut Reactor</a> updates to Project Reactor bill of materials (BOM) <code>2024.0.11</code>.</li>
-<li><a href="https://micronaut-projects.github.io/micronaut-rxjava3/latest/guide">Micronaut RxJava3</a> updates to <a href="https://github.com/ReactiveX/RxJava/releases/tag/v3.1.12">RxJava3 <code>3.1.12 </code></a></li>
-</ul>
-<h3>Cloud</h3>
-<ul>
-<li><a href="https://micronaut-projects.github.io/micronaut-oracle-cloud/latest/guide">Micronaut Oracle Cloud</a> updates to OCI SDK <code>3.74.2</code>, and it supports client certificate refresh from the certificate service.</li>
-<li><a href="https://micronaut-projects.github.io/micronaut-azure/latest/guide">Micronaut Azure</a> updates to Azure Cosmos 4.74.0, and Azure SDK 1.3.0.</li>
-<li><a href="https://micronaut-projects.github.io/micronaut-gcp/latest/guide">Micronaut GCP</a> updates to Google Auth Library OAuth2 HTTP <code>1.39.1</code>, Google Cloud Core <code>2.60.0</code>, Google Cloud PubSub <code>1.142.0</code>, and Google Secret Manager <code>2.76.0</code>.</li>
-<li><a href="https://micronaut-projects.github.io/micronaut-object-storage/latest/guide">Micronaut Object Storage</a> adds support for <a href="https://micronaut-projects.github.io/micronaut-object-storage/snapshot/guide/#_pre_authorized_requests" rel="nofollow">pre-signed requests</a>.</li>
-</ul>
-<h3>Configuration</h3>
-<ul>
-<li><a href="https://micronaut-projects.github.io/micronaut-logging/latest/guide">Micronaut Logging</a> updates SLF4J <code>2.0.17</code>, <a href="https://logback.qos.ch/news.html#1.5.18" rel="nofollow">Logback</a> <code>1.5.19</code> to Log4j2 <code>2.25.2</code></li>
-</ul>
-<h3>Messaging</h3>
-<ul>
-<li><a href="https://micronaut-projects.github.io/micronaut-nats/latest/guide">Micronaut NATS</a> updates to <a href="https://github.com/nats-io/nats.java/releases/tag/2.23.0">NATS <code>2.23.0</code></a></li>
-</ul>
-<h3>Analytics</h3>
-<ul>
-<li><a href="https://micronaut-projects.github.io/micronaut-tracing/latest/guide">Micronaut Tracing</a> updates to OpenTelemetry <code>1.54.1</code>.</li>
-<li><a href="https://micronaut-projects.github.io/micronaut-micrometer/latest/guide">Micronaut Micrometer</a> updates to <a href="https://github.com/micrometer-metrics/micrometer/releases/tag/v1.15.4">Micrometer 1.15.4</a>.</li>
-</ul>
-<h3>API</h3>
-<ul>
-<li><a href="https://micronaut-projects.github.io/micronaut-spring/latest/guide">Micronaut Spring</a> updates to <a href="https://spring.io/blog/2025/09/18/spring-boot-3-5-6-available-now/" rel="nofollow">Spring Boot <code>3.5.6</code></a> and <a href="https://spring.io/blog/2025/09/11/spring-framework-6-2-11-available%20now" rel="nofollow">Spring <code>6.2.11</code></a>.</li>
-</ul>
-<h3>Update</h3>
-<ul>
-<li><a href="https://micronaut-projects.github.io/micronaut-openrewrite/latest/guide">Micronaut OpenRewrite</a>, a new module, with <a href="https://docs.openrewrite.org/" rel="nofollow">OpenRewrite</a> recipes specific to Micronaut applications.</li>
-</ul>
-<h3>Misc</h3>
-<ul>
-<li><a href="https://micronaut-projects.github.io/micronaut-email/latest/guide">Micronaut Email</a> updates to Jakarta Mail API <code>2.1.5</code> and <code>angus-mail</code> <code>2.0.5</code></li>
-</ul>
-<h2>Gradle Plugins</h2>
-<p>Update the <a href="https://plugins.gradle.org/u/micronaut">Micronaut Gradle Plugins</a> version to use the <a href="https://github.com/micronaut-projects/micronaut-gradle-plugin/releases">latest version</a> (<code>4.6.0</code>)</p>
-<h2>Maven Plugins</h2>
-<h3>Core Maven</h3>
-<ul>
-<li><a href="https://github.com/apache/maven/releases/tag/maven-3.9.11">Maven 3.9.11</a></li>
-</ul>
-<h3>Micronaut Maven Plugin</h3>
-<ul>
-<li><a href="https://github.com/micronaut-projects/micronaut-maven-plugin/releases/tag/v4.10.2">Micronaut Maven Plugin 4.10.2</a></li>
-</ul>
-<h3>Build Plugins</h3>
-<ul>
-<li><a href="https://github.com/mojohaus/exec-maven-plugin/releases/tag/3.6.2">Exec Maven Plugin 3.6.2</a></li>
-<li><a href="https://github.com/apache/maven-compiler-plugin/releases/tag/maven-compiler-plugin-3.14.1">Maven Compiler Plugin 3.14.1</a></li>
-<li><a href="https://github.com/apache/maven-shade-plugin/releases/tag/maven-shade-plugin-3.6.1">Maven Shade Plugin 3.6.1</a></li>
-<li><a href="https://github.com/apache/maven-surefire/releases/tag/surefire-3.5.4">Maven Failsafe Plugin 3.5.4</a></li>
-<li><a href="https://github.com/apache/maven-surefire/releases/tag/surefire-3.5.4">Maven Surefire Plugin 3.5.4</a></li>
-<li><a href="https://github.com/groovy/GMavenPlus/releases/tag/4.2.1">GMavenPlus Plugin 4.2.1</a></li>
-<li><a href="https://github.com/oracle/graalpython/releases/tag/graal-25.0.0">GraalPy Maven Plugin 25.0.0</a></li>
-<li><a href="https://github.com/openrewrite/rewrite-maven-plugin/releases/tag/v6.19.0">OpenRewrite Maven Plugin 6.19.0</a></li>
-</ul>
-<h3>Build and Development Tools</h3>
-<ul>
-<li><a href="https://github.com/projectlombok/lombok/releases/tag/v1.18.42">Lombok 1.18.42</a></li>
-<li><a href="https://github.com/java-native-access/jna/releases/tag/5.18.1">JNA 5.18.1</a></li>
-<li><a href="https://github.com/spotbugs/spotbugs/releases/tag/4.9.6">SpotBugs 4.9.6</a></li>
-</ul>
-<h3>GraalVM</h3>
-<ul>
-<li><a href="https://github.com/oracle/graal/releases/tag/graal-24.2.2">GraalVM SDK 24.2.2</a></li>
-<li><a href="https://github.com/graalvm/native-build-tools/releases/tag/0.11.2">Native Build Tools 0.11.2</a></li>
-</ul>
-<h2>NEXT STEPS</h2>
-<p>If you haven’t yet updated to <a href="https://micronaut.io/2023/07/14/micronaut-framework-4-0-0-released/" rel="nofollow">Micronaut framework 4</a>, this is an excellent opportunity to do so!</p>
-<p>Please feel free to <a href="https://micronaut.io/support/" rel="nofollow">reach out to us</a> if you need any assistance.</p>
-<p>The post <a href="https://micronaut.io/2025/10/22/micronaut-framework-4-10-0-released/">Micronaut Framework 4.10.0 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Micronaut Framework 4.9.4</title>
-		<link>https://micronaut.io/2025/10/03/micronaut-framework-4-9-4/</link>
-		
-		<dc:creator><![CDATA[Sergio Del Amo Caballero]]></dc:creator>
-		<pubDate>Fri, 03 Oct 2025 14:42:57 +0000</pubDate>
-				<category><![CDATA[Release Announcements]]></category>
-		<category><![CDATA[release]]></category>
-		<guid isPermaLink="false">https://micronaut.io/?p=7336</guid>
-
-					<description><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 4.9.4! It contains releases of Micronaut Core 4.9.12, Micronaut SQL 6.2.2, Micronaut Data 4.13.5 Micronaut Spring 5.11.2, and Micronaut Control Panel 1.8.1 NEXT STEPS If you haven’t yet updated to Micronaut framework 4, this is an excellent opportunity to do so! Please feel [&#8230;]</p>
-<p>The post <a href="https://micronaut.io/2025/10/03/micronaut-framework-4-9-4/">Micronaut Framework 4.9.4</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
-]]></description>
-										<content:encoded><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 4.9.4!</p>
-<p>It contains releases of <a href="https://github.com/micronaut-projects/micronaut-core/releases/tag/v4.9.12">Micronaut Core 4.9.12, </a><a href="https://github.com/micronaut-projects/micronaut-sql/releases/tag/v6.2.2">Micronaut SQL 6.2.2, </a><a href="https://github.com/micronaut-projects/micronaut-data/releases/tag/v4.13.5">Micronaut Data 4.13.5</a><br />
-<a href="https://github.com/micronaut-projects/micronaut-spring/releases/tag/v5.11.2">Micronaut Spring 5.11.2,</a> and <a href="https://github.com/micronaut-projects/micronaut-control-panel/releases/tag/v1.8.1">Micronaut Control Panel 1.8.1</a></p>
-<h2>NEXT STEPS</h2>
-<p>If you haven’t yet updated to <a href="https://micronaut.io/2023/07/14/micronaut-framework-4-0-0-released/">Micronaut framework 4</a>, this is an excellent opportunity to do so!</p>
-<p>Please feel free to <a href="https://micronaut.io/support/">reach out to us</a> if you need any assistance.</p>
-<p>The post <a href="https://micronaut.io/2025/10/03/micronaut-framework-4-9-4/">Micronaut Framework 4.9.4</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Micronaut Framework 4.9.3 Released!</title>
-		<link>https://micronaut.io/2025/09/01/micronaut-framework-4-9-3-released/</link>
-		
-		<dc:creator><![CDATA[Sergio Del Amo Caballero]]></dc:creator>
-		<pubDate>Mon, 01 Sep 2025 09:14:32 +0000</pubDate>
-				<category><![CDATA[Release Announcements]]></category>
-		<category><![CDATA[release]]></category>
-		<guid isPermaLink="false">https://micronaut.io/?p=7326</guid>
-
-					<description><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 4.9.3! It contains releases of Micronaut Core, Micronaut Data, , and Micronaut Spring 5.11.1. NEXT STEPS If you haven’t yet updated to Micronaut framework 4, this is an excellent opportunity to do so! Please feel free to reach out to us if you [&#8230;]</p>
-<p>The post <a href="https://micronaut.io/2025/09/01/micronaut-framework-4-9-3-released/">Micronaut Framework 4.9.3 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
-]]></description>
-										<content:encoded><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 4.9.3!</p>
-<p>It contains releases of <a href="https://github.com/micronaut-projects/micronaut-core/releases/tag/v4.9.10">Micronaut Core</a>, <a href="https://github.com/micronaut-projects/micronaut-data/releases/tag/v4.13.4">Micronaut Data</a>, , and <a href="https://github.com/micronaut-projects/micronaut-spring/releases/tag/v5.11.1">Micronaut Spring 5.11.1</a>.</p>
-<h2>NEXT STEPS</h2>
-<p>If you haven’t yet updated to <a href="https://micronaut.io/2023/07/14/micronaut-framework-4-0-0-released/">Micronaut framework 4</a>, this is an excellent opportunity to do so!</p>
-<p>Please feel free to <a href="https://micronaut.io/support/">reach out to us</a> if you need any assistance.</p>
-<p>The post <a href="https://micronaut.io/2025/09/01/micronaut-framework-4-9-3-released/">Micronaut Framework 4.9.3 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Micronaut Framework 4.9.2 Released!</title>
-		<link>https://micronaut.io/2025/07/31/micronaut-framework-4-9-2-released/</link>
-		
-		<dc:creator><![CDATA[Sergio Del Amo Caballero]]></dc:creator>
-		<pubDate>Thu, 31 Jul 2025 14:40:43 +0000</pubDate>
-				<category><![CDATA[Release Announcements]]></category>
-		<category><![CDATA[release]]></category>
-		<guid isPermaLink="false">https://micronaut.io/?p=7322</guid>
-
-					<description><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 4.9.2! It contains releases of Micronaut Core, Micronaut Security, Micronaut Serialization, Micronaut Data, Micronaut JAX RS, Micronaut Tracing, and Micronaut Kubernetes 7.1.1. NEXT STEPS If you haven’t yet updated to Micronaut framework 4, this is an excellent opportunity to do so! Please feel [&#8230;]</p>
-<p>The post <a href="https://micronaut.io/2025/07/31/micronaut-framework-4-9-2-released/">Micronaut Framework 4.9.2 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
-]]></description>
-										<content:encoded><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 4.9.2!</p>
-<p>It contains releases of <a href="https://github.com/micronaut-projects/micronaut-core/releases/tag/v4.9.9">Micronaut Core</a>, <a href="https://github.com/micronaut-projects/micronaut-security/releases/tag/v4.13.1">Micronaut Security</a>, <a href="https://github.com/micronaut-projects/micronaut-serialization/releases/tag/v2.15.1">Micronaut Serialization</a>, <a href="https://github.com/micronaut-projects/micronaut-data/releases/tag/v4.13.3">Micronaut Data</a>, <a href="https://github.com/micronaut-projects/micronaut-jaxrs/releases/tag/v4.9.2">Micronaut JAX RS</a>, <a href="https://github.com/micronaut-projects/micronaut-tracing/releases/tag/v7.1.3">Micronaut Tracing</a>, and <a href="https://github.com/micronaut-projects/micronaut-kubernetes/releases/tag/v7.1.1">Micronaut Kubernetes 7.1.1</a>.</p>
-<h2>NEXT STEPS</h2>
-<p>If you haven’t yet updated to <a href="https://micronaut.io/2023/07/14/micronaut-framework-4-0-0-released/">Micronaut framework 4</a>, this is an excellent opportunity to do so!</p>
-<p>Please feel free to <a href="https://micronaut.io/support/">reach out to us</a> if you need any assistance.</p>
-<p>The post <a href="https://micronaut.io/2025/07/31/micronaut-framework-4-9-2-released/">Micronaut Framework 4.9.2 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Micronaut Framework 4.9.1 Released!</title>
-		<link>https://micronaut.io/2025/07/08/micronaut-framework-4-9-1-released/</link>
-		
-		<dc:creator><![CDATA[Sergio Del Amo Caballero]]></dc:creator>
-		<pubDate>Tue, 08 Jul 2025 15:47:55 +0000</pubDate>
-				<category><![CDATA[Release Announcements]]></category>
-		<category><![CDATA[release]]></category>
-		<guid isPermaLink="false">https://micronaut.io/?p=7319</guid>
-
-					<description><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 4.9.1! It contains releases of Micronaut Core, Micronaut JaxRS, Micronaut Data, Micronaut SQL, Micronaut AOT, and Micronaut OpenAPI 6.17.3. NEXT STEPS If you haven’t yet updated to Micronaut framework 4, this is an excellent opportunity to do so! Please feel free to reach [&#8230;]</p>
-<p>The post <a href="https://micronaut.io/2025/07/08/micronaut-framework-4-9-1-released/">Micronaut Framework 4.9.1 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
-]]></description>
-										<content:encoded><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 4.9.1!</p>
-<p>It contains releases of <a href="https://github.com/micronaut-projects/micronaut-core/releases/v4.9.7">Micronaut Core</a>, <a href="https://github.com/micronaut-projects/micronaut-jaxrs/releases/v4.9.1">Micronaut JaxRS</a>, <a href="https://github.com/micronaut-projects/micronaut-data/releases/v4.13.2">Micronaut Data</a>, <a href="https://github.com/micronaut-projects/micronaut-sql/releases/v6.2.1">Micronaut SQL</a>, <a href="https://github.com/micronaut-projects/micronaut-aot/releases/v2.8.1">Micronaut AOT</a>, and <a href="https://github.com/micronaut-projects/micronaut-openapi/releases/v6.17.3">Micronaut OpenAPI 6.17.3</a>.</p>
-<h2>NEXT STEPS</h2>
-<p>If you haven’t yet updated to <a href="https://micronaut.io/2023/07/14/micronaut-framework-4-0-0-released/">Micronaut framework 4</a>, this is an excellent opportunity to do so!</p>
-<p>Please feel free to <a href="https://micronaut.io/support/">reach out to us</a> if you need any assistance.</p>
-<p>The post <a href="https://micronaut.io/2025/07/08/micronaut-framework-4-9-1-released/">Micronaut Framework 4.9.1 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Micronaut Framework 4.9.0 Released!</title>
-		<link>https://micronaut.io/2025/06/30/micronaut-framework-4-9-0-released/</link>
-		
-		<dc:creator><![CDATA[Sergio Del Amo Caballero]]></dc:creator>
-		<pubDate>Mon, 30 Jun 2025 12:36:32 +0000</pubDate>
-				<category><![CDATA[Release Announcements]]></category>
-		<category><![CDATA[release]]></category>
-		<guid isPermaLink="false">https://micronaut.io/?p=7306</guid>
-
-					<description><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 4.9.0! Micronaut Core Improvements Netty 4.2.2 Micronaut 4.9.0 updates to Netty 4.2. This Netty release changes the default buffer allocator, which may affect application performance. Event loop Carrier micronaut-http-server-netty 4.9.0 introduces an experimental mode to run virtual threads on the Netty event loop. [&#8230;]</p>
-<p>The post <a href="https://micronaut.io/2025/06/30/micronaut-framework-4-9-0-released/">Micronaut Framework 4.9.0 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
-]]></description>
-										<content:encoded><![CDATA[<p>The Micronaut Foundation is excited to announce the release of <a href="https://github.com/micronaut-projects/micronaut-platform/releases/tag/v4.9.0">Micronaut framework 4.9.0</a>!</p>
-<h2>Micronaut Core Improvements</h2>
-<h3>Netty 4.2.2</h3>
-<p>Micronaut 4.9.0 updates to <a href="https://netty.io/news/2025/06/05/4-2-2.html" rel="nofollow">Netty 4.2</a>. This Netty release changes the default buffer allocator, which may affect application performance.</p>
-<h3>Event loop Carrier</h3>
-<p><code>micronaut-http-server-netty</code> 4.9.0 introduces <a href="https://docs.micronaut.io/4.9.5/guide/index.html#_event_loop_carrier" rel="nofollow">an experimental mode to run virtual threads on the Netty event loop</a>. This can lead to more predictable performance when migrating from async code to virtual threads. Read &#8220;<a href="https://micronaut.io/2025/06/30/transitioning-to-virtual-threads-using-the-micronaut-loom-carrier/">Transitioning to virtual threads using the Micronaut Loom Carrier</a>&#8220;.</p>
-<h3>@ClassImport</h3>
-<p><a href="https://docs.micronaut.io/4.9.5/api/io/micronaut/context/annotation/ClassImport.html" rel="nofollow"><code>@ClassImport</code></a> annotation allows to <a href="https://docs.micronaut.io/4.9.5/guide/index.html#classImport" rel="nofollow">process already compiled classes as if they were ordinary non-compiled classes</a>.</p>
-<h3><code>@Mixin</code></h3>
-<p>It’s possible to define a <a href="https://docs.micronaut.io/4.9.5/guide/index.html#mixin" rel="nofollow">Mixin class</a> by annotating it with <a href="https://docs.micronaut.io/4.9.5/api/io/micronaut/context/annotation/Mixin.html" rel="nofollow"><code>@Mixin</code></a> and specifying which class does it reference.</p>
-<p>Mixins only modify the Micronaut annotations metadata model. Original classes are not modified in any way. Mixins are currently supported only in Java.</p>
-<h3>HTTP/3</h3>
-<p>If you were using the <a href="https://docs.micronaut.io/4.9.5/guide/index.html#http3Server" rel="nofollow">experimental HTTP/3 support</a> you need to replace the dependency <code>io.netty.incubator:netty-incubator-codec-http3 </code> with <code> io.micronaut:micronaut-http-netty-http3</code>.</p>
-<h3>Graceful Shutdown</h3>
-<p>This release includes a <a href="https://docs.micronaut.io/4.9.5/guide/index.html#gracefulShutdown" rel="nofollow">Graceful shutdown API</a>. A graceful shutdown allows you to stop accepting new work and finish in-progress tasks.</p>
-<h3>Cache Control API</h3>
-<p>A fluid API <a href="https://docs.micronaut.io/4.9.5/api/io/micronaut/http/cachecontrol/CacheControl.html" rel="nofollow">CacheControl</a> permits you to populate the <a href="https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Cache-Control" rel="nofollow">HTTP Cache-Control</a> header in an HTTP Response easily.</p>
-<h3>KSP 2</h3>
-<p>This release supports <a href="https://github.com/google/ksp">KSP</a> 2 (starting from the version 2.0.2) and it&#8217;s tested to work with Kotlin 2.</p>
-<h2>Jakarta Data</h2>
-<p><a href="https://micronaut-projects.github.io/micronaut-data/latest/guide/#jakartaData" rel="nofollow">Micronaut Data provides implementation support for the Jakarta Data</a> 1.0 specification, allowing developers to leverage <a href="https://jakarta.ee/specifications/data/1.0/jakarta-data-1.0" rel="nofollow">Jakarta Data’s standardized approach</a> to data access within Micronaut applications.</p>
-<h2>Protocol Buffers Json Support</h2>
-<p><a href="https://github.com/micronaut-projects/micronaut-grpc/releases/tag/v4.11.0">Micronaut gRPC</a>, thanks to a community contribution, adds a <a href="https://micronaut-projects.github.io/micronaut-grpc/latest/guide/#protocolBuffersJsonSupport" rel="nofollow">new module</a> that adds the ability to send JSON-serialized messages via a POST HTTP 1.1 call.</p>
-<h2>ProjectGen</h2>
-<p><a href="https://micronaut-projects.github.io/micronaut-projectgen/latest/guide/">Micronaut ProjectGen</a>, a new experimental module, provides an API for generating JVM Projects (Gradle or Maven). </p>
-<h2>Persistence</h2>
-<ul>
-<li><a href="https://github.com/micronaut-projects/micronaut-sql/releases/tag/v6.2.0">Micronaut SQL</a> updates ojdbc to <code>23.8.0.25.04</code>, MariaDB to <code>3.5.3</code>, and MySQL Connector to <code>9.2.0</code>, Hikari to <code>6.3.0</code>, and Tomcat JDBC to <code>11.0.7</code>.</li>
-<li><a href="https://github.com/micronaut-projects/micronaut-coherence/releases/tag/v5.0.6">Micronaut Coherence</a> updates to Coherence <code>25.03.1</code>.</li>
-</ul>
+<h3>Micronaut LangChain4j (<a href="https://github.com/micronaut-projects/micronaut-langchain4j/releases/v2.0.1">2.0.1</a> → <a href="https://github.com/micronaut-projects/micronaut-langchain4j/releases/v2.2.0">2.2.0</a>)</h3>
+<p>Adds Oracle chat-memory auto-configuration, <a href="https://micronaut-projects.github.io/micronaut-langchain4j/2.2.0/guide/#chroma" rel="nofollow">Chroma embedding-store support</a>, AI-service guardrails resolved from Micronaut beans, <a href="https://micronaut-projects.github.io/micronaut-langchain4j/2.2.0/guide/#testing" rel="nofollow">evaluation testing</a>, <a href="https://micronaut-projects.github.io/micronaut-langchain4j/2.2.0/guide/#agenticService" rel="nofollow">agentic support</a>, and injected Google credentials for Vertex AI.</p>
+<h3>Micronaut MCP (<a href="https://github.com/micronaut-projects/micronaut-mcp/releases/v1.0.0">1.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-mcp/releases/v2.0.0">2.0.0</a>)</h3>
+<p>Updates the <a href="https://github.com/modelcontextprotocol/java-sdk">MCP Java SDK</a> to 2.0.0.</p>
 <h2>Cloud</h2>
-<ul>
-<li><a href="https://github.com/micronaut-projects/micronaut-aws/releases/tag/v4.11.0">Micronaut AWS</a> updates to AWS SDK v1 <code>1.12.787</code>, and AWS SDK v2 <code>2.31.66</code>.</li>
-<li><a href="https://github.com/micronaut-projects/micronaut-azure/releases/tag/v5.11.0">Micronaut Azure</a> updates to Azure Cosmos <code>4.71.0</code>, and Azure SDK <code>1.2.35</code>. Moreover, it adds a <a href="https://micronaut-projects.github.io/micronaut-azure/latest/guide/#azureTracing" rel="nofollow">new module <code>micronaut-azure-tracing</code></a> to use <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/overview" rel="nofollow">Azure Monitor Tracing</a>.</li>
-<li><a href="https://github.com/micronaut-projects/micronaut-gcp/releases/tag/v5.12.0">Micronaut GCP</a> updates to Google Auth Library OAuth2 HTTP <code>1.37.0</code>, Google Cloud Core <code>2.57.1</code>, Google Cloud PubSub <code>1.140.1</code>, and Google Secret Manager <code>2.64.0</code>.</li>
-<li><a href="https://github.com/micronaut-projects/micronaut-oracle-cloud/releases/tag/v5.2.0">Micronaut Oracle Cloud</a> updates to OCI SDK <code>3.67.2</code></li>
-</ul>
-<h1>Database Migration</h1>
-<ul>
-<li><a href="https://github.com/micronaut-projects/micronaut-liquibase/releases/tag/v6.8.0">Micronaut Liquibase</a> updates to <a href="https://github.com/liquibase/liquibase/releases/tag/v4.32.0">Liquibase <code>4.32.0</code></a>.</li>
-</ul>
-<h2>Reactive Libraries</h2>
-<ul>
-<li><a href="https://github.com/micronaut-projects/micronaut-reactor/releases/tag/v3.8.0">Micronaut Reactor</a> updates to Project Reactor bill of materials (BOM) <code>2024.0.7</code>.</li>
-</ul>
-<h2>Security</h2>
-<ul>
-<li><a href="https://github.com/micronaut-projects/micronaut-security/releases/tag/v4.13.0">Micronaut Security</a> updates to <a href="https://connect2id.com/products/nimbus-jose-jwt" rel="nofollow">Nimbus JOSE + JWT</a> <code>10.3</code>.</li>
-</ul>
-<h2>Miscellaneous</h2>
-<ul>
-<li><a href="https://micronaut-projects.github.io/micronaut-langchain4j/latest/guide/" rel="nofollow">Micronaut Langchain4J</a> updates to the first stable release of <a href="https://docs.langchain4j.dev/" rel="nofollow">Langchain4j</a>.</li>
-<li><a href="https://micronaut-projects.github.io/micronaut-picocli/latest/guide/" rel="nofollow">Micronaut Picocli</a> updates to <a href="https://picocli.info/" rel="nofollow">Picocli</a> 4.7.7</li>
-<li><a href="https://micronaut-projects.github.io/micronaut-mqtt/latest/guide" rel="nofollow">Micronaut MQTT</a> updates to <a href="https://github.com/hivemq/hivemq-mqtt-client">HiveMQ MQTT Client</a> <code>1.3.7</code>.</li>
-<li><a href="https://github.com/micronaut-projects/micronaut-test/releases/tag/v4.8.0">Micronaut Test</a> updates to JUnit5 <code>5.12.2</code>, Mockito <code>5.18.0</code>, and <a href="https://rest-assured.io/" rel="nofollow">REST-assured</a> 5.5.5.</li>
-<li><a href="https://github.com/micronaut-projects/micronaut-spring/releases/tag/v5.11.0">Micronaut Spring</a> updates to <a href="https://spring.io/blog/2025/05/22/spring-boot-3-5-0-available-now" rel="nofollow">Spring Boot <code>3.5.0</code></a> and <a href="https://spring.io/blog/2025/06/12/spring-framework-6-1-21-and-6-2-8-releases-fix-cve-2025-41234" rel="nofollow">Spring <code>6.2.8</code></a>.</li>
-<li><a href="https://github.com/micronaut-projects/micronaut-cache/releases/tag/v5.3.0">Micronaut Cache</a> updates to <a href="https://infinispan.org/" rel="nofollow">Infinispan</a> <code>15.2.4.Final</code>, and Caffeine 3.2.1.</li>
-<li><a href="https://github.com/micronaut-projects/micronaut-logging/releases/tag/v1.7.0">Micronaut logging</a> updates to <a href="https://logback.qos.ch/news.html#1.5.18" rel="nofollow">Logback <code>1.5.18</code></a> and SLF4J 2.0.17.</li>
-<li><a href="https://github.com/micronaut-projects/micronaut-views/releases/tag/v5.8.0">Micronaut Views</a> updates to Pebble <code>3.24</code>, JTE <code>3.2.1</code>, and JStachio <code>1.3.7</code>.</li>
-<li><a href="https://github.com/micronaut-projects/micronaut-nats/releases/tag/v4.8.0">Micronaut NATS</a> updates to <a href="https://github.com/nats-io/nats.java/releases/tag/2.21.2">NATS Java Client <code>2.21.2</code></a></li>
-<li><a href="https://github.com/micronaut-projects/micronaut-jms/releases/tag/v4.3.0">Micronaut JMS</a> updates to <strong>activemq-jakarta</strong> to <code>6.1.6</code>, and <strong>artemis-jakarta-client</strong> to <code>2.41.0</code>.</li>
-<li><a href="https://github.com/micronaut-projects/micronaut-neo4j/releases/tag/v6.10.0">Micronaut Neo4j</a> updates to <a href="https://github.com/neo4j/neo4j-java-driver/releases/tag/5.28.5">Neo4J Java Driver <code>5.28.5</code></a>.</li>
-<li><a href="https://github.com/micronaut-projects/micronaut-graal-languages/releases/tag/v1.2.0">Micronaut Graal Languages</a> updates to <a href="https://www.graalvm.org/python/" rel="nofollow">GraalPy</a> <code>24.2.1</code>.</li>
-<li><a href="https://github.com/micronaut-projects/micronaut-opensearch/releases/tag/v1.5.0">Micronaut OpenSearch</a> updates to <a href="https://github.com/opensearch-project/opensearch-java/releases/tag/v2.24.0">OpenSearch <code>2.24.0</code></a>.</li>
-</ul>
-<h2>NEXT STEPS</h2>
-<p>If you haven’t yet updated to <a href="https://micronaut.io/2023/07/14/micronaut-framework-4-0-0-released/" rel="nofollow">Micronaut framework 4</a>, this is an excellent opportunity to do so!</p>
-<p>Please feel free to <a href="https://micronaut.io/support/" rel="nofollow">reach out to us</a> if you need any assistance.</p>
-<p>The post <a href="https://micronaut.io/2025/06/30/micronaut-framework-4-9-0-released/">Micronaut Framework 4.9.0 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
+<h3>Micronaut AWS (<a href="https://github.com/micronaut-projects/micronaut-aws/releases/v5.0.2">5.0.2</a> → <a href="https://github.com/micronaut-projects/micronaut-aws/releases/v5.1.0">5.1.0</a>)</h3>
+<p>Adds AWS CRT and Apache HttpClient 5 support for AWS SDK v2, fixes Lambda embedded-server startup and payload handling, and updates AWS SDK v2 to 2.48.3.</p>
+<h3>Micronaut Azure (<a href="https://github.com/micronaut-projects/micronaut-azure/releases/v6.0.0">6.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-azure/releases/v6.1.0">6.1.0</a>)</h3>
+<p>Updates Azure SDK to <code>1.3.7</code> and Azure Cosmos to <code>4.81.0</code>.</p>
+<h3>Micronaut GCP (<a href="https://github.com/micronaut-projects/micronaut-gcp/releases/v6.0.0">6.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-gcp/releases/v6.1.0">6.1.0</a>)</h3>
+<p>Updates google-cloud-pubsub to <code>1.152.0</code>, google-cloud-secretmanager to <code>2.94.0</code>, google-cloud-core to <code>2.72.0</code>, and Google OAuth2 HTTP to <code>1.49.0</code>.</p>
+<h3>Micronaut Oracle Cloud (<a href="https://github.com/micronaut-projects/micronaut-oracle-cloud/releases/v6.0.3">6.0.3</a> → <a href="https://github.com/micronaut-projects/micronaut-oracle-cloud/releases/v6.1.3">6.1.3</a>)</h3>
+<p>Updates to OCI SDK <code>3.91.0</code>.</p>
+<h3>Micronaut Kubernetes (<a href="https://github.com/micronaut-projects/micronaut-kubernetes/releases/v8.0.0">8.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-kubernetes/releases/v9.0.0">9.0.0</a>)</h3>
+<p>Updates the <a href="https://github.com/kubernetes-client/java">Kubernetes Java Client</a> to <code>27.0.0</code>.</p>
+<h3>Tracing (<a href="https://github.com/micronaut-projects/micronaut-tracing/releases/v8.0.0">8.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-tracing/releases/v8.2.0">8.2.0</a>)</h3>
+<p>Updates <a href="https://github.com/open-telemetry/opentelemetry-java">OpenTelemetry</a> to <code>1.64.0</code> and adds <a href="https://micronaut-projects.github.io/micronaut-tracing/8.2.0/guide/#ucp" rel="nofollow">Oracle UCP telemetry support</a>.</p>
+<h3>Micronaut Object Storage (<a href="https://github.com/micronaut-projects/micronaut-object-storage/releases/v3.0.0">3.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-object-storage/releases/v3.1.0">3.1.0</a>)</h3>
+<p>Adds a storage-metadata persistence SPI, <code>InputStream</code> uploads, deterministic local-storage ETags, multipart lifecycle support for S3 and OCI, and local multipart uploads.</p>
+<h2>Languages</h2>
+<h3>Micronaut Kotlin (<a href="https://github.com/micronaut-projects/micronaut-kotlin/releases/v5.0.0">5.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-kotlin/releases/v5.1.0">5.1.0</a>)</h3>
+<p>Updates <a href="https://ktor.io/" rel="nofollow">Ktor</a> to <code>3.5.1</code>.</p>
+<h2>Messaging</h2>
+<h3>Micronaut JMS (<a href="https://github.com/micronaut-projects/micronaut-jms/releases/v5.0.0">5.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-jms/releases/v5.1.0">5.1.0</a>)</h3>
+<p>Updates ActiveMQ Jakarta to 6.2.7 and Artemis Jakarta Client to 2.55.0.</p>
+<h3>Micronaut Kafka (<a href="https://github.com/micronaut-projects/micronaut-kafka/releases/v6.0.0">6.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-kafka/releases/v6.1.0">6.1.0</a>)</h3>
+<p>Updates <a href="https://github.com/apache/kafka">Apache Kafka</a> to <code>4.3.1</code> and adds non-blocking retry topics, a consumer-record interception hook, and the ability to stop listeners after retries are exhausted.</p>
+<h3>Micronaut MQTT (<a href="https://github.com/micronaut-projects/micronaut-mqtt/releases/v4.0.0">4.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-mqtt/releases/v4.1.0">4.1.0</a>)</h3>
+<p>Updates HiveMQ MQTT client to <code>1.3.17</code>.</p>
+<h3>Micronaut NATS (<a href="https://github.com/micronaut-projects/micronaut-nats/releases/v5.0.0">5.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-nats/releases/v5.1.0">5.1.0</a>)</h3>
+<p>Updates the <a href="https://github.com/nats-io/nats.java">NATS Java Client</a> to <code>2.26.0</code>.</p>
+<h3>Micronaut Pulsar (<a href="https://github.com/micronaut-projects/micronaut-pulsar/releases/v3.0.0">3.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-pulsar/releases/v3.1.0">3.1.0</a>)</h3>
+<p>Updates <a href="https://github.com/apache/pulsar">Apache Pulsar</a> to <code>4.2.3</code>.</p>
+<h3>Micronaut RabbitMQ (<a href="https://github.com/micronaut-projects/micronaut-rabbitmq/releases/v5.0.0">5.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-rabbitmq/releases/v5.1.0">5.1.0</a>)</h3>
+<p>Updates the <a href="https://github.com/rabbitmq/rabbitmq-java-client">RabbitMQ Java Client</a> to <code>5.34.0</code>, fixes publisher completion blocking consumers, and fails channel initialization when resources are locked.</p>
+<h2>Misc</h2>
+<h3>Micronaut Cache (<a href="https://github.com/micronaut-projects/micronaut-cache/releases/v6.0.0">6.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-cache/releases/v6.1.0">6.1.0</a>)</h3>
+<p>Updates <a href="https://infinispan.org/" rel="nofollow">Infinispan</a> to 16.2.1 and <a href="https://hazelcast.com/developers/clients/java/" rel="nofollow">Hazelcast</a> to 5.7.0.</p>
+<h3>Micronaut Email (<a href="https://github.com/micronaut-projects/micronaut-email/releases/v3.0.0">3.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-email/releases/v3.1.0">3.1.0</a>)</h3>
+<p>Adds <a href="https://micronaut-projects.github.io/micronaut-email/3.1.0/guide/#mailpit" rel="nofollow">Mailpit integration</a>.</p>
+<h3>Micronaut Security (<a href="https://github.com/micronaut-projects/micronaut-security/releases/v5.0.0">5.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-security/releases/v5.3.1">5.3.1</a>)</h3>
+<p>Adds an <a href="https://micronaut-projects.github.io/micronaut-security/5.3.1/guide/#htmlSanitizer" rel="nofollow">OWASP HTML Sanitizer module</a>, <a href="https://micronaut-projects.github.io/micronaut-security/5.3.1/guide/#runAs" rel="nofollow"><code>@RunAs</code> authentication delegation</a>, <a href="https://micronaut-projects.github.io/micronaut-security/5.3.1/guide/#localeClaimHttpLocaleResolver" rel="nofollow">OIDC locale resolution from profile claims</a>, optional OpenID metadata fetching, <a href="https://micronaut-projects.github.io/micronaut-security/5.3.1/guide/#authenticationMapper" rel="nofollow">authentication mapping</a>, and normalized trailing slashes for intercept-URL rules.</p>
+<h2>Reactive</h2>
+<h3>Micronaut Reactor (<a href="https://github.com/micronaut-projects/micronaut-reactor/releases/v4.0.0">4.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-reactor/releases/v4.1.0">4.1.0</a>)</h3>
+<p>Updates to Project Reactor <code>2025.0.6</code>.</p>
+<h2>Views</h2>
+<h3>Micronaut Views (<a href="https://github.com/micronaut-projects/micronaut-views/releases/v6.0.0">6.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-views/releases/v6.2.0">6.2.0</a>)</h3>
+<p>Adds <a href="https://micronaut-projects.github.io/micronaut-views/6.2.0/guide/#jinjava" rel="nofollow">Jinjava</a> as a template-rendering option and supports a Thymeleaf request expression object.</p>
+<h2>Database Migration</h2>
+<h3>Micronaut Flyway (<a href="https://github.com/micronaut-projects/micronaut-flyway/releases/v8.0.0">8.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-flyway/releases/v8.1.0">8.1.0</a>)</h3>
+<p>Dependency and Micronaut alignment only.</p>
+<h3>Micronaut Liquibase (<a href="https://github.com/micronaut-projects/micronaut-liquibase/releases/v7.0.0">7.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-liquibase/releases/v7.1.0">7.1.0</a>)</h3>
+<p>Updates <a href="https://documentation.red-gate.com/flyway/release-notes-and-older-versions/release-notes-for-flyway-engine" rel="nofollow">Flyway</a> to <code>2.6.2</code>.</p>
+<h2>Dev &amp; Test</h2>
+<h3>Micronaut Test (<a href="https://github.com/micronaut-projects/micronaut-test/releases/v5.0.1">5.0.1</a> → <a href="https://github.com/micronaut-projects/micronaut-test/releases/v5.1.0">5.1.0</a>)</h3>
+<p>Updates <a href="https://junit.org/" rel="nofollow">JUnit</a> to 6.1.2, <a href="https://kotest.io/" rel="nofollow">Kotest</a> to 6.1.11, <a href="https://mockk.io/" rel="nofollow">MockK</a> to 1.14.11, and <a href="https://rest-assured.io/" rel="nofollow">REST Assured</a> to 6.0.1.</p>
+<h3>Micronaut Test Resources (<a href="https://github.com/micronaut-projects/micronaut-test-resources/releases/v4.0.0">4.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-test-resources/releases/v4.1.0">4.1.0</a>)</h3>
+<p>Adds <a href="https://micronaut-projects.github.io/micronaut-test-resources/4.1.0/guide/#modules-floci" rel="nofollow">Floci</a> test-resources support.</p>
+<h3>Micronaut Control Panel (<a href="https://github.com/micronaut-projects/micronaut-control-panel/releases/v2.0.0">2.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-control-panel/releases/v2.1.0">2.1.0</a>)</h3>
+<p>Expands the Kafka control panel, prevents the datasource panel from forcing Micronaut Data onto consumers, and makes cache panels safe when cache implementations are absent.</p>
+<h2>Validation</h2>
+<h3>Micronaut Validation (<a href="https://github.com/micronaut-projects/micronaut-validation/releases/v5.0.0">5.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-validation/releases/v5.1.0">5.1.0</a>)</h3>
+<p>Adds a <a href="https://micronaut-projects.github.io/micronaut-validation/5.1.0/guide/#builtInConstraints" rel="nofollow">URL validation</a> annotation.</p>
+<h2>API</h2>
+<h3>Micronaut GraphQL (<a href="https://github.com/micronaut-projects/micronaut-graphql/releases/v5.0.1">5.0.1</a> → <a href="https://github.com/micronaut-projects/micronaut-graphql/releases/v5.1.0">5.1.0</a>)</h3>
+<p>Adds GraphQL multipart requests, Apollo-style batched query requests, and <code>@Refreshable</code> GraphQL beans.</p>
+<h3>Micronaut GRPC (<a href="https://github.com/micronaut-projects/micronaut-grpc/releases/v5.0.1">5.0.1</a> → <a href="https://github.com/micronaut-projects/micronaut-grpc/releases/v5.1.0">5.1.0</a>)</h3>
+<p>Updates gRPC Java to <code>1.82.22</code>.</p>
+<h3>Micronaut JSON Schema (<a href="https://github.com/micronaut-projects/micronaut-json-schema/releases/v2.0.1">2.0.1</a> → <a href="https://github.com/micronaut-projects/micronaut-json-schema/releases/v2.1.0">2.1.0</a>)</h3>
+<p>Generated schemas now honor <code>@JsonProperty</code> on enum constants.</p>
+<h3>Micronaut Open API (<a href="https://github.com/micronaut-projects/micronaut-openapi/releases/v7.0.0">7.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-openapi/releases/v7.1.0">7.1.0</a>)</h3>
+<p>Adds opt-in <code>$dynamicAnchor</code> and <code>$dynamicRef</code> generation for recursive types and single-variable generics, and upgrades OpenAPI Generator to 7.24.0.</p>
+<h3>Micronaut Serialization (<a href="https://github.com/micronaut-projects/micronaut-serialization/releases/v3.0.0">3.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-serialization/releases/v3.1.0">3.1.0</a>)</h3>
+<p>Adds JSON-B/JSON-P compliance, Java-properties serialization, <code>@JsonKey</code>, <code>@JsonMerge</code>, and <code>@JsonTypeId</code> support, plus performance improvements.</p>
+<h3>Micronaut Servlet (<a href="https://github.com/micronaut-projects/micronaut-servlet/releases/v6.0.0">6.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-servlet/releases/v6.1.0">6.1.0</a>)</h3>
+<p>Updates <a href="https://jetty.org/" rel="nofollow">Eclipse Jetty</a> to <code>12.1.10</code>, <a href="https://undertow.io/" rel="nofollow">Undertow</a> to <code>2.3.35</code>, and <a href="https://tomcat.apache.org/" rel="nofollow">Apache Tomcat</a> to <code>11.0.23</code>.</p>
+<h3>Micronaut Spring (<a href="https://github.com/micronaut-projects/micronaut-spring/releases/v6.0.1">6.0.1</a> → <a href="https://github.com/micronaut-projects/micronaut-spring/releases/v6.1.0">6.1.0</a>)</h3>
+<p>Updates <a href="https://github.com/spring-projects/spring-framework/releases">Spring Framework</a> to <code>7.0.8</code> and <a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-4.1-Release-Notes">Spring Boot 4.1.0</a>.</p>
+<h2>Analytics</h2>
+<h3>Micronaut Elasticsearch (<a href="https://github.com/micronaut-projects/micronaut-elasticsearch/releases/v6.0.0">6.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-elasticsearch/releases/v6.1.0">6.1.0</a>)</h3>
+<p>Updates the <a href="https://github.com/elastic/elasticsearch-java/releases">Elasticsearch Java Client</a> to <code>9.4.3</code>.</p>
+<h3>Micronaut OpenSearch (<a href="https://github.com/micronaut-projects/micronaut-opensearch/releases/v2.0.0">2.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-opensearch/releases/v2.1.0">2.1.0</a>)</h3>
+<p>Updates the <a href="https://github.com/opensearch-project/opensearch-java">OpenSearch Java Client</a> to 3.9.0, the OpenSearch REST client to 3.7.0, and Apache HttpClient 5 to 5.6.2.</p>
+<h2>Configuration</h2>
+<h3>Micronaut TOML (<a href="https://github.com/micronaut-projects/micronaut-toml/releases/v3.0.0">3.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-toml/releases/v3.1.0">3.1.0</a>)</h3>
+<p>Adds TOML 1.1 parsing support.</p>
+<h3>Micronaut Logging (<a href="https://github.com/micronaut-projects/micronaut-logging/releases/v2.0.1">2.0.1</a> → <a href="https://github.com/micronaut-projects/micronaut-logging/releases/v2.1.0">2.1.0</a>)</h3>
+<p>Updates SLF4J to <code>2.0.18</code>, Logback to <code>1.5.37</code>, and Log4j 2 to <code>2.26.1</code>.</p>
+<h2>Build</h2>
+<h3>Micronaut SourceGen (<a href="https://github.com/micronaut-projects/micronaut-sourcegen/releases/v2.0.0">2.0.0</a> → <a href="https://github.com/micronaut-projects/micronaut-sourcegen/releases/v2.1.0">2.1.0</a>)</h3>
+<p>Fixes switch-expression ordering so generated code preserves the caller correctly.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>The post <a href="https://micronaut.io/2026/07/27/micronaut-framework-5-1-0-release/">Micronaut Framework 5.1.0 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
 ]]></content:encoded>
 					
 		
 		
 			</item>
 		<item>
-		<title>Transitioning to virtual threads using the Micronaut loom carrier</title>
-		<link>https://micronaut.io/2025/06/30/transitioning-to-virtual-threads-using-the-micronaut-loom-carrier/</link>
-		
-		<dc:creator><![CDATA[Jonas Konrad]]></dc:creator>
-		<pubDate>Mon, 30 Jun 2025 09:50:07 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<category><![CDATA[loom]]></category>
-		<category><![CDATA[virtual-threads]]></category>
-		<guid isPermaLink="false">https://micronaut.io/?p=7280</guid>
-
-					<description><![CDATA[<p>Micronaut HTTP Server Netty 4.9 introduces a new, experimental &#8220;loom carrier mode&#8221; for the Netty event loop. This prototype uses internal JDK APIs to run virtual threads directly on the event loop, under control of the framework. Our goal is to provide performance characteristics comparable to reactive code, with the convenience and &#8220;safety net&#8221; that [&#8230;]</p>
-<p>The post <a href="https://micronaut.io/2025/06/30/transitioning-to-virtual-threads-using-the-micronaut-loom-carrier/">Transitioning to virtual threads using the Micronaut loom carrier</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
-]]></description>
-										<content:encoded><![CDATA[<p>Micronaut HTTP Server Netty 4.9 introduces a new, experimental &#8220;loom carrier mode&#8221; for the Netty event loop. This prototype uses internal JDK APIs to run virtual threads directly on the event loop, under control of the framework. Our goal is to provide performance characteristics comparable to reactive code, with the convenience and &#8220;safety net&#8221; that virtual threads provide.</p>
-<div class="markdown-heading">
-<h2 class="heading-element">The Netty threading model</h2>
-<p>&nbsp;</p>
-</div>
-<p>Netty is a general-purpose framework for networking applications. Years of development have gone into some of the fastest protocol implementations available for the JVM. The use of native libraries to replace JDK APIs, such as the io_uring-based transport or the OpenSSL-based TLS implementation, push performance further. This has made it the natural choice for the basis of &#8220;next generation&#8221; web servers, such as Micronaut HTTP, Quarkus (Vert.x), and Spring WebFlux (reactor-netty).</p>
-<p>From the ground up, Netty is designed with an asynchronous programming model. Whereas traditional networking frameworks spin up a thread for each connection and use blocking operations to read from or write to the connection, Netty uses only a few threads, so-called <em>event loops</em>, that can each serve many connections.</p>
-<p>The most well-known advantage of this programming model is straight-forward: You need fewer threads. Platform threads (as opposed to the new virtual threads) require a fairly large amount of memory for the stack, causing problems when dealing with thousands of connections. Each new connection requires starting up a new thread, which can be expensive. Switching between processing different connections requires an OS-level context switch.</p>
-<p>But the benefits don&#8217;t stop there. New APIs and protocols are designed with this programming model in mind. For example, HTTP/2 bundles many requests on the same connection. Processing these streams in a synchronous fashion would need a thread for each request, and logic to distribute data to these threads. Similarly, Linux&#8217; new io_uring API, which offers superior IO performance by saving on syscalls, is modeled for a single user mode platform thread consuming the data of many asynchronous IO operations.</p>
-<p>Finally, there are gains to be had from sharing resources among connections but not among event loops. A pool of IO buffers does not need complicated (and slow!) synchronization operations to function if it is restricted to an event loop where all multitasking is cooperative and no other threads can interfere.</p>
-<p>The big downside to asynchronous programming is the added complexity, however. Code on the event loop must not block: Doing so will not only stall progress for the current connection, but potentially many others as well. In Netty, decoders must always verify that enough input data is available before decoding, and save their progress to fields when there isn&#8217;t. In higher-level frameworks built on Netty, network operations often use callbacks or reactive streams that will complete asynchronously with the operation. The difficulty of debugging such code is notorious. Wouldn&#8217;t it be nice to write &#8220;normal&#8221; blocking code, but still get the benefits of asynchronous code? Enter virtual threads.</p>
-<div class="markdown-heading">
-<h2 class="heading-element">Virtual Threads</h2>
-<p>&nbsp;</p>
-</div>
-<p>Many approaches have been tried to make asynchronous programming easier in various languages. The JDK team has chosen an ambitious one: Virtual threads that behave almost identically to platform threads. As opposed to async-await or Kotlin&#8217;s suspended functions, this requires no change to (most) existing blocking code to work. This is a great benefit to the large existing ecosystem that still uses blocking operations, but it&#8217;s also convenient for &#8220;rarely blocking&#8221; code. For example, a log statement is usually thrown around without a callback waiting for its completion, but may block in rare situations. You still want to avoid blocking the event loop then.</p>
-<p>Virtual threads are less memory intensive than platform threads, they are relatively cheap to start, and when a virtual thread goes idle, the carrier thread can pick up another without a heavy context switch. We can start a virtual thread for every connection or every HTTP/2 request with no issue.</p>
-<p>Virtual threads work using <em>continuations</em>. Blocking operations in the standard library, such as <code>Thread.sleep</code>, have a special path for virtual threads. Instead of actually performing a sleep system call, the JDK instead tells the JVM to <em>yield</em>the virtual thread. The JVM saves thread information (e.g. the stack) to a heap data structure. Once the sleep finishes, the JDK will tell the JVM to restore the stack and can continue execution of the virtual thread.</p>
-<p>The separation of responsibilities to make this happen in the JDK is quite neat. The suspension and resumption logic is distinct from the scheduler. A virtual thread is encapsulated by a <code>Runnable</code> that is submitted to an <code>Executor</code>. When the virtual thread needs to suspend, <code>Runnable.run()</code> finishes. When the thread is resumed, the thread is resubmitted using <code>Executor.execute(Runnable)</code>. The <code>Executor</code> implementation is implemented purely in Java.</p>
-<p>The <code>Executor</code> used for virtual threads in the JDK is a dedicated <code>ForkJoinPool</code>. This pool compromises between <em>locality</em>and <em>progress</em>: Each platform thread has a local queue and the submission logic tries to avoid moving tasks between platform threads unnecessarily, but if a task &#8220;hogs&#8221; a platform thread e.g. for a long CPU-intensive operation, other platform threads can <em>steal</em> queued tasks to make sure they progress anyway. This approach works reasonably well, but when combined with Netty, there are some drawbacks.</p>
-<div class="markdown-heading">
-<h2 class="heading-element">Netty and the <code>ForkJoinPool</code> (FJP) don&#8217;t mix well</h2>
-<p>&nbsp;</p>
-</div>
-<p>Say we have a Netty-based web server and want to run each request on a virtual thread for user convenience. The first dilemma is where to run the event loop. If we run the event loop as a virtual thread on the FJP, request tasks can run on the same carrier thread without a context switch. There are three reasons why this doesn&#8217;t work, however.</p>
-<ul>
-<li>In Netty, the most performant transport implementations use native code. In this native code, Netty sends off system calls that may block the current thread until data becomes available. The JVM cannot suspend the virtual thread in this case–the carrier thread is stuck even though it&#8217;s not busy and could be running continuations.</li>
-<li>The second issue is that the FJP may transfer the event loop to another platform thread between different iterations. This is forbidden e.g. by io_uring. If we want to use io_uring, we must ensure that the event loop remains on the same platform thread throughout its lifetime. That leaves us only the option to run the event loop outside the FJP, which means we have to live with the cost of context switching between the FJP and the event loop for every request and response.</li>
-<li>Another problem with FJP is that while it tries to keep virtual threads local, framework-level knowledge is missing. We&#8217;ve seen benchmarks where several HTTP/2 requests that come in on one connection would end up being distributed all over the FJP, leading to large synchronization overhead when the responses have to be merged back into a single TCP connection. In the other direction, when using a DB connection pool, we can gain some performance by picking DB connections that run on the same event loop as the server connection. A shoutout to Vert.x in particular for making this easy–and benefiting from it in benchmarks.</li>
-</ul>
-<div class="markdown-heading">
-<h2 class="heading-element">A framework-level solution</h2>
-<p>&nbsp;</p>
-</div>
-<p>I&#8217;ve described above the abstraction the JDK uses internally to run virtual threads. The FJP is simply used as an <code>Executor</code>. What if we were to replace this <code>Executor</code> with something we have more control over? The necessary APIs are private–we need the <code>--add-opens=java.base/java.lang=ALL-UNNAMED</code> JVM argument, and a healthy dose of reflection–but the infrastructure exists. With the loom carrier prototype, we make that option available for you to try.</p>
-<p>For every event loop, there is a carrier thread. The event loop itself runs on a virtual thread on that carrier thread, but is treated specially. The event loop will only enter the native blocking code if the carrier thread really is idle and there are no other virtual threads to run. On the other side, when a virtual thread is submitted to the carrier while the event loop is sleeping in native code, we wake the event loop and return control to the carrier so that we can run the submitted work. This way, we resolve the event loop on FJP issues listed above.</p>
-<p>When a request comes in, a virtual thread is created on the same carrier thread, so we don&#8217;t need to context switch. We can even go a step further with <em>immediate run</em>: Inside an event loop <code>read</code> event handler, we can submit the request processing task, <code>yield</code> the event loop thread, run the request handler virtual thread, and then return to the event loop. The response is available before the event loop even finishes with its <code>read</code> handler. When this works out, the performance advantage can be significant, in particular when the same read event contains multiple requests that can have their responses batched–something we could only achieve with async code before. When it doesn&#8217;t work out and the controller has to block, we don&#8217;t get this benefit, but the event loop doesn&#8217;t come crashing to a halt either. The best of both worlds.</p>
-<figure>
-<p><img fetchpriority="high" decoding="async" src="https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-1-1024x421.png" alt="" width="1024" height="421" class="alignnone size-large wp-image-7290" srcset="https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-1-1024x421.png 1024w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-1-300x123.png 300w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-1-768x316.png 768w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-1-150x62.png 150w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-1.png 1119w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption><b>Figure 1</b>: Simple &#8216;Hello World&#8217; style benchmark latency histogram. At low request rates, latency and CPU usage of the <span class="figurepink">custom loom scheduler</span> is between that of <span class="figureorange">async</span> and <span class="figureblue">loom with FJP</span>. Maximum request rate (not shown) also lies between async (best) and FJP.</figcaption></figure>
-<p>This is a great start! Now let&#8217;s look beyond the &#8220;immediate response&#8221; use case.</p>
-<div class="markdown-heading">
-<h2 class="heading-element">Client affinity</h2>
-<p>&nbsp;</p>
-</div>
-<p>I briefly touched on an optimization event loops can do above that I call <em>client affinity</em>. A Netty event loop can handle multiple connections at a time, but this is not limited to server connections. It&#8217;s possible to run HTTP client or database connections on the same event loop as the server. This avoids context switching between the IO thread of the request we&#8217;re serving and the IO thread of the client connection we&#8217;re using to fetch data.</p>
-<p>The difficulty with this optimization is that it necessarily requires specialized logic in the connection pool. Migrating a connection to a new thread is difficult to impossible, so when a controller requests a connection from the pool, the pool must be programmed to only choose among the connections on the same event loop as that controller.</p>
-<p>The Micronaut HTTP client has had this feature since 4.8, and further improved in 4.9, but only async code could benefit from affinity before. When the controller runs on a virtual thread on the FJP, there is little point in the client sharing the event loop with the server, because the response returned by the client will have to pass through the virtual thread on the FJP before making it back to the event loop anyway. With the event loop carrier however, this optimization finally becomes feasible with virtual threads.</p>
-<figure>
-<p><img decoding="async" src="https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-2-1024x416.png" alt="" width="1024" height="416" class="alignnone size-large wp-image-7292" srcset="https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-2-1024x416.png 1024w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-2-300x122.png 300w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-2-768x312.png 768w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-2-150x61.png 150w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-2.png 1125w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption><b>Figure 2</b>: HTTP client call inside a controller, latency histogram. Latency and CPU usage of the <span class="figurepink">custom loom scheduler</span> is close to <span class="figureorange">async</span> and far better than <span class="figureblue">loom with FJP</span>. Maximum request rate (not shown) is similar to that of async and better than FJP, though CPU usage exceeds async at high request rates.</figcaption></figure>
-<p>From the results, we can see that the optimization works and latency ends up very close to the async implementation (which also uses client affinity). This approach is transparent to the user.</p>
-<div class="markdown-heading">
-<h2 class="heading-element">Non-Netty IO</h2>
-<p>&nbsp;</p>
-</div>
-<p>While Netty-based IO works great, most external code uses normal JDK IO operations. With virtual threads, blocking IO is implemented using two levels of pollers.</p>
-<ol>
-<li>When <code>InputStream.read()</code> is called, first a non-blocking read is attempted.</li>
-<li>If data isn&#8217;t available immediately, the file descriptor is registered with a <em>sub poller</em> (chosen by the numeric FD value). The sub pollers are themselves virtual threads. When they see data become available, they wake up the virtual thread that&#8217;s waiting for it. Due to how virtual threads and the FJP work, this wakeup will usually need no context switch, the blocking thread will run on the same carrier thread as the sub poller that woke it up.</li>
-<li>If the sub poller also needs to wait because none of the files registered to it have data available, it registers with the <em>master poller</em> and goes to sleep itself. The master poller is a proper platform thread, not a virtual thread, so waking up the sub poller at that point does lead to a context switch.</li>
-</ol>
-<p>This setup is fairly rigid at the moment. There is no way for us to create our own sub pollers for a particular event loop, and even if we could, there would be no way to assign particular file descriptors to the &#8220;right&#8221; sub poller. In fact, the event loop carrier prototype has to take extra care to make sure that the poller virtual threads stay on the FJP and don&#8217;t all start on the event loop by accident.</p>
-<p>The best we can do for now is try to make JDK IO <em>no worse</em> than with FJP. When a controller virtual thread on the event loop carrier performs a blocking IO operation (i.e. waits using the sub poller), it is &#8220;moved&#8221; to the FJP temporarily, so that it can do its IO there. This is one context switch. Once IO is done and the controller thread interacts with the event loop again, it can be moved back, leading to a second context switch. Not ideal, but two context switches is the same cost we&#8217;d have paid if the controller virtual thread had run on the FJP from the start.</p>
-<p>Measuring this with a realistic example is surprisingly difficult. The Micronaut HTTP client uses Netty, so it doesn&#8217;t work as an example. The new JDK <code>HttpClient</code> has its own event loop architecture using a separate platform thread and doesn&#8217;t use the pollers either. The test case I settled on instead is a JDBC PostgreSQL connection using the Hikari connection pool. A fairly common setup, though Hikari and the JDBC driver have their own performance issues that interfere with the benchmark a bit.</p>
-<figure>
-<img decoding="async" src="https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-3-1024x425.png" alt="" width="1024" height="425" class="alignnone size-large wp-image-7291" srcset="https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-3-1024x425.png 1024w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-3-300x124.png 300w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-3-768x318.png 768w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-3-150x62.png 150w, https://micronaut.io/wp-content/uploads/2025/06/loom-carrier-figure-3.png 1124w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption><b>Figure 3</b>: PostgreSQL/HikariCP database operation. Latency and CPU usage is almost identical between the <span class="figureorange">custom loom scheduler</span> and <span class="figurepink">FJP</span>. However, the custom scheduler reaches a lower maximum request rate (not shown). No async benchmark here, since JDBC is a synchronous API.</figcaption></figure>
-<p>In the benchmark, the latency and CPU usage are on par with FJP, which is what we want. However, the loom carrier approach cannot handle a request rate as high as the pure FJP approach. This needs further work, but one possible explanation is related to HikariCP: In the loom carrier mode, connection acquisition happens on the event loop carrier thread, while release happens on the FJP. This could lead to more synchronization overhead and context switching when compared against the test where acquisition also happens on the FJP.</p>
-<div class="markdown-heading">
-<h2 class="heading-element">Balancing tasks</h2>
-<p>&nbsp;</p>
-</div>
-<p>One area where the event loop carrier approach differs substantially from the FJP is work stealing. FJP will transfer tasks between carrier threads much more freely. In some benchmarks this can become a disadvantage, with e.g. virtual threads of different HTTP/2 streams on the same connection being distributed to other carrier threads with little care, leading to unnecessary context switching and synchronization overhead to coordinate the response writing. But it can also go the other way. If there is a load burst on one event loop and the request processing is fairly heavy, the overhead from distributing tasks is smaller than the advantage gained from parallel processing. In an Oracle-internal synthetic benchmark this lead to a striking initial latency advantage for the FJP. I was able to tune the event loop carrier to reach performance on par with the FJP, but such optimization always runs the risk of &#8220;overfitting&#8221; a particular benchmark, with little benefit or even performance losses for real world applications.</p>
-<p>It is likely that there will always be applications that perform worse when running their virtual threads on the event loop compared to running them on the FJP. Improving locality and reducing migration between CPUs will always come with tradeoffs–but it&#8217;s nice to have the option to customize the scheduler to your needs.</p>
-<div class="markdown-heading">
-<h2 class="heading-element">Where to go from here</h2>
-<p>&nbsp;</p>
-</div>
-<p>Where we can, in principle, always compete, is async code. There is no fundamental reason why a reactive controller should be faster than the same reactive controller on a virtual thread on the event loop–we don&#8217;t pay the fixed FJP and context switch overhead after all. In practice there is still a gap, but there doesn&#8217;t have to be. If we can match the performance, we can take the step to making virtual threads the default for our users, without risking performance regressions in existing applications. Applications will get the &#8220;safety net&#8221; of virtual threads, where accidental blocking operations don&#8217;t stall the event loop. Folks that are already committed to blocking code and virtual threads can try the event loop carrier, or could continue using the FJP if that&#8217;s where their application performs better.</p>
-<p>Then, of course, there&#8217;s the JDK API side. This entire effort relies on reflecting into the JDKs innards, and the folks at Red Hat have even gone a step further and experimented with JDK patches. For production use, the JDK would have to open up scheduling APIs. Those APIs can be dangerous to use and restrict the JDK in what changes can be made in the future, so they will have to be designed with care.</p>
-<p>We&#8217;d love to hear your feedback on this prototype. Test your applications–be they reactive or blocking–with the event loop carrier to see if there are major performance regressions or improvements. To use the event loop carrier, set the following configuration properties:</p>
-<div class="highlight highlight-source-ini notranslate position-relative overflow-auto">
-<pre><span class="pl-c"># run controllers on virtual threads</span>
-<span class="pl-k">micronaut.server.thread-selection</span>=blocking
-<span class="pl-c"># enable the event loop carrier on the default event loop</span>
-<span class="pl-k">micronaut.netty.event-loops.default.loom-carrier</span>=true
-<span class="pl-c"># make the HTTP client use the same event loop as the server to take advantage of client affinity</span>
-<span class="pl-k">micronaut.http.client.event-loop-group</span>=default
-<span class="pl-c"># optional: throw an exception if client affinity does not engage</span>
-<span class="pl-c">#micronaut.http.client.pool.connection-locality=enforced-always</span></pre>
-<div class="zeroclipboard-container position-absolute right-0 top-0"></div>
-</div>
-<p>If you have feedback on the general design or the JDK APIs, that would also be appreciated. You can contact us in the micronaut-core <a href="https://github.com/micronaut-projects/micronaut-core/discussions">discussions forum</a>.</p>
-<div class="markdown-heading">
-<h2 class="heading-element">Acknowledgements</h2>
-<p>&nbsp;</p>
-</div>
-<p>This work would not have been possible without the help of the Red Hat folks from the Quarkus and OpenJDK teams. They laid the necessary groundwork to make Netty fast on virtual threads and to introduce the Netty APIs necessary for this level of event loop customization. They also provided feedback throughout the development process, and worked closely with us to solve functional and performance problems we encountered.</p>
-<div class="markdown-heading">
-<h2 class="heading-element">Appendix A: Deadlocks and running with scissors</h2>
-<p>&nbsp;</p>
-</div>
-<p>Implementing a custom virtual thread scheduler is risky business. One particular problem that we did not encounter in practice but played a big part in our design decisions is the risk of deadlocks. When a lock is used both in a carrier thread and a virtual thread that runs on that carrier, a deadlock can appear. If the virtual thread suspends while holding the lock, and then the carrier thread attempts to acquire the same lock, it will block forever because the virtual thread that releases it can never run–its carrier is blocked. Work stealing can mitigate this to some extent, but in more complex settings even that is not enough.</p>
-<p>The only real solution is to avoid locks shared between virtual threads and the carrier. But that is easier said than done: For example, logback appenders regularly use <code>synchronized</code>, so if the carrier thread does any logging at all it risks deadlocking with its virtual threads that certainly will log. Again, we&#8217;ve never seen this happen in practice, but the risk is there. When it does happen the event loop will lock up in an unrecoverable state.</p>
-<p>For that reason we decided to move the event loop to a virtual thread as described above. Running the event loop directly on the carrier thread carries some performance advantages due to how netty works, but the risk of a deadlock is hard to avoid. With the event loop on a virtual thread, if it does block (hopefully a rare occurrence), it can suspend and other virtual threads can run to unblock it.</p>
-<div class="markdown-heading">
-<h2 class="heading-element">Appendix B: Thread local caching</h2>
-<p>&nbsp;</p>
-</div>
-<p>One benefit of event loops over a many-thread architecture that I listed at the start of this article is that we can share resources without expensive synchronization. For example, a buffer pool can be stored in a <code>ThreadLocal</code> and will never have to worry about interference from other threads. You&#8217;ll notice that I haven&#8217;t talked about this since, and indeed there is still room for improvement here.</p>
-<p>The biggest pooling structure Netty uses, its buffer allocator, has been made more efficient for virtual threads with Netty 4.2, thanks to the folks at Red Hat. When <code>ThreadLocal</code> is not feasible, it can instead use the thread ID to select an &#8220;arena&#8221; that is hopefully uncontended. But even with this approach, some overhead remains. For other pools where the performance gain from pooling is smaller, this overhead is big enough to make pooling simply not worth it anymore.</p>
-<p>There is some work to be done here. Something we could do today already is to rely on <em>critical sections</em>, code sections where the carrier thread is fixed, and a virtual thread cannot suspend. Inside this section we can then manipulate a structure local to the carrier thread without worrying about interference.</p>
-<p>Because virtual threads are purely cooperative at the moment, we can &#8220;emulate&#8221; such a section by simply making sure none of the code inside of it may suspend the virtual thread. But this is brittle, and if the JDK ever introduces preemption for virtual threads, it will break. It also relies on internal APIs to access the carrier thread and share data structures.</p>
-<p>A better solution would be a JDK API that implements recycling without exposing concepts like critical sections or carrier thread access that may lock the JDK out of future changes to the virtual thread architecture. I&#8217;ve written up a proposal <a href="https://github.com/micronaut-projects/micronaut-http-benchmarks/wiki/Recycler-API-proposal">here</a>, but it&#8217;s in its early stages, and I&#8217;m not yet sure that the API can cover all the use cases Netty needs.</p>
-<p>The post <a href="https://micronaut.io/2025/06/30/transitioning-to-virtual-threads-using-the-micronaut-loom-carrier/">Transitioning to virtual threads using the Micronaut loom carrier</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Micronaut Framework 4.8.3 Released!</title>
-		<link>https://micronaut.io/2025/06/12/micronaut-framework-4-8-3-released/</link>
+		<title>Micronaut Framework 5.0.6 Released!</title>
+		<link>https://micronaut.io/2026/07/23/micronaut-framework-5-0-6-released/</link>
 		
 		<dc:creator><![CDATA[Sergio Del Amo Caballero]]></dc:creator>
-		<pubDate>Thu, 12 Jun 2025 10:09:39 +0000</pubDate>
+		<pubDate>Thu, 23 Jul 2026 19:53:19 +0000</pubDate>
 				<category><![CDATA[Release Announcements]]></category>
+		<category><![CDATA[Security Announcements]]></category>
 		<category><![CDATA[release]]></category>
-		<guid isPermaLink="false">https://micronaut.io/?p=7276</guid>
+		<guid isPermaLink="false">https://micronaut.io/?p=7536</guid>
 
-					<description><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 4.8.3! It contains releases of Micronaut Core, Micronaut Security, Micronaut Serialization, Micronaut Oracle Cloud, Micronaut SourceGen, Micronaut Spring, Micronaut Data, Micronaut Micrometer, and Micronaut Coherence. NEXT STEPS If you haven’t yet updated to Micronaut framework 4, this is an excellent opportunity to do [&#8230;]</p>
-<p>The post <a href="https://micronaut.io/2025/06/12/micronaut-framework-4-8-3-released/">Micronaut Framework 4.8.3 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
+					<description><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 5.0.6! It includes a release of Micronaut Core, Micronaut Oracle Cloud, and Micronaut Data. If you haven’t yet updated to Micronaut Framework 5, this is an excellent opportunity to do so! Please feel free to reach out to us if you need any [&#8230;]</p>
+<p>The post <a href="https://micronaut.io/2026/07/23/micronaut-framework-5-0-6-released/">Micronaut Framework 5.0.6 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
 ]]></description>
-										<content:encoded><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 4.8.3!</p>
-<p>It contains releases of <a href="https://github.com/micronaut-projects/micronaut-core/releases/tag/v4.8.11">Micronaut Core, </a><a href="https://github.com/micronaut-projects/micronaut-security/releases/tag/v4.12.2">Micronaut Security, </a><a href="https://github.com/micronaut-projects/micronaut-serialization/releases/v2.14.1">Micronaut Serialization, </a><a href="https://github.com/micronaut-projects/micronaut-oracle-cloud/releases/v5.0.2">Micronaut Oracle Cloud</a>, <a href="https://github.com/micronaut-projects/micronaut-sourcegen/releases/v1.7.10">Micronaut SourceGen</a>, <a href="https://github.com/micronaut-projects/micronaut-spring/releases/v5.10.1">Micronaut Spring</a>, <a href="https://github.com/micronaut-projects/micronaut-data/releases/tag/v4.12.2">Micronaut Data</a>, <a href="https://github.com/micronaut-projects/micronaut-micrometer/releases/tag/v5.10.2">Micronaut Micrometer</a>, and <a href="https://github.com/micronaut-projects/micronaut-coherence/releases/tag/v5.0.6">Micronaut Coherence</a><a href="https://github.com/micronaut-projects/micronaut-servlet/releases/tag/v5.2.2">.</a></p>
-<h2>NEXT STEPS</h2>
-<p>If you haven’t yet updated to <a href="https://micronaut.io/2023/07/14/micronaut-framework-4-0-0-released/">Micronaut framework 4</a>, this is an excellent opportunity to do so!</p>
+										<content:encoded><![CDATA[<p><span data-preserver-spaces="true">The Micronaut Foundation is excited to announce the release of Micronaut framework 5.0.6! It includes a release of <a href="https://github.com/micronaut-projects/micronaut-core/releases/tag/v5.0.7">Micronaut Core</a>, <a href="https://github.com/micronaut-projects/micronaut-oracle-cloud/releases/tag/v6.0.2">Micronaut Oracle Cloud</a>, and <a href="https://github.com/micronaut-projects/micronaut-data/releases/tag/v5.0.6">Micronaut Data.</a></span></p>
+<p><span draggable="true">If you haven’t yet updated to <a href="https://micronaut.io/2026/05/20/micronaut-framework-5-0-0-released/">Micronaut Framework 5</a>, this is an excellent opportunity to do so!</span></p>
 <p>Please feel free to <a href="https://micronaut.io/support/">reach out to us</a> if you need any assistance.</p>
-<p>The post <a href="https://micronaut.io/2025/06/12/micronaut-framework-4-8-3-released/">Micronaut Framework 4.8.3 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
+<p>The post <a href="https://micronaut.io/2026/07/23/micronaut-framework-5-0-6-released/">Micronaut Framework 5.0.6 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
 ]]></content:encoded>
 					
 		
 		
 			</item>
 		<item>
-		<title>Micronaut Framework 4.8.2 Released!</title>
-		<link>https://micronaut.io/2025/04/18/micronaut-framework-4-8-2-released/</link>
+		<title>Micronaut Framework 5.0.5 Released!</title>
+		<link>https://micronaut.io/2026/07/16/micronaut-framework-5-0-5-released/</link>
 		
 		<dc:creator><![CDATA[Sergio Del Amo Caballero]]></dc:creator>
-		<pubDate>Fri, 18 Apr 2025 06:29:20 +0000</pubDate>
+		<pubDate>Thu, 16 Jul 2026 07:29:57 +0000</pubDate>
+				<category><![CDATA[Release Announcements]]></category>
+		<category><![CDATA[Security Announcements]]></category>
+		<category><![CDATA[release]]></category>
+		<guid isPermaLink="false">https://micronaut.io/?p=7534</guid>
+
+					<description><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 5.0.5! It includes a release of Micronaut AWS. Micronaut Core, Micronaut gRPC, Micronaut Oracle Cloud, and Micronaut Logging 2.0.1 If you haven’t yet updated to Micronaut Framework 5, this is an excellent opportunity to do so! Please feel free to reach out to [&#8230;]</p>
+<p>The post <a href="https://micronaut.io/2026/07/16/micronaut-framework-5-0-5-released/">Micronaut Framework 5.0.5 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><span data-preserver-spaces="true">The Micronaut Foundation is excited to announce the release of Micronaut framework 5.0.5! It includes a release of </span><a href="https://github.com/micronaut-projects/micronaut-aws/releases/v5.0.2">Micronaut AWS.</a> <a href="https://github.com/micronaut-projects/micronaut-core/releases/v5.0.6">Micronaut Core,</a> <a href="https://github.com/micronaut-projects/micronaut-grpc/releases/v5.0.1">Micronaut gRPC,</a> <a href="https://github.com/micronaut-projects/micronaut-oracle-cloud/releases/v6.0.1">Micronaut Oracle Cloud,</a> and <a href="https://github.com/micronaut-projects/micronaut-logging/releases/v2.0.1">Micronaut Logging 2.0.1</a></p>
+<p><span draggable="true">If you haven’t yet updated to <a href="https://micronaut.io/2026/05/20/micronaut-framework-5-0-0-released/">Micronaut Framework 5</a>, this is an excellent opportunity to do so!</span></p>
+<p>Please feel free to <a href="https://micronaut.io/support/">reach out to us</a> if you need any assistance.</p>
+<p>The post <a href="https://micronaut.io/2026/07/16/micronaut-framework-5-0-5-released/">Micronaut Framework 5.0.5 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Micronaut Framework 5.0.4 Released!</title>
+		<link>https://micronaut.io/2026/07/07/micronaut-framework-5-0-4-released/</link>
+		
+		<dc:creator><![CDATA[Sergio Del Amo Caballero]]></dc:creator>
+		<pubDate>Tue, 07 Jul 2026 11:04:55 +0000</pubDate>
+				<category><![CDATA[Release Announcements]]></category>
+		<category><![CDATA[Security Announcements]]></category>
+		<category><![CDATA[release]]></category>
+		<guid isPermaLink="false">https://micronaut.io/?p=7530</guid>
+
+					<description><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 5.0.4! It includes a release of Micronaut Core.  We strongly recommend that users update to Micronaut 5.0.4, as it ships with Netty 4.2.16, which fixes multiple CVEs. If you haven’t yet updated to Micronaut Framework 5, this is an excellent opportunity to do so! Please [&#8230;]</p>
+<p>The post <a href="https://micronaut.io/2026/07/07/micronaut-framework-5-0-4-released/">Micronaut Framework 5.0.4 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><span data-preserver-spaces="true">The Micronaut Foundation is excited to announce the release of Micronaut framework 5.0.4! It includes a release of </span><a href="https://github.com/micronaut-projects/micronaut-core/releases/tag/v5.0.5">Micronaut Core.</a></p>
+<p><span data-preserver-spaces="true"> </span><strong><span data-preserver-spaces="true">We strongly recommend that users update to Micronaut 5.0.4</span></strong><span data-preserver-spaces="true">, as it ships with </span><a class="editor-rtfLink" href="http://netty.io/news/2026/07/06/4-2-16-Final.html" target="_blank" rel="noopener"><span data-preserver-spaces="true">Netty 4.2.16</span></a><span data-preserver-spaces="true">, which fixes multiple CVEs.</span></p>
+<p><span draggable="true">If you haven’t yet updated to <a href="https://micronaut.io/2026/05/20/micronaut-framework-5-0-0-released/">Micronaut Framework 5</a>, this is an excellent opportunity to do so!</span></p>
+<p>Please feel free to <a href="https://micronaut.io/support/">reach out to us</a> if you need any assistance.</p>
+<p>The post <a href="https://micronaut.io/2026/07/07/micronaut-framework-5-0-4-released/">Micronaut Framework 5.0.4 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Micronaut Framework 5.0.3 Released!</title>
+		<link>https://micronaut.io/2026/06/30/micronaut-framework-5-0-3-released/</link>
+		
+		<dc:creator><![CDATA[Sergio Del Amo Caballero]]></dc:creator>
+		<pubDate>Tue, 30 Jun 2026 15:47:19 +0000</pubDate>
+				<category><![CDATA[Micronaut 5]]></category>
+		<category><![CDATA[Release Announcements]]></category>
+		<guid isPermaLink="false">https://micronaut.io/?p=7527</guid>
+
+					<description><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 5.0.3! It includes releases of Micronaut Core, Micronaut AWS, Micronaut Data, Micronaut SQL, Micronaut R2DBC, Micronaut Problem, Micronaut Test, and Micronaut Micrometer. If you haven’t yet updated to Micronaut Framework 5, this is an excellent opportunity to do so! Please feel free to [&#8230;]</p>
+<p>The post <a href="https://micronaut.io/2026/06/30/micronaut-framework-5-0-3-released/">Micronaut Framework 5.0.3 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><span data-preserver-spaces="true">The Micronaut Foundation is excited to announce the release of Micronaut framework 5.0.3! It includes releases of </span><a href="https://github.com/micronaut-projects/micronaut-core/releases/tag/v5.0.4">Micronaut Core, </a><a href="https://github.com/micronaut-projects/micronaut-aws/releases/tag/v5.0.1">Micronaut AWS, </a><a href="https://github.com/micronaut-projects/micronaut-data/releases/tag/v5.0.5">Micronaut Data, </a><a href="https://github.com/micronaut-projects/micronaut-sql/releases/tag/v7.0.2">Micronaut SQL, </a><a href="https://github.com/micronaut-projects/micronaut-r2dbc/releases/tag/v7.0.2">Micronaut R2DBC, </a><a href="https://github.com/micronaut-projects/micronaut-problem/releases/tag/v5.0.0">Micronaut Problem, </a><a href="https://github.com/micronaut-projects/micronaut-test/releases/tag/v5.0.1">Micronaut Test</a>, and <a href="https://github.com/micronaut-projects/micronaut-micrometer/releases/tag/v6.0.1">Micronaut Micrometer.</a></p>
+<p><span draggable="true">If you haven’t yet updated to <a href="https://micronaut.io/2026/05/20/micronaut-framework-5-0-0-released/">Micronaut Framework 5</a>, this is an excellent opportunity to do so!</span></p>
+<p>Please feel free to <a href="https://micronaut.io/support/">reach out to us</a> if you need any assistance.</p>
+<p>The post <a href="https://micronaut.io/2026/06/30/micronaut-framework-5-0-3-released/">Micronaut Framework 5.0.3 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Micronaut Framework 5.0.2 Released!</title>
+		<link>https://micronaut.io/2026/06/03/micronaut-framework-5-0-2-released/</link>
+		
+		<dc:creator><![CDATA[Sergio Del Amo Caballero]]></dc:creator>
+		<pubDate>Wed, 03 Jun 2026 15:44:43 +0000</pubDate>
+				<category><![CDATA[Micronaut 5]]></category>
+		<category><![CDATA[Release Announcements]]></category>
+		<guid isPermaLink="false">https://micronaut.io/?p=7517</guid>
+
+					<description><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 5.0.2! It includes releases of Micronaut Core 5.0.2, Micronaut Data, Micronaut Spring, and Micronaut Langchain4j.  We strongly recommend that users update to Micronaut 5.0.2, as it ships with Netty 4.2.15, which fixes multiple CVEs. If you haven’t yet updated to Micronaut Framework 5, this is [&#8230;]</p>
+<p>The post <a href="https://micronaut.io/2026/06/03/micronaut-framework-5-0-2-released/">Micronaut Framework 5.0.2 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><span data-preserver-spaces="true">The Micronaut Foundation is excited to announce the release of Micronaut framework 5.0.2! It includes releases of </span><a href="https://github.com/micronaut-projects/micronaut-core/releases/tag/v5.0.2">Micronaut Core 5.0.2</a>, <a href="https://github.com/micronaut-projects/micronaut-data/releases/tag/v5.0.4">Micronaut Data, </a><a href="https://github.com/micronaut-projects/micronaut-spring/releases/tag/v6.0.1">Micronaut Spring</a>, and <a href="https://github.com/micronaut-projects/micronaut-langchain4j/releases/tag/v2.0.1">Micronaut Langchain4j.</a></p>
+<p><span data-preserver-spaces="true"> </span><strong><span data-preserver-spaces="true">We strongly recommend that users update to Micronaut 5.0.2</span></strong><span data-preserver-spaces="true">, as it ships with </span><a class="editor-rtfLink" href="https://github.com/netty/netty/releases/tag/netty-4.2.15.Final" target="_blank" rel="noopener"><span data-preserver-spaces="true">Netty 4.2.15</span></a><span data-preserver-spaces="true">, which fixes multiple CVEs.</span></p>
+<p><span draggable="true">If you haven’t yet updated to <a href="https://micronaut.io/2026/05/20/micronaut-framework-5-0-0-released/">Micronaut Framework 5</a>, this is an excellent opportunity to do so!</span></p>
+<p>Please feel free to <a href="https://micronaut.io/support/">reach out to us</a> if you need any assistance.</p>
+<p>The post <a href="https://micronaut.io/2026/06/03/micronaut-framework-5-0-2-released/">Micronaut Framework 5.0.2 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Micronaut Framework 5.0.1 Released!</title>
+		<link>https://micronaut.io/2026/06/01/micronaut-framework-5-0-1-released/</link>
+		
+		<dc:creator><![CDATA[Sergio Del Amo Caballero]]></dc:creator>
+		<pubDate>Mon, 01 Jun 2026 14:40:05 +0000</pubDate>
+				<category><![CDATA[Micronaut 5]]></category>
+		<category><![CDATA[Release Announcements]]></category>
+		<guid isPermaLink="false">https://micronaut.io/?p=7509</guid>
+
+					<description><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 5.0.1! It includes releases of Micronaut Core, Micronaut Data, Micronaut GraphQL, and Micronaut JSON Schema. This release contains fixes for both GHSA-387m-935m-c4vw and GHSA-q6gh-6v2r-hjv3 security advisories. If you are still using Micronaut 4, update to Micronaut 4.10.15. If you are using Micronaut 3, [&#8230;]</p>
+<p>The post <a href="https://micronaut.io/2026/06/01/micronaut-framework-5-0-1-released/">Micronaut Framework 5.0.1 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><span data-preserver-spaces="true">The Micronaut Foundation is excited to announce the release of Micronaut framework 5.0.1! It includes releases of </span><a href="https://github.com/micronaut-projects/micronaut-core/releases/tag/v5.0.1">Micronaut Core</a>, <a href="https://github.com/micronaut-projects/micronaut-data/releases/tag/v5.0.3">Micronaut Data</a>, <a href="https://github.com/micronaut-projects/micronaut-graphql/releases/tag/v5.0.1">Micronaut GraphQL</a>, and <a href="https://github.com/micronaut-projects/micronaut-json-schema/releases/tag/v2.0.1">Micronaut JSON Schema.</a></p>
+<p>This release contains fixes for both <span draggable="true"><a href="https://github.com/micronaut-projects/micronaut-core/security/advisories/GHSA-387m-935m-c4vw" target="_blank" rel="noopener noreferrer">GHSA-387m-935m-c4vw</a></span> and <span draggable="true"><a href="https://github.com/micronaut-projects/micronaut-core/security/advisories/GHSA-q6gh-6v2r-hjv3" target="_blank" rel="noopener noreferrer">GHSA-q6gh-6v2r-hjv3</a> security advisories.</span></p>
+<p>If you are still using Micronaut 4, update to <span draggable="true"><a href="https://github.com/micronaut-projects/micronaut-platform/releases/tag/v4.10.15" target="_blank" rel="noopener noreferrer">Micronaut 4.10.15</a>. If you are using Micronaut 3, update to </span><span draggable="true"><a href="https://github.com/micronaut-projects/micronaut-core/releases/tag/v3.10.7" target="_blank" rel="noopener noreferrer">Micronaut 3.10.7.</a> If you haven’t yet updated to <a href="https://micronaut.io/2026/05/20/micronaut-framework-5-0-0-released/">Micronaut Framework 5</a>, this is an excellent opportunity to do so!</span></p>
+<p>Please feel free to <a href="https://micronaut.io/support/">reach out to us</a> if you need any assistance.</p>
+<p>The post <a href="https://micronaut.io/2026/06/01/micronaut-framework-5-0-1-released/">Micronaut Framework 5.0.1 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Micronaut Framework 5.0.0 Released!</title>
+		<link>https://micronaut.io/2026/05/20/micronaut-framework-5-0-0-released/</link>
+		
+		<dc:creator><![CDATA[Sergio Del Amo Caballero]]></dc:creator>
+		<pubDate>Wed, 20 May 2026 14:54:35 +0000</pubDate>
+				<category><![CDATA[Micronaut 5]]></category>
+		<category><![CDATA[Release Announcements]]></category>
+		<category><![CDATA[release]]></category>
+		<guid isPermaLink="false">https://micronaut.io/?p=7497</guid>
+
+					<description><![CDATA[<p>The Micronaut Foundation is excited to announce the general availability (GA) release of Micronaut framework 5! Latest Versions Micronaut 5 is represented by the Micronaut Platform BOM and brings the framework, its modules, and the managed dependency ecosystem up to current major versions. Micronaut 4 was introduced almost three years ago, so Micronaut 5 is [&#8230;]</p>
+<p>The post <a href="https://micronaut.io/2026/05/20/micronaut-framework-5-0-0-released/">Micronaut Framework 5.0.0 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The Micronaut Foundation is excited to announce the general availability (GA) release of <a href="https://micronaut.io/" rel="nofollow">Micronaut</a> framework 5!</p>
+<p><strong>Latest Versions</strong></p>
+<p>Micronaut 5 is represented by the <a href="https://micronaut-projects.github.io/micronaut-platform/snapshot/guide/" rel="nofollow">Micronaut Platform BOM</a> and brings the framework, its modules, and the managed dependency ecosystem up to current major versions. <a href="https://micronaut.io/2023/07/14/micronaut-framework-4-0-0-released/" rel="nofollow">Micronaut 4</a> was introduced almost three years ago, so Micronaut 5 is both a major framework release and a broad platform refresh across more than 70 Micronaut modules.</p>
+<p><strong>Build-Time and Speed</strong></p>
+<p>We have, of course, also taken the opportunity to continue improving the framework&#8217;s internals, maintaining alignment with its core values. Do as much as possible during build time and keep making it faster and faster.</p>
+<div class="markdown-heading">
+<h2 class="heading-element">Languages&#8217; Baselines</h2>
+<p><a id="user-content-languages-baselines" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#languages-baselines" aria-label="Permalink: Languages' Baselines"></a></div>
+<p>Micronaut 5 updates to the following baselines:</p>
+<ul>
+<li><a href="https://micronaut.io/2026/04/27/micronaut-framework-5-0-with-java-25-baseline/" rel="nofollow">Java 25</a></li>
+<li><a href="https://micronaut.io/2026/04/28/micronaut-framework-5-0-supports-apache-groovy-5/" rel="nofollow">Apache Groovy 5</a></li>
+<li><a href="https://micronaut.io/2026/04/28/micronaut-framework-5-0-supports-kotlin-2-3/" rel="nofollow">Kotlin 2.3</a></li>
+</ul>
+<div class="markdown-heading">
+<h2 class="heading-element">GraalVM</h2>
+<p><a id="user-content-graalvm" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#graalvm" aria-label="Permalink: GraalVM"></a></div>
+<p>Micronaut 5 updates <a href="https://graalvm.org/" rel="nofollow">GraalVM</a> to 25.0.3.</p>
+<div class="markdown-heading">
+<h2 class="heading-element">Core Changes</h2>
+<p><a id="user-content-core-changes" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#core-changes" aria-label="Permalink: Core Changes"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">Internals</h3>
+<p><a id="user-content-internals" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#internals" aria-label="Permalink: Internals"></a></div>
+<p>The IoC container and compile-time infrastructure have received substantial work in Micronaut 5. Bean resolution, qualifier handling, replacement metadata, eager initialization, and runtime annotation processing were refined to reduce runtime work and improve predictability.</p>
+<p>The bean context was reworked in several areas during the Micronaut 5 development cycle, including precomputed bean indexes, compile-time <code>@Replaces</code> handling, and broader bean context optimizations. Together, these changes continue Micronaut&#8217;s focus on startup performance and low runtime overhead.</p>
+<p>Micronaut 5 adds support for <code>jakarta.annotation.Priority</code>, mapping it to Micronaut&#8217;s bean and HTTP filter ordering semantics.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">HTTP</h3>
+<p><a id="user-content-http" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#http" aria-label="Permalink: HTTP"></a></div>
+<p>On the HTTP side, <a href="https://docs.micronaut.io/snapshot/guide/#http3Server" rel="nofollow">HTTP/3 support</a> on the Netty stack was promoted to stable. Micronaut 5 also includes a multipart/form handling refactor that introduces a lower-level, more server-independent form API and improves resource management in higher-level binders. See <a href="https://docs.micronaut.io/snapshot/guide/#form" rel="nofollow">Forms</a>, <a href="https://docs.micronaut.io/snapshot/guide/#formCapable" rel="nofollow">Detailed Form API</a>, and <a href="https://docs.micronaut.io/snapshot/guide/#uploads" rel="nofollow">File Uploads</a>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">JSpecify Nullability Annotations</h3>
+<p><a id="user-content-jspecify-nullability-annotations" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#jspecify-nullability-annotations" aria-label="Permalink: JSpecify Nullability Annotations"></a></div>
+<p>The framework APIs now embrace <a href="https://docs.micronaut.io/snapshot/guide/#nullabilityAnnotations" rel="nofollow">nullability annotations</a> and specifically <a href="https://docs.micronaut.io/snapshot/guide/#jspecify" rel="nofollow">JSpecify nullability annotations</a>, with <code>@NullMarked</code> adoption across the codebase and stronger static analysis integration. The result is clearer API contracts, improved Kotlin interoperability, and better IDE feedback.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Resilience and Context Propagation</h3>
+<p><a id="user-content-resilience-and-context-propagation" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#resilience-and-context-propagation" aria-label="Permalink: Resilience and Context Propagation"></a></div>
+<p>In addition to the existing annotation-driven model documented in <a href="https://docs.micronaut.io/snapshot/guide/#retry" rel="nofollow">Retry Advice</a>, Micronaut 5 offers <a href="https://docs.micronaut.io/snapshot/guide/#_programmatic_retry" rel="nofollow">programmatic retry</a>and <a href="https://docs.micronaut.io/snapshot/guide/#_programmatic_circuit_breaker" rel="nofollow">circuit breaker APIs</a>. These changes enable defining typed retry and circuit breaker policies in code and reusing them for synchronous, reactive, and asynchronous flows.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Configuration</h2>
+<p><a id="user-content-configuration" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#configuration" aria-label="Permalink: Configuration"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">Configuration Support</h3>
+<p><a id="user-content-configuration-support" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#configuration-support" aria-label="Permalink: Configuration Support"></a></div>
+<p>Micronaut 5 supports config imports and a <a href="https://docs.micronaut.io/snapshot/api/io/micronaut/context/env/PropertySourceImporter.html" rel="nofollow"><code>PropertySourceImporter</code> SPI</a>, enabling configuration loading from sources such as files, classpath locations, environment variables, config trees, and custom importer implementations. See <a href="https://docs.micronaut.io/snapshot/guide/#configImport" rel="nofollow">Importing Additional Configuration</a>, <a href="https://docs.micronaut.io/snapshot/guide/#customPropertySourceImporter" rel="nofollow">Implementing a Custom PropertySourceImporter</a>, and <a href="https://docs.micronaut.io/snapshot/guide/#propertySource" rel="nofollow">Externalized Configuration with PropertySources</a>.</p>
+<p>This new approach deprecates the <a href="https://docs.micronaut.io/snapshot/guide/#bootstrap" rel="nofollow">Bootstrap Configuration</a> support, which may be removed in Micronaut 6.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Application Configuration Validation</h3>
+<p><a id="user-content-application-configuration-validation" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#application-configuration-validation" aria-label="Permalink: Application Configuration Validation"></a></div>
+<p>A new module, <a href="https://micronaut-projects.github.io/micronaut-json-schema/snapshot/guide/#configurationValidator" rel="nofollow">Micronaut JSON Schema configuration validator</a>, eases application configuration validation and is integrated into the <a href="https://micronaut-projects.github.io/micronaut-maven-plugin/snapshot/examples/configuration-validation.html" rel="nofollow">Micronaut Maven Plugin</a> and the <a href="https://micronaut-projects.github.io/micronaut-gradle-plugin/5.0.0/#configuration-validation" rel="nofollow">Micronaut Gradle Plugin</a>.</p>
+<p>This module relies on the capability introduced in Micronaut 5 to generate JSON Schema documents from <code>@ConfigurationProperties</code>.</p>
+<p><a href="https://micronaut-projects.github.io/micronaut-json-schema/snapshot/guide/" rel="nofollow">Micronaut JSON Schema</a> updates <a href="https://github.com/networknt/json-schema-validator"><code>com.networknt:json-schema-validator</code></a> to <code>3.0.2</code>.</p>
+<div class="markdown-heading">
+<h2 class="heading-element">Logging</h2>
+<p><a id="user-content-logging" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#logging" aria-label="Permalink: Logging"></a></div>
+<p>Micronaut Logging updates to Log4j <a href="https://logging.apache.org/log4j/2.x/release-notes.html#release-notes-2-25-4" rel="nofollow"><code>2.25.4</code></a></p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Dev &amp; Test</h2>
+<p><a id="user-content-dev--test" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#dev--test" aria-label="Permalink: Dev &amp; Test"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">Control Panel</h3>
+<p><a id="user-content-control-panel" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#control-panel" aria-label="Permalink: Control Panel"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-control-panel/snapshot/guide/" rel="nofollow">Micronaut Control Panel</a> gets a fresh look, and it adds panels for <a href="https://micronaut-projects.github.io/micronaut-control-panel/snapshot/guide/#cache" rel="nofollow">Cache</a>, <a href="https://micronaut-projects.github.io/micronaut-control-panel/snapshot/guide/#datasource" rel="nofollow">DataSource</a>, <a href="https://micronaut-projects.github.io/micronaut-control-panel/snapshot/guide/#hibernate" rel="nofollow">Hibernate</a>, and <a href="https://micronaut-projects.github.io/micronaut-control-panel/snapshot/guide/#kafka" rel="nofollow">Kafka Streams</a>. It also adds Object Storage, Disabled Beans, and Metrics panels, plus authenticated and authorized access.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">AOT</h3>
+<p><a id="user-content-aot" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#aot" aria-label="Permalink: AOT"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-aot/snapshot/guide/" rel="nofollow">Micronaut AOT</a> adds an AOT diagnostics report.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">OpenAPI</h3>
+<p><a id="user-content-openapi" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#openapi" aria-label="Permalink: OpenAPI"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-openapi/snapshot/guide/" rel="nofollow">Micronaut OpenAPI</a> updates to <code>7.0.0</code>, with fixes and improvements for KSP2, <code>@SecuritySchema</code>, <code>JsonAnyGetter</code> / <code>JsonAnySetter</code>, <code>JsonNode</code>, headers, byte arrays, and URI template/path/query processing.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Test</h3>
+<p><a id="user-content-test" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#test" aria-label="Permalink: Test"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-test/snapshot/guide/" rel="nofollow">Micronaut Test</a> updates:</p>
+<ul>
+<li><a href="https://junit.org/" rel="nofollow">JUnit</a> to <code>6.0.3</code>.</li>
+<li><a href="https://kotest.io/" rel="nofollow">KoTest</a> to <code>6.1.9</code>.</li>
+<li><a href="https://spockframework.org/" rel="nofollow">Spock</a> to <code>2.4-groovy-5.0</code>.</li>
+<li><a href="https://site.mockito.org/" rel="nofollow">Mockito</a> to <code>5.23.0</code>.</li>
+<li><a href="https://mockk.io/" rel="nofollow">Mockk</a> to <code>1.14.9</code>.</li>
+<li><a href="https://rest-assured.io/" rel="nofollow">REST-assured</a> to <code>6.0.0</code>.</li>
+<li><a href="https://assertj.github.io/doc/" rel="nofollow">AssertJ</a>: updates to <code>3.27.7</code>.</li>
+</ul>
+<p><a href="https://micronaut-projects.github.io/micronaut-test-resources/snapshot/guide/" rel="nofollow">Micronaut Test Resources</a> updates to <code>4.0.0</code>, with a binary protocol between client and server, shared containers across multiple databases, and new providers for Infinispan, Hazelcast, Pulsar, MinIO, SeaweedFS, Azurite, Couchbase, and WireMock. The platform also manages <a href="https://testcontainers.com/" rel="nofollow">Testcontainers</a> <code>2.0.5</code>.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Serialization</h2>
+<p><a id="user-content-serialization" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#serialization" aria-label="Permalink: Serialization"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">Micronaut Serialization</h3>
+<p><a id="user-content-micronaut-serialization" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#micronaut-serialization" aria-label="Permalink: Micronaut Serialization"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-serialization/snapshot/guide/" rel="nofollow">Micronaut Serialization</a> adds:</p>
+<ul>
+<li>Serializers and Deserializers are now generated at build time with SourceGen, improving performance. The <a href="https://micronaut-projects.github.io/micronaut-serialization/snapshot/api/io/micronaut/serde/annotation/SerdeableGenerated.html" rel="nofollow"><code>@SerdeableGenerated</code></a> annotation, declares the compile-time generated serde contract for a <a href="https://micronaut-projects.github.io/micronaut-serialization/snapshot/api/io/micronaut/serde/annotation/Serdeable.html" rel="nofollow"><code>Serdeable</code></a> type.</li>
+<li>Broader format metadata support: pattern, shape, locale, timezone, lenient parsing, and radix.</li>
+<li>Serialization feature flags for nanosecond timestamps, zone IDs, unwrapped single-element arrays, and sorted map entries.</li>
+<li>Deserialization feature flags for single-value-as-array, case-insensitive properties, unknown enum handling, timestamp precision, and context time zone adjustment.</li>
+<li>Support for <code>@JsonEnumDefaultValue</code> with <code>@JsonFormat(with = READ_UNKNOWN_ENUM_VALUES_USING_DEFAULT_VALUE)</code></li>
+</ul>
+<div class="markdown-heading">
+<h3 class="heading-element">Jackson 3</h3>
+<p><a id="user-content-jackson-3" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#jackson-3" aria-label="Permalink: Jackson 3"></a></div>
+<p>With the release of Micronaut 5, <a href="https://micronaut.io/2026/05/01/micronaut-framework-5-with-jackson-3/" rel="nofollow">Micronaut Jackson Databind updates to Jackson 3</a> (<code>3.1.3</code> in the platform BOM).</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Server</h2>
+<p><a id="user-content-server" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#server" aria-label="Permalink: Server"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">Ktor</h3>
+<p><a id="user-content-ktor" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#ktor" aria-label="Permalink: Ktor"></a></div>
+<p>Micronaut Kotlin updates to <a href="https://ktor.io/changelog/3.0/" rel="nofollow">Ktor 3</a> (<code>3.4.3</code> in the platform BOM).</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Servlet</h3>
+<p><a id="user-content-servlet" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#servlet" aria-label="Permalink: Servlet"></a></div>
+<p>Micronaut Servlet updates the following server runtime dependencies:</p>
+<ul>
+<li><a href="https://undertow.io/" rel="nofollow">Undertow</a> to <code>2.3.24.Final</code></li>
+<li><a href="https://tomcat.apache.org/" rel="nofollow">Apache Tomcat</a> to <code>11.0.21</code></li>
+<li><a href="https://jetty.org/" rel="nofollow">Eclipse Jetty</a> to <code>12.1.8</code></li>
+</ul>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Persistence</h2>
+<p><a id="user-content-persistence" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#persistence" aria-label="Permalink: Persistence"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">DATA</h3>
+<p><a id="user-content-data" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#data" aria-label="Permalink: DATA"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-data/snapshot/guide/" rel="nofollow">Micronaut Data</a> adds <a href="https://micronaut-projects.github.io/micronaut-data/snapshot/guide/#sqlGeospatial" rel="nofollow">Geospatial Support</a>, <a href="https://micronaut-projects.github.io/micronaut-data/snapshot/guide/#sqlVectorType" rel="nofollow">SQL Vector Type Mapping</a>, and it continues to improve the <a href="https://micronaut-projects.github.io/micronaut-data/snapshot/guide/#sqlJsonView" rel="nofollow">@JsonView</a>support.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">SQL</h3>
+<p><a id="user-content-sql" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#sql" aria-label="Permalink: SQL"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-sql/snapshot/guide/" rel="nofollow">Micronaut SQL</a> adds the ability to <a href="https://micronaut-projects.github.io/micronaut-sql/snapshot/guide/#jdbc-runtime-password-update" rel="nofollow">update JDBC datasource credentials at runtime without restarting the application</a>, adds support for <a href="https://www.sqlite.org/" rel="nofollow">SQLite</a>, <a href="https://micronaut-projects.github.io/micronaut-sql/snapshot/guide/#jdbc-connection-pools" rel="nofollow">Oracle Session Program Auto-Configuration</a>, unpooled datasource support, and updates to the latest versions:</p>
+<ul>
+<li>vertx to <code>5.0.12</code>.</li>
+<li>jooq to <code>3.21.4</code>.</li>
+<li>Hibernate-core to <code>7.3.4.Final</code>.</li>
+<li>jdbi3-core to <code>3.53.0</code>.</li>
+<li>ojdbc to <code>23.26.2.0.0</code>.</li>
+<li>postgresql to <code>42.7.11</code>.</li>
+<li>mariadb-driver to <code>3.5.8</code>.</li>
+<li>mssql-jdbc to <code>13.4.0.jre11</code>.</li>
+<li>Mysql-connector-j to <code>9.7.0</code>.</li>
+<li>Hikari to <code>7.0.2</code>.</li>
+<li>commons-dbcp2 to <code>2.14.0</code>.</li>
+<li>Tomcat JDBC to <code>11.0.22</code>.</li>
+<li>Jakarta Persistence API to <code>3.2.0</code>.</li>
+<li>H2 to <code>2.4.240</code>.</li>
+</ul>
+<div class="markdown-heading">
+<h3 class="heading-element">R2DBC</h3>
+<p><a id="user-content-r2dbc" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#r2dbc" aria-label="Permalink: R2DBC"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-r2dbc/snapshot/guide/" rel="nofollow">Micronaut R2DBC</a> adds Google Cloud SQL R2DBC PostgreSQL support, and it updates the R2DBC drivers, including H2 from <code>1.0.0</code> to <code>1.1.0</code>, MariaDB from <code>1.3.0</code> to <code>1.4.0</code>, MSSQL from <code>1.0.3</code> to <code>1.0.4</code>, MySQL from <code>1.4.1</code> to <code>1.4.2</code>, PostgreSQL from <code>1.1.0</code> to <code>1.1.1</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">MongoDB</h3>
+<p><a id="user-content-mongodb" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#mongodb" aria-label="Permalink: MongoDB"></a></div>
+<p><a href="https://github.com/mongodb/mongo-java-driver">MongoDB Java Driver</a> upgrades to <code>5.7.0</code>.</p>
+<p>A new module, <code>io.micronaut.mongodb:micronaut-mongo-coroutine</code>, adds Kotlin coroutine MongoDB driver support. The release also adds <code>MongoClientSettings</code> customization for client-side field-level encryption.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Eclipsestore</h3>
+<p><a id="user-content-eclipsestore" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#eclipsestore" aria-label="Permalink: Eclipsestore"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-eclipsestore/snapshot/guide/" rel="nofollow">Micronaut EclipseStore</a> annotation mappers moved from <code>micronaut-eclipsestore-annotations</code> to the new module <code>micronaut-eclipsestore-processor</code>. Users must replace the annotation processor or Groovy <code>compileOnly</code>dependency accordingly.</p>
+<p>The module updates EclipseStore from <code>1.4.0</code> to <a href="https://github.com/eclipse-store/store/releases/tag/4.0.1"><code>4.0.1</code></a>. It also adds Google Cloud Firestore storage target support.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Redis</h3>
+<p><a id="user-content-redis" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#redis" aria-label="Permalink: Redis"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-redis/snapshot/guide/" rel="nofollow">Micronaut Redis</a> adds <a href="https://micronaut-projects.github.io/micronaut-redis/snapshot/guide/#pubsub" rel="nofollow">Pub/Sub Messaging support</a>, cache bulk operations, retry options, configurable namespace support, and it updates the <a href="https://github.com/redis/lettuce">Lettuce Java Redis client</a> to <code>7.5.1</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Neo4J</h3>
+<p><a id="user-content-neo4j" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#neo4j" aria-label="Permalink: Neo4J"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-neo4j/snapshot/guide/" rel="nofollow">Micronaut Neo4J</a> updates the <a href="https://github.com/neo4j/neo4j-java-driver">Neo4j Java driver</a> to <code>6.1.0</code>.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Database Migration</h2>
+<p><a id="user-content-database-migration" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#database-migration" aria-label="Permalink: Database Migration"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">Liquibase</h3>
+<p><a id="user-content-liquibase" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#liquibase" aria-label="Permalink: Liquibase"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-liquibase/snapshot/guide/" rel="nofollow">Micronaut Liquibase</a> updates to Liquibase <code>5.0.2</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Flyway</h3>
+<p><a id="user-content-flyway" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#flyway" aria-label="Permalink: Flyway"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-flyway/snapshot/guide/" rel="nofollow">Micronaut Flyway</a> updates to Flyway <code>12.6.1</code>.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Cloud</h2>
+<p><a id="user-content-cloud" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#cloud" aria-label="Permalink: Cloud"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">Object Storage</h3>
+<p><a id="user-content-object-storage" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#object-storage" aria-label="Permalink: Object Storage"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-object-storage/snapshot/guide/" rel="nofollow">Micronaut Object Storage</a> adds support for <a href="https://micronaut-projects.github.io/micronaut-object-storage/snapshot/guide/#paginatedListing" rel="nofollow">Paginated Listing</a>, <a href="https://micronaut-projects.github.io/micronaut-object-storage/snapshot/guide/#bucketManagement" rel="nofollow">Bucket and Container Management APIs</a>, presigned requests, streaming upload support, and reactive operations.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Tracing</h3>
+<p><a id="user-content-tracing" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#tracing" aria-label="Permalink: Tracing"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-tracing/snapshot/guide/" rel="nofollow">Micronaut Tracing</a> updates to <a href="https://github.com/open-telemetry/opentelemetry-java">Open Telemetry</a> <code>1.62.0</code>. It also adds OpenTelemetry R2DBC instrumentation and a Logback appender.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Kubernetes</h3>
+<p><a id="user-content-kubernetes" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#kubernetes" aria-label="Permalink: Kubernetes"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-kubernetes/snapshot/guide/" rel="nofollow">Micronaut Kubernetes</a> updates to <a href="https://github.com/kubernetes-client/java">Kubernetes Java client</a> <code>26.0.0</code>.</p>
+<p>The Kubernetes module also gains support for <a href="https://micronaut-projects.github.io/micronaut-kubernetes/latest/guide/#config-import" rel="nofollow">Configuration Import via Kubernetes ConfigMaps, Secrets or Mounted Volumes</a>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">AWS</h3>
+<p><a id="user-content-aws" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#aws" aria-label="Permalink: AWS"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-aws/snapshot/guide/" rel="nofollow">Micronaut AWS</a> updates AWS SDK v2 to <code>2.44.7</code>, AWS Lambda Java Serialization to <code>1.4.0</code>, and runtime interface client to <code>2.10.1</code>. It also adds config import support for AWS Parameter Store and AWS Secrets Manager.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Azure</h3>
+<p><a id="user-content-azure" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#azure" aria-label="Permalink: Azure"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-azure/snapshot/guide/" rel="nofollow">Micronaut Azure</a> updates to Azure SDK to <code>1.3.6</code>, Azure Cosmos to <code>4.80.0</code>, and Azure Functions Library to <code>3.3.0</code>. It also adds Azure Key Vault config import support.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">GCP</h3>
+<p><a id="user-content-gcp" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#gcp" aria-label="Permalink: GCP"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-gcp/snapshot/guide/" rel="nofollow">Micronaut GCP</a> updates <a href="https://github.com/cloudevents/sdk-java">CloudEvents SDK</a> to <code>4.0.2</code>, Google Secret Manager to <code>2.91.0</code>, Google Auth <code>1.46.0</code>, Pub/Sub <code>1.150.1</code>, and Functions Framework API <code>2.0.1</code>. It also adds Google Secret Manager config import support.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Oracle Cloud</h3>
+<p><a id="user-content-oracle-cloud" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#oracle-cloud" aria-label="Permalink: Oracle Cloud"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-oracle-cloud/snapshot/guide/" rel="nofollow">Micronaut Oracle Cloud</a> updates to OCI SDK <code>3.86.1</code>.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">AI</h2>
+<p><a id="user-content-ai" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#ai" aria-label="Permalink: AI"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">Micronaut MCP</h3>
+<p><a id="user-content-micronaut-mcp" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#micronaut-mcp" aria-label="Permalink: Micronaut MCP"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-mcp/snapshot/guide/" rel="nofollow">Micronaut MCP</a> updates to <a href="https://github.com/modelcontextprotocol/java-sdk">MCP Java SDK</a> <code>1.1.2</code> and is included in the platform as <code>1.0.0</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Micronaut Langchain4J</h3>
+<p><a id="user-content-micronaut-langchain4j" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#micronaut-langchain4j" aria-label="Permalink: Micronaut Langchain4J"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-langchain4j/snapshot/guide/" rel="nofollow">Micronaut Langchain4j</a> updates to <a href="https://github.com/langchain4j/langchain4j">Langchain4j</a> <code>1.15.0</code>.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Validation</h2>
+<p><a id="user-content-validation" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#validation" aria-label="Permalink: Validation"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-hibernate-validator/snapshot/guide/" rel="nofollow">Micronaut Hibernate Validator</a> updates <a href="https://hibernate.org/validator/" rel="nofollow">Hibernate Validator</a> to <code>9.1.0.Final</code> and registers custom <code>ValueExtractor</code>beans in <code>ValidatorFactoryProvider</code>.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Security</h2>
+<p><a id="user-content-security" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#security" aria-label="Permalink: Security"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-security/snapshot/guide/" rel="nofollow">Micronaut Security</a> updates <a href="https://connect2id.com/products/nimbus-jose-jwt" rel="nofollow">Nimbus JOSE JWT</a> to <code>10.9</code>.</p>
+<p>The JSR 250 annotation mappers have been moved to a new module <code>io.micronaut.security:micronaut-security-processor</code>. Users must replace the annotation processor or Groovy <code>compileOnly</code> dependency accordingly.</p>
+<p>New security context API/SPI was added: <a href="https://micronaut-projects.github.io/micronaut-security/snapshot/api/io/micronaut/security/context/SecurityContext.html" rel="nofollow">SecurityContext</a>, <a href="https://micronaut-projects.github.io/micronaut-security/snapshot/api/io/micronaut/security/context/SecurityContextHolder.html" rel="nofollow">SecurityContextHolder</a>, and <a href="https://micronaut-projects.github.io/micronaut-security/snapshot/api/io/micronaut/security/context/SecurityContextSupplier.html" rel="nofollow">SecurityContextSupplier</a>, with request-backed behavior wired through the SecurityFilter. The module also adds OAuth2/OIDC <code>prompt=create</code>support for user registration.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Reactive Libraries</h2>
+<p><a id="user-content-reactive-libraries" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#reactive-libraries" aria-label="Permalink: Reactive Libraries"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">Micronaut Reactor</h3>
+<p><a id="user-content-micronaut-reactor" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#micronaut-reactor" aria-label="Permalink: Micronaut Reactor"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-reactor/snapshot/guide/" rel="nofollow">Micronaut Reactor</a> updates Reactor to <code>2025.0.5</code> and <code>micrometer-context-propagation</code> to <code>1.2.1</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Micronaut RxJava</h3>
+<p><a id="user-content-micronaut-rxjava" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#micronaut-rxjava" aria-label="Permalink: Micronaut RxJava"></a></div>
+<p>Micronaut 5 no longer supports RxJava 2. Micronaut 5 users willing to use RxJava should use <a href="https://micronaut-projects.github.io/micronaut-rxjava3/snapshot/guide/" rel="nofollow">Micronaut RxJava 3</a>.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Analytics</h2>
+<p><a id="user-content-analytics" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#analytics" aria-label="Permalink: Analytics"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">OpenSearch</h3>
+<p><a id="user-content-opensearch" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#opensearch" aria-label="Permalink: OpenSearch"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-opensearch/snapshot/guide/" rel="nofollow">Micronaut OpenSearch</a> updates the <a href="https://github.com/opensearch-project/opensearch-java">OpenSearch Java client</a> to <code>3.8.0</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">ElasticSearch</h3>
+<p><a id="user-content-elasticsearch" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#elasticsearch" aria-label="Permalink: ElasticSearch"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-elasticsearch/snapshot/guide/" rel="nofollow">Micronaut ElasticSearch</a> updates the <a href="https://github.com/elastic/elasticsearch-java">ElasticSearch Java Client</a> to <code>9.4.0</code>.</p>
+<div class="markdown-heading">
+<h2 class="heading-element">Micrometer</h2>
+<p><a id="user-content-micrometer" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#micrometer" aria-label="Permalink: Micrometer"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-micrometer/snapshot/guide/" rel="nofollow">Micronaut Micrometer</a> updates:</p>
+<ul>
+<li><a href="https://github.com/micrometer-metrics/micrometer">Micrometer</a> to <code>1.16.5</code>.</li>
+<li><code>micrometer-tracing</code> to <code>1.6.5</code>.</li>
+<li><code>metrics-core</code> to <code>4.2.38</code>.</li>
+<li><code>prometheus-metrics-exporter-pushgateway</code> to <code>1.6.1</code>.</li>
+<li><code>datasource-micrometer</code> to <code>2.2.1</code>.</li>
+</ul>
+<p>Micronaut Micrometer also adds streaming Prometheus scrape responses.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">API</h2>
+<p><a id="user-content-api" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#api" aria-label="Permalink: API"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">JAX-RS</h3>
+<p><a id="user-content-jax-rs" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#jax-rs" aria-label="Permalink: JAX-RS"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-jaxrs/snapshot/guide/" rel="nofollow">Micronaut JAX-RS</a> updates to Jakarta REST API <code>4.0.0</code> and adds support for <code>@ConstrainedTo</code> and <code>ParamConverterProvider</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">GraphQL</h3>
+<p><a id="user-content-graphql" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#graphql" aria-label="Permalink: GraphQL"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-graphql/snapshot/guide/" rel="nofollow">Micronaut GraphQL</a> updates:</p>
+<ul>
+<li><a href="https://github.com/graphql-java/graphql-java">GraphQL Java</a> to <code>26.0</code>.</li>
+<li><a href="https://github.com/graphql-java/graphql-java-extended-scalars">GraphQL Java Extended Scalars</a> to <code>24.0</code>.</li>
+</ul>
+<p>Malformed GraphQL JSON now returns HTTP 400.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">gRPC</h3>
+<p><a id="user-content-grpc" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#grpc" aria-label="Permalink: gRPC"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-grpc/snapshot/guide/" rel="nofollow">Micronaut gRPC</a> adds the <code>io.micronaut.grpc:micronaut-grpc-inprocess</code> module to ease testing. It updates to:</p>
+<ul>
+<li>gRPC Java to <code>1.80.0</code>.</li>
+<li>Protobuf to <code>4.34.1</code>.</li>
+<li>gRPC Kotlin to <code>1.5.0</code>.</li>
+</ul>
+<p>It also adds configurable gRPC server executor support.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Spring</h3>
+<p><a id="user-content-spring" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#spring" aria-label="Permalink: Spring"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-spring/snapshot/guide/" rel="nofollow">Micronaut Spring</a> updates to</p>
+<ul>
+<li>Spring Boot <code>4.0.6</code>.</li>
+<li>Spring <code>7.0.7</code>.</li>
+</ul>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Messaging</h2>
+<p><a id="user-content-messaging" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#messaging" aria-label="Permalink: Messaging"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">Kafka</h3>
+<p><a id="user-content-kafka" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#kafka" aria-label="Permalink: Kafka"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-kafka/snapshot/guide/" rel="nofollow">Micronaut Kafka</a> updates to <a href="https://github.com/apache/kafka">Apache Kafka</a> <code>4.2.0</code>.</p>
+<p>The Kafka module receives a number of enhancements including per-class consumer strategies, a Kafka consumer bean scope, listener IDs, listener invocation scope, optional AdminClient, and support for graceful shutdown.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">RABBITMQ</h3>
+<p><a id="user-content-rabbitmq" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#rabbitmq" aria-label="Permalink: RABBITMQ"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-rabbitmq/snapshot/guide/" rel="nofollow">Micronaut RabbitMQ</a> updates the <a href="https://github.com/rabbitmq/rabbitmq-java-client">RabbitMQ Java client</a> to <code>5.30.0</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">NATS</h3>
+<p><a id="user-content-nats" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#nats" aria-label="Permalink: NATS"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-spring/nats/guide/" rel="nofollow">Micronaut NATS</a> updates the <a href="https://github.com/nats-io/nats.java">NATS &#8211; Java Client</a> to <code>2.25.3</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">JMS</h3>
+<p><a id="user-content-jms" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#jms" aria-label="Permalink: JMS"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-jms/nats/guide/" rel="nofollow">Micronaut JMS</a> updates to:</p>
+<ul>
+<li>ActiveMQ Classic to <code>6.2.5</code>.</li>
+<li>ActiveMQ Artemis Jakarta client to <code>2.53.0</code>.</li>
+<li>Apache Commons Pool to <code>2.13.1</code>.</li>
+</ul>
+<div class="markdown-heading">
+<h3 class="heading-element">MQTT</h3>
+<p><a id="user-content-mqtt" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#mqtt" aria-label="Permalink: MQTT"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-mqtt/nats/guide/" rel="nofollow">Micronaut MQTT</a> updates the HiveMQ MQTT Client to <code>1.3.14</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Pulsar</h3>
+<p><a id="user-content-pulsar" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#pulsar" aria-label="Permalink: Pulsar"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-pulsar/nats/guide/" rel="nofollow">Micronaut Pulsar</a> updates <a href="https://github.com/apache/pulsar">Apache Pulsar</a> Java Client to <code>4.2.1</code>.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Views</h2>
+<p><a id="user-content-views" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#views" aria-label="Permalink: Views"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-views/snapshot/guide/" rel="nofollow">Micronaut Views</a> updates:</p>
+<ul>
+<li>Soy to <code>2024-02-26</code></li>
+<li>Handlebars to <code>4.5.0</code>.</li>
+<li>JTE to <code>3.2.4</code>.</li>
+<li>Thymeleaf to <code>3.1.5.RELEASE</code>.</li>
+<li>Pebble to <code>4.1.1</code>.</li>
+</ul>
+<p><a href="https://micronaut-projects.github.io/micronaut-views/snapshot/guide/#turbo" rel="nofollow">Turbo</a> has moved to its own dependency <code>io.micronaut.views:micronaut-views-turbo</code>. Micronaut Views also adds HTMX integration.</p>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">Miscellaneous</h2>
+<p><a id="user-content-miscellaneous" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#miscellaneous" aria-label="Permalink: Miscellaneous"></a></div>
+<div class="markdown-heading">
+<h3 class="heading-element">EMAIL</h3>
+<p><a id="user-content-email" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#email" aria-label="Permalink: EMAIL"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-email/snapshot/guide/" rel="nofollow">Micronaut Email</a> updates Mailjet to <code>6.0.1</code>, Mailtrap to <code>1.2.0</code>, and Postmark to <code>1.13.0</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">ACME</h3>
+<p><a id="user-content-acme" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#acme" aria-label="Permalink: ACME"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-acme/snapshot/guide/" rel="nofollow">Micronaut ACME</a> <a href="https://github.com/shred/acme4j">updates to ACMEJ</a> <code>5.1.0</code>.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Session</h3>
+<p><a id="user-content-session" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#session" aria-label="Permalink: Session"></a></div>
+<p><a href="https://micronaut-projects.github.io/micronaut-session/snapshot/guide/" rel="nofollow">Micronaut Session</a> updates to <code>5.0.0</code>, with request/response filter method support and custom context-path fixes.</p>
+<div class="markdown-heading">
+<h3 class="heading-element">Cache</h3>
+<p><a id="user-content-cache" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#cache" aria-label="Permalink: Cache"></a></div>
+<p>It updates:</p>
+<ul>
+<li><a href="https://github.com/ben-manes/caffeine">Caffeine</a> to <code>3.2.4</code>.</li>
+<li><a href="https://www.ehcache.org/" rel="nofollow">Ehcache</a> to <code>3.12.0</code>.</li>
+<li><a href="https://hazelcast.com/developers/clients/java/" rel="nofollow">Hazelcast</a> to <code>5.6.0</code>.</li>
+<li><a href="https://infinispan.org/" rel="nofollow">Infinispan</a> to <code>16.1.4</code>.</li>
+</ul>
+<hr />
+<div class="markdown-heading">
+<h2 class="heading-element">HOW TO UPGRADE TO MICRONAUT FRAMEWORK 5?</h2>
+<p><a id="user-content-how-to-upgrade-to-micronaut-framework-5" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#how-to-upgrade-to-micronaut-framework-5" aria-label="Permalink: HOW TO UPGRADE TO MICRONAUT FRAMEWORK 5?"></a></div>
+<p>We have published an <a href="https://github.com/micronaut-projects/micronaut-core/wiki/Update-to-Micronaut-5">upgrade to Micronaut framework 5 guide</a> to help you upgrade your Micronaut applications.</p>
+<div class="markdown-heading">
+<h1 class="heading-element">NEXT STEPS</h1>
+<p><a id="user-content-next-steps" class="anchor" href="https://github.com/micronaut-projects/micronaut-core/wiki/Micronaut-5-Release#next-steps" aria-label="Permalink: NEXT STEPS"></a></div>
+<p>Please refer to the <a href="https://docs.micronaut.io/" rel="nofollow">documentation</a> for further details, try upgrading your applications, and use <a href="https://github.com/micronaut-projects">GitHub</a> to report any issues.</p>
+<p>Thanks to all those who contributed to this release! We look forward to your feedback.</p>
+<p>The post <a href="https://micronaut.io/2026/05/20/micronaut-framework-5-0-0-released/">Micronaut Framework 5.0.0 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Micronaut Framework 4.10.14 Released!</title>
+		<link>https://micronaut.io/2026/05/12/micronaut-framework-4-10-14-released/</link>
+		
+		<dc:creator><![CDATA[Sergio Del Amo Caballero]]></dc:creator>
+		<pubDate>Tue, 12 May 2026 17:15:47 +0000</pubDate>
 				<category><![CDATA[Release Announcements]]></category>
 		<category><![CDATA[release]]></category>
-		<guid isPermaLink="false">https://micronaut.io/?p=7272</guid>
+		<guid isPermaLink="false">https://micronaut.io/?p=7493</guid>
 
-					<description><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 4.8.2! It contains releases of Micronaut Core, Micronaut Maven Plugin, Micronaut JSON Schema, Micronaut Micrometer, and Micronaut Servlet. NEXT STEPS If you haven’t yet updated to Micronaut framework 4, this is an excellent opportunity to do so! Please feel free to reach out [&#8230;]</p>
-<p>The post <a href="https://micronaut.io/2025/04/18/micronaut-framework-4-8-2-released/">Micronaut Framework 4.8.2 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
+					<description><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 4.10.14! It contains releases of Micronaut Core and Micronaut Data. We strongly recommend that users update to Micronaut 4.10.14, as it ships with Netty 4.2.13, which fixes multiple CVEs. Please feel free to reach out to us if you need any assistance.</p>
+<p>The post <a href="https://micronaut.io/2026/05/12/micronaut-framework-4-10-14-released/">Micronaut Framework 4.10.14 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
 ]]></description>
-										<content:encoded><![CDATA[<p>The Micronaut Foundation is excited to announce the release of Micronaut framework 4.8.2!</p>
-<p>It contains releases of <a href="https://github.com/micronaut-projects/micronaut-core/releases/tag/v4.8.11">Micronaut Core, </a><a href="https://github.com/micronaut-projects/micronaut-maven-plugin/releases/tag/v4.8.2">Micronaut Maven Plugin, </a><a href="https://github.com/micronaut-projects/micronaut-json-schema/releases/tag/v1.5.2">Micronaut JSON Schema, </a><a href="https://github.com/micronaut-projects/micronaut-micrometer/releases/tag/v5.10.1">Micronaut Micrometer</a>, and <a href="https://github.com/micronaut-projects/micronaut-servlet/releases/tag/v5.2.2">Micronaut Servlet.</a></p>
-<h2>NEXT STEPS</h2>
-<p>If you haven’t yet updated to <a href="https://micronaut.io/2023/07/14/micronaut-framework-4-0-0-released/">Micronaut framework 4</a>, this is an excellent opportunity to do so!</p>
-<p>Please feel free to <a href="https://micronaut.io/support/">reach out to us</a> if you need any assistance.</p>
-<p>The post <a href="https://micronaut.io/2025/04/18/micronaut-framework-4-8-2-released/">Micronaut Framework 4.8.2 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
+										<content:encoded><![CDATA[<p><span data-preserver-spaces="true">The Micronaut Foundation is excited to announce the release of Micronaut framework 4.10.14! It contains releases of </span><a class="editor-rtfLink" href="https://github.com/micronaut-projects/micronaut-core/releases/tag/v4.10.23" target="_blank" rel="noopener"><span data-preserver-spaces="true">Micronaut Core</span></a><span data-preserver-spaces="true"> and </span><a class="editor-rtfLink" href="https://github.com/micronaut-projects/micronaut-data/releases/tag/v4.14.4" target="_blank" rel="noopener"><span data-preserver-spaces="true">Micronaut Data</span></a><span data-preserver-spaces="true">. </span><strong><span data-preserver-spaces="true">We strongly recommend that users update to Micronaut 4.10.14</span></strong><span data-preserver-spaces="true">, as it ships with </span><a class="editor-rtfLink" href="https://github.com/netty/netty/releases/tag/netty-4.2.13.Final" target="_blank" rel="noopener"><span data-preserver-spaces="true">Netty 4.2.13</span></a><span data-preserver-spaces="true">, which fixes multiple CVEs.</span></p>
+<p><span data-preserver-spaces="true">Please feel free to </span><a class="editor-rtfLink" href="https://micronaut.io/support/" target="_blank" rel="noopener"><span data-preserver-spaces="true">reach out to us</span></a><span data-preserver-spaces="true"> if you need any assistance.</span></p>
+<p>The post <a href="https://micronaut.io/2026/05/12/micronaut-framework-4-10-14-released/">Micronaut Framework 4.10.14 Released!</a> appeared first on <a href="https://micronaut.io">Micronaut Framework</a>.</p>
 ]]></content:encoded>
 					
 		
