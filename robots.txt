@@ -1,0 +1,8 @@
+# Keep HTML pages crawlable so search engines can process their noindex directives.
+User-agent: *
+
+# These exported resources do not need to be crawled for the legacy site.
+Disallow: /feed/
+Disallow: /wp-content/
+Disallow: /wp-includes/
+Disallow: /wp-json/
